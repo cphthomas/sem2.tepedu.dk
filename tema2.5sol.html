@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erhvervsøkonomi - Tema 2.5 Løsning</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-page-id="cbs2">
+    <div class="container py-5">
+        <!-- For demo purpose -->
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+
+                <!-- Timeline -->
+                <ul class="timeline">
+                    <i>
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <p><i>
+                                    <!-- Brug gerne et mere relevant billede, hvis det findes -->
+                                    <img src="images/earbuds.jpg" width="100%" alt="Tech Gadgets">
+                                    <h2>Erhvervsøkonomi</h2>
+                                    <h2>Løsningsforslag</h2>
+                                    <h2>Tema 2.5: Pris, Omsætning, Elasticitet & Omkostninger</h2>
+
+                                    <u>Formål:</u><br>
+                                    Løsning af opgaver i erhvervsøkonomi med fokus på prisafsætningsfunktion, omsætning,
+                                    grænseomsætning, elasticitet og basale omkostningsberegninger.<br>
+                                    <br>
+                                    <u>Anslået tidsforbrug:</u><br>
+                                    Ca. 4-5 timer<br>
+                                    <br>
+                                    <u>Forudsætning:</u>
+                                    <p>Materialerne er dækket i teorien for ugen.</p>
+
+                                    <h5>Materiale</h5>
+
+
+
+                                    <a href="https://eo.tepedu.dk/" class="effectLinks" data-replace="Gå til Overskud"
+                                        target="_blank">
+                                        <span>Overskud
+                                        </span>
+                                    </a>
+                                    <br>
+
+                                    <a href="https://eo.tepedu.dk/costs.html" class="effectLinks"
+                                        data-replace="Gå til Omkostningsteori" target="_blank">
+                                        <span>Omkostningsteori
+                                        </span>
+                                    </a>
+                                    <br>
+
+                                    <a href="https://eo.tepedu.dk/price.html" class="effectLinks"
+                                        data-replace="Gå til Prisfastsættelse" target="_blank">
+                                        <span>Prisfastsættelse
+                                        </span>
+                                    </a>
+                                    <br>
+
+                                    <a href="https://eo.tepedu.dk/elasticity.html" class="effectLinks"
+                                        data-replace="Gå til Elasticitet" target="_blank">
+                                        <span>Elasticitet
+                                        </span>
+                                    </a>
+                                    <br>
+
+                                    <a href="https://driftsoekonomi-4udg.digi.hansreitzel.dk/" class="effectLinks"
+                                        data-replace="Gå til Lærebog i Driftsøkonomi" target="_blank">
+                                        <span>Lærebog i Driftsøkonomi 4. udg. (kap 1, 2, 5 og 6.1)
+                                        </span>
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <h5>Interaktive apps (Eksempler)</h5>
+                                    <a href="https://optimer.tepedu.dk/pris" class="effectLinks"
+                                        data-replace="Gå til Pris og elasticitet app" target="_blank">
+                                        <span>App: Pris og elasticitet</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://optimer.tepedu.dk/elasticitet2" class="effectLinks"
+                                        data-replace="Gå til Krydspris elasticitet app" target="_blank">
+                                        <span>App: Krydspris elasticitet</span>
+                                    </a>
+                                    <br>
+                                    <hr>
+                                    <u>Opgave:</u> <br>
+                                    Besvar spørgsmålene baseret på de givne oplysninger. <br>
+                                    <br>
+                            </p>
+                        </li>
+
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h2>Oplysninger</h2>
+                        </li>
+
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <i>
+                                <h3>Case: TechGadget A/S</h3>
+                                <p>
+                                    Du er netop blevet ansat som økonomikonsulent i økonomiafdelingen hos TechGadget
+                                    A/S, en af Danmarks førende producenter af forbrugerelektronik. Virksomheden har
+                                    gennem de sidste år oplevet betydelig vækst og har nu brug for din ekspertise til at
+                                    analysere deres prissætning og omkostningsstruktur.
+                                </p>
+                                <p>
+                                    TechGadget A/S er særligt kendt for deres innovative smartphones, men har også en
+                                    stærk position inden for tablets, smartwatches og tilbehør. I lyset af den stigende
+                                    konkurrence på markedet og ændrede forbrugermønstre ønsker ledelsen en grundig
+                                    analyse af deres produktportefølje.
+                                </p>
+                                <p>
+                                    <b>Markedsanalyseafdelingen har indsamlet følgende data:</b>
+                                <ul>
+                                    <li>For deres standard smartphone, "SmartPhone X", er prisafsætningsfunktionen
+                                        estimeret til: <br><b>P = -0,05X + 8000</b> (P i kr., X i stk. pr. måned)</li>
+                                    <li>For deres high-end smartphone, "SmartPhone Pro", er prisafsætningsfunktionen
+                                        estimeret til: <br><b>P = -0,1X + 12000</b> (P i kr., X i stk. pr. måned)</li>
+                                    <li>For deres trådløse earbuds, "SoundBuds", har marketingafdelingen estimeret
+                                        omsætningsfunktionen til: <br><b>Oms = -0,2X² + 1500X</b> (Oms i kr., X i stk.
+                                        pr. måned)</li>
+                                    <li>For deres smartwatch, "TimeWatch", er grænseomsætningsfunktionen (Groms)
+                                        estimeret til: <br><b>Groms = -0,8X + 4000</b> (Groms i kr., X i stk. pr. måned)
+                                    </li>
+                                    <li>For deres nye tablet, "TabX", er de totale omkostninger (TO) estimeret til:
+                                        <br><b>TO = 0,01X² + 100X + 500000</b> (TO i kr., X i stk. pr. måned). De
+                                        500.000 kr. er faste omkostninger (FO).
+                                    </li>
+                                    <li>En prisstigning på "SmartPhone X" fra 6000 kr. til 6500 kr. medfører typisk, at
+                                        salget af "SmartPhone Pro" stiger fra 1000 stk. til 1150 stk. pr. måned.</li>
+                                </ul>
+                                </p>
+                                <p>
+                                    Din opgave er at analysere disse data og give ledelsen konkrete anbefalinger om
+                                    prissætning, produktionsvolumen og omkostningsstyring.
+                                </p>
+                            </i>
+                        </li>
+
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h2>Spørgsmål</h2>
+                        </li>
+
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <i>
+                                <ol type="A">
+                                    <li>
+                                        Bestem funktionsforskriften for grænseomsætningen (Groms) for "SmartPhone X" (P
+                                        = -0,05X + 8000).
+                                        <br>
+                                        <small><i>Vink: For en lineær prisafsætningsfunktion P = aX + b er
+                                                grænseomsætningsfunktionen Groms = 2aX + b.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Prisafsætningsfunktionen P er givet ved P = -0,05X + 8000.<br>
+                                        Dette er en lineær funktion på formen P = aX + b, hvor:<br>
+                                        Hældningen a = -0,05<br>
+                                        Skæringen med y-aksen b = 8000<br>
+                                        For en lineær prisafsætningsfunktion P = aX + b, gælder det, at
+                                        grænseomsætningsfunktionen (Groms) findes ved at fordoble hældningen 'a' og
+                                        beholde skæringen 'b'. <br>
+                                        Groms = 2aX + b<br>
+                                        Vi indsætter værdierne for a og b:<br>
+                                        Groms = 2 * (-0,05) * X + 8000<br>
+                                        Groms = -0,1 * X + 8000<br>
+                                        Funktionsforskriften for grænseomsætningen er derfor: <b>Groms = -0,1X +
+                                            8000</b>. <br>
+                                        Du kan se grafen for grænseomsætningen nedenfor i app'en forskriften er markeret
+                                        med blå label:
+                                        <img src="images/earbuds1.png" width="100%">
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Hvad er afsætningen (X) for "SmartPhone X", når prisen (P) sættes til 6000 kr.?
+                                        <br>
+                                        <small><i>Vink: Indsæt P = 6000 i prisafsætningsfunktionen og isolér
+                                                X.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Vi bruger prisafsætningsfunktionen P = -0,05X + 8000 og indsætter den kendte
+                                        pris P = 6000 kr.:<br>
+                                        6000 = -0,05X + 8000<br>
+                                        Vi skal nu isolere X (finde ud af, hvad X er). Først flytter vi 8000 over på
+                                        venstre side af lighedstegnet. Når et positivt tal flyttes over, bliver det
+                                        negativt:<br>
+                                        6000 - 8000 = -0,05X<br>
+                                        -2000 = -0,05X<br>
+                                        Nu skal vi have X til at stå alene. X er ganget med -0,05. For at fjerne -0,05
+                                        fra højre side, skal vi dividere med -0,05 på begge sider af lighedstegnet:<br>
+                                        -2000 / -0,05 = (-0,05X) / -0,05<br>
+                                        -2000 / -0,05 = X<br>
+                                        At dividere med -0,05 er det samme som at gange med -20 (fordi 1 / 0,05 = 20).
+                                        Division med et negativt tal giver et positivt resultat.<br>
+                                        X = 40.000<br>
+                                        Afsætningen er <b>X = 40.000 stk.</b>, når prisen er 6.000 kr. <br>
+                                        Du kan se afsætningen 40.000 stk. når prisen er 6.000 kr. i app'en nedenfor:
+                                        <img src="images/earbuds2.png" width="100%">
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Hvad er grænseomsætningen (Groms) for "SmartPhone X", når prisen er 6000 kr.?
+                                        <br>
+                                        <small><i>Vink: Vi fandt tidligere, at X = 40.000, når P = 6000. Indsæt denne
+                                                X-værdi i Groms-funktionen fra første spørgsmål.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Fra spørgsmål B ved vi, at når prisen P = 6000 kr., så er afsætningen X = 40.000
+                                        stk.<br>
+                                        Fra spørgsmål A fandt vi grænseomsætningsfunktionen: Groms = -0,1X + 8000.<br>
+                                        For at finde Groms ved denne afsætning, indsætter vi X = 40.000 i
+                                        Groms-funktionen:<br>
+                                        Groms = -0,1 * (40.000) + 8000<br>
+                                        Groms = -4000 + 8000<br>
+                                        Groms = 4000<br>
+                                        Grænseomsætningen er <b>Groms = 4000 kr.</b>, når prisen er 6000 kr. (og
+                                        afsætningen er 40.000 stk.). Det betyder, at hvis salget øges fra 40.000 til
+                                        40.001 stk., vil den samlede omsætning stige med ca. 4000 kr.
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Beregn den maksimale omsætning for "SmartPhone X" samt den tilhørende pris (P)
+                                        og afsætning (X).
+                                        <br>
+                                        <small><i>Vink: Omsætningen er maksimal, hvor kurven for omsætning topper,
+                                                hvilket sker, når grænseomsætningen (Groms) er lig nul. Sæt Groms = 0 og
+                                                løs for X. Brug X til at finde P. Beregn Oms = P * X.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Den samlede omsætning er maksimal, når grænseomsætningen (Groms) er lig med 0.
+                                        Det skyldes, at Groms angiver ændringen i omsætningen, når afsætningen øges med
+                                        én enhed. Når Groms er positiv, stiger omsætningen ved øget salg. Når Groms er
+                                        negativ, falder omsætningen ved øget salg. Toppunktet findes, hvor Groms skifter
+                                        fra positiv til negativ, altså hvor Groms = 0.<br>
+                                        Vi bruger Groms-funktionen fra tidligere: Groms = -0,1X + 8000.<br>
+                                        Sæt Groms = 0:<br>
+                                        0 = -0,1X + 8000<br>
+                                        Flyt -0,1X til venstre side (bliver positivt):<br>
+                                        0,1X = 8000<br>
+                                        Divider med 0,1 på begge sider for at isolere X:<br>
+                                        X = 8000 / 0,1<br>
+                                        X = 80.000<br>
+                                        Den afsætning, der giver maksimal omsætning, er <b>X = 80.000 stk.</b><br><br>
+                                        Find den tilhørende pris (P) ved at indsætte X = 80.000 i
+                                        prisafsætningsfunktionen P = -0,05X + 8000:<br>
+                                        P = -0,05 * (80.000) + 8000<br>
+                                        P = -4000 + 8000<br>
+                                        P = 4000<br>
+                                        Prisen, der giver maksimal omsætning, er <b>P = 4000 kr.</b><br><br>
+                                        Beregn den maksimale omsætning ved Oms = P * X:<br>
+                                        Oms_max = 4000 kr. * 80.000 stk.<br>
+                                        Oms_max = 320.000.000<br>
+                                        Den maksimale omsætning er <b>Oms_max = 320.000.000 kr.</b> <br>
+                                        Du kan se den maksimale omsætning 320.000.000 kr. i app'en nedenfor:
+                                        <img src="images/earbuds3.png" width="100%">
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Hvad er den teoretisk maksimale afsætning (X) for "SmartPhone X" (den mængde,
+                                        der kan afsættes, hvis prisen var 0 kr.)?
+                                        <br>
+                                        <small><i>Vink: Hvad sker der med afsætningen, når produktet gives væk gratis?
+                                                Sæt P = 0 i prisafsætningsfunktionen.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Den maksimale afsætning findes ved den pris, hvor ingen er villige til at betale
+                                        mere, dvs. prisen er 0 kr. Vi indsætter P = 0 i prisafsætningsfunktionen P =
+                                        -0,05X + 8000:<br>
+                                        0 = -0,05X + 8000<br>
+                                        Flyt -0,05X til venstre side:<br>
+                                        0,05X = 8000<br>
+                                        Divider med 0,05 på begge sider:<br>
+                                        X = 8000 / 0,05<br>
+                                        X = 160.000<br>
+                                        Den teoretisk maksimale afsætning er <b>X_max = 160.000 stk.</b> Dette er det
+                                        punkt, hvor prisafsætningsfunktionen skærer X-aksen. <br>
+                                        Du kan se den teoretisk maksimale afsætning 160.000 stk. i app'en nedenfor,
+                                        dette er markeret med orange label: <br>
+                                        <img src="images/earbuds3.png" width="100%">
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Bestem prisen (P) for "SmartPhone Pro" (P = -0,1X + 12000), når
+                                        grænseomsætningen (Groms) er 8000 kr.
+                                        <br>
+                                        <small><i>Vink: Denne opgave er ikke til at løse direkte i app'en. <br>
+                                                Start med at finde Groms-funktionen for "SmartPhone Pro". <br>
+                                                Sæt denne funktion lig med 8000 og løs for X. <br>
+                                                Indsæt den fundne X-værdi i P-funktionen for "SmartPhone Pro" for at
+                                                finde prisen.
+                                            </i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Først finder vi Groms-funktionen for "SmartPhone Pro". Prisafsætningsfunktionen
+                                        er P = -0,1X + 12000. Her er a = -0,1 og b = 12000.<br>
+                                        Groms = 2aX + b = 2 * (-0,1) * X + 12000 = -0,2X + 12000.<br><br>
+                                        Vi får at vide, at Groms skal være 8000 kr. Vi sætter Groms-funktionen lig med
+                                        8000:<br>
+                                        8000 = -0,2X + 12000<br>
+                                        Flyt 12000 til venstre side:<br>
+                                        8000 - 12000 = -0,2X<br>
+                                        -4000 = -0,2X<br>
+                                        Divider med -0,2 på begge sider:<br>
+                                        X = -4000 / -0,2<br>
+                                        X = 20.000<br>
+                                        Afsætningen er altså 20.000 stk., når Groms er 8000 kr.<br><br>
+                                        Nu finder vi prisen (P) ved denne afsætning (X = 20.000) ved at bruge
+                                        P-funktionen for "SmartPhone Pro": P = -0,1X + 12000.<br>
+                                        P = -0,1 * (20.000) + 12000<br>
+                                        P = -2000 + 12000<br>
+                                        P = 10.000<br>
+                                        Prisen er <b>P = 10.000 kr.</b>, når grænseomsætningen er 8000 kr. <br>
+                                        Du kan se prisen 10.000 kr. i app'en nedenfor hvor Groms er 8000 kr. og
+                                        afsætningen er 20.000 stk.: <br>
+                                        <img src="images/earbuds4.png" width="100%">
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        For "SoundBuds" (Oms = -0,2X² + 1500X), udled prisafsætningsfunktionen (P) og
+                                        grænseomsætningsfunktionen (Groms).
+                                        <br>
+                                        <small><i>Vink: Husk at Omsætning (Oms) = Pris (P) * Afsætning (X). Derfor er P
+                                                = Oms / X. Grænseomsætningen (Groms) er den afledte af Oms-funktionen
+                                                mht. X (Oms').</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        <u>Prisafsætningsfunktion (P):</u><br>
+                                        Vi ved, at Oms = P * X. For at finde P, dividerer vi Oms med X:<br>
+                                        P = Oms / X = (-0,2X² + 1500X) / X<br>
+                                        Vi dividerer hvert led i tælleren med X:<br>
+                                        P = -0,2X² / X + 1500X / X<br>
+                                        P = -0,2X + 1500<br>
+                                        Prisafsætningsfunktionen er <b>P = -0,2X + 1500</b>.<br><br>
+                                        <u>Grænseomsætningsfunktion (Groms):</u><br><br>
+
+                                        Groms er den afledte af omsætningsfunktionen (Oms) med hensyn til X.<br>
+                                        Vi starter med: Oms = -0,2X² + 1500X<br><br>
+
+                                        Vi bruger differentiationsreglen (n·k·X<sup>n-1</sup>) for hvert led:<br><br>
+
+                                        1. For leddet -0,2X²:<br>
+                                        • n = 2<br>
+                                        • k = -0,2<br>
+                                        • Den afledte er: 2 · (-0,2) · X<sup>2-1</sup><br>
+                                        • Forenklet: -0,4X¹ = -0,4X<br><br>
+
+                                        2. For leddet +1500X:<br>
+                                        • n = 1<br>
+                                        • k = 1500<br>
+                                        • Den afledte er: 1 · 1500 · X<sup>1-1</sup><br>
+                                        • Forenklet: 1500 · X<sup>0</sup> = 1500 · 1 = 1500<br><br>
+
+                                        Samlet får vi:<br>
+                                        Groms = Oms' = -0,4X + 1500<br><br>
+
+                                        <b>Grænseomsætningsfunktionen er derfor: Groms = -0,4X + 1500</b><br><br>
+
+                                        <i>Bemærk: Vi kunne også have brugt en hurtigere metode:<br>
+                                            Da vi tidligere fandt P = -0,2X + 1500, kunne vi have brugt reglen Groms =
+                                            2aX + b<br>
+                                            hvor a = -0,2 og b = 1500<br>
+                                            Dette giver: Groms = 2·(-0,2)X + 1500 = -0,4X + 1500</i>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Beregn den maksimale omsætning for "SoundBuds" samt den tilhørende pris (P) og
+                                        afsætning (X).
+                                        <br>
+                                        <small><i>Vink: Brug Groms-funktionen fundet i tidligere. Sæt Groms = 0 for at
+                                                finde X, der maksimerer omsætningen. Brug denne X til at finde P og den
+                                                maksimale Oms.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Omsætningen er maksimal, når Groms = 0. Fra tidligere har vi Groms = -0,4X +
+                                        1500.<br>
+                                        Sæt Groms = 0:<br>
+                                        0 = -0,4X + 1500<br>
+                                        0,4X = 1500<br>
+                                        X = 1500 / 0,4<br>
+                                        X = 3750<br>
+                                        Den afsætning, der giver maksimal omsætning, er <b>X = 3750 stk.</b><br><br>
+                                        Find prisen (P) ved X = 3750 ved at bruge P-funktionen fra tidligere: P = -0,2X
+                                        +
+                                        1500.<br>
+                                        P = -0,2 * (3750) + 1500<br>
+                                        P = -750 + 1500<br>
+                                        P = 750<br>
+                                        Prisen, der giver maksimal omsætning, er <b>P = 750 kr.</b><br><br>
+                                        Find den maksimale omsætning (Oms_max) ved at indsætte X = 3750 i Oms-funktionen
+                                        Oms = -0,2X² + 1500X:<br>
+                                        Oms_max = -0,2 * (3750)² + 1500 * (3750)<br>
+                                        Oms_max = -0,2 * 14.062.500 + 5.625.000<br>
+                                        Oms_max = -2.812.500 + 5.625.000<br>
+                                        Oms_max = 2.812.500<br>
+                                        Den maksimale omsætning er <b>Oms_max = 2.812.500 kr.</b><br>
+                                        (Alternativt kunne vi beregne Oms_max = P * X = 750 * 3750 = 2.812.500 kr.) <br>
+                                        Du kan se den maksimale omsætning 2.812.500 kr. i app'en nedenfor:
+                                        <img src="images/earbuds5.png" width="100%">
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        For "TimeWatch" (Groms = -0,8X + 4000), udled prisafsætningsfunktionen (P) og
+                                        omsætningsfunktionen (Oms).
+                                        <br>
+                                        <small><i>Vink: Vi ved, at for en lineær P = aX + b, er Groms = 2aX + b.
+                                                Sammenlign dette med den givne Groms-funktion for at finde 'a' og 'b'.
+                                                Brug 'a' og 'b' til at skrive P-funktionen. Beregn Oms = P *
+                                                X.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Vi har fået Groms = -0,8X + 4000.<br>
+                                        Vi ved, at Groms-funktionen for en lineær prisafsætningsfunktion P = aX + b er
+                                        Groms = 2aX + b.<br>
+                                        Ved at sammenligne de to udtryk for Groms kan vi identificere 'a' og 'b' for den
+                                        ukendte P-funktion:<br>
+                                        Sammenlign X-leddene: 2a = -0,8 => a = -0,8 / 2 => a = -0,4.<br>
+                                        Sammenlign konstantleddene: b = 4000.<br><br>
+                                        Nu kender vi a = -0,4 og b = 4000 for prisafsætningsfunktionen P = aX + b.<br>
+                                        Prisafsætningsfunktionen er derfor: <b>P = -0,4X + 4000</b>.<br><br>
+                                        Omsætningsfunktionen findes ved Oms = P * X:<br>
+                                        Oms = (-0,4X + 4000) * X<br>
+                                        Oms = -0,4X * X + 4000 * X<br>
+                                        Omsætningsfunktionen er: <b>Oms = -0,4X² + 4000X</b>.
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Beregn priselasticiteten (ε) for "SmartPhone X" (P = -0,05X + 8000) ved en pris
+                                        på 7000 kr. Forklar,
+                                        hvad resultatet betyder for omsætningen ved en lille prisstigning.
+                                        <br>
+                                        <small><i>Vink: <br>
+                                                Brug formlen eller app'en
+                                                <br>
+                                                Fortolk resultatet</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Vi kan benytte formlen ε = P/(b-P) = Nedre/Øvre = 7000/(8000-7000) = -7000/1000
+                                        = -7 <br>
+                                        <b>ε = -7</b> <br>
+                                        <b>Fortolkning:</b> Priselasticiteten er -7, efterspørgslen er altså meget
+                                        <b>elastisk</b> ved denne pris. <br>
+                                        En elasticitet på -7 betyder, at hvis prisen stiger med 1%, vil den efterspurgte
+                                        mængde falde med ca. 7%. <br>
+                                        Da mængden falder procentvis meget mere end prisen stiger, vil den samlede
+                                        omsætning (P * X) <b>falde</b> ved en lille prisstigning fra 7000 kr. <br>
+                                        Virksomheden bør overveje at sænke prisen for at øge omsætningen, hvis den
+                                        opererer i det elastiske område.
+                                        <br>
+                                        I app'en nedenfor kan du se, at priselasticiteten er -7, når prisen er 7000 kr.
+                                        <br>
+                                        <img src="images/earbuds6.png" width="100%">
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Beregn krydspriselasticiteten mellem "SmartPhone X" (vare A) og "SmartPhone Pro"
+                                        (vare B), når prisen på "SmartPhone X" stiger fra 6000 kr. til 6500 kr., og
+                                        salget af "SmartPhone Pro" stiger fra 1000 stk. til 1150 stk. Hvad fortæller
+                                        resultatet om forholdet mellem de to produkter?
+                                        <br>
+                                        <small><i>Vink: Brug formlen for krydspriselasticitet: ε_AB = (Procentvis
+                                                ændring i mængde B) / (Procentvis ændring i pris A). ε_AB = (ΔB/B) /
+                                                (ΔP_A/P_A). Hvis ε_AB > 0, er de substitutter. Hvis ε_AB < 0, er de
+                                                    komplementære.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Vi identificerer de givne værdier:<br>
+                                        Vare A: SmartPhone X, Vare B: SmartPhone Pro.<br>
+                                        Oprindelig pris på A (P_A): 6000 kr.<br>
+                                        Ny pris på A (Ny P_A): 6500 kr.<br>
+                                        Ændring i pris på A (ΔP_A): 6500 - 6000 = 500 kr.<br>
+                                        Oprindelig mængde af B (B): 1000 stk.<br>
+                                        Ny mængde af B (Ny B): 1150 stk.<br>
+                                        Ændring i mængde af B (ΔB): 1150 - 1000 = 150 stk.<br><br>
+                                        Beregn procentvis ændring i mængde B:<br>
+                                        (ΔB / B) = 150 / 1000 = 0,15 (dvs. 15%)<br>
+                                        Beregn procentvis ændring i pris A:<br>
+                                        (ΔP_A / P_A) = 500 / 6000 = 1/12 ≈ 0,0833 (dvs. ca. 8,33%)<br><br>
+                                        Beregn krydspriselasticiteten (ε_AB):<br>
+                                        ε_AB = (Procentvis ændring i mængde B) / (Procentvis ændring i pris A)<br>
+                                        ε_AB = 0,15 / (1/12)<br>
+                                        ε_AB = 0,15 * 12<br>
+                                        <b>ε_AB = 1,8</b><br><br>
+                                        <b>Fortolkning:</b> Krydspriselasticiteten er 1,8. Da værdien er <b>positiv</b>
+                                        (1,8 > 0), betyder det, at de to produkter er <b>substitutter</b>. Når prisen på
+                                        "SmartPhone X" stiger, øges efterspørgslen efter "SmartPhone Pro", fordi nogle
+                                        forbrugere skifter til det nu relativt billigere alternativ (eller det
+                                        alternativ, der nu virker mere attraktivt prismæssigt). En værdi på 1,8
+                                        indikerer en relativt stærk substitutionsrelation; en prisstigning på 1% for
+                                        SmartPhone X fører til en stigning i salget af SmartPhone Pro på 1,8%. <br>
+                                        I app'en nedenfor kan du se, at krydspriselasticiteten er 1,8, når prisen på
+                                        "SmartPhone X" stiger fra 6000 kr. til 6500 kr., og salget af "SmartPhone Pro"
+                                        stiger fra 1000 stk. til 1150 stk. <br>
+                                        <img src="images/earbuds7.png" width="100%">
+                                    </li>
+
+
+                                    <hr>
+                                    <li>
+                                        Bestem funktionen for grænseomkostningerne (Gromk) for tabletten "TabX" (TO =
+                                        0,01X² + 100X + 500000).
+                                        <br>
+                                        <small><i>Vink: Grænseomkostningerne (Gromk) findes ved at differentiere den
+                                                totale omkostningsfunktion (TO) med hensyn til afsætningen (X). Gromk =
+                                                TO'. Husk differentiationreglen: d(k*X^n)/dX = n*k*X^(n-1).</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Grænseomkostningerne (Gromk) er den afledte af de totale omkostninger (TO) med
+                                        hensyn til X.<br>
+                                        TO = 0,01X² + 100X + 500000<br>
+                                        Vi differentierer hvert led:<br>
+                                        Afledt af 0,01X²: 2 * 0,01 * X^(2-1) = 0,02X¹ = 0,02X<br>
+                                        Afledt af 100X (eller 100X¹): 1 * 100 * X^(1-1) = 100 * X^0 = 100 * 1 = 100<br>
+                                        Afledt af konstanten 500000: 0<br>
+                                        Lægger vi de afledte led sammen, får vi Gromk:<br>
+                                        Gromk = TO' = 0,02X + 100 + 0<br>
+                                        Funktionen for grænseomkostningerne er <b>Gromk = 0,02X + 100</b>.
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Beregn grænseomkostningerne (Gromk) for "TabX" (TO = 0,01X² + 100X + 500000),
+                                        når der produceres 5000 stk.
+                                        (X=5000).
+                                        <br>
+                                        <small><i>Vink: Indsæt X = 5000 i Gromk-funktionen, som du fandt i forrige
+                                                spørgsmål.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Vi bruger Gromk-funktionen fra tidligere: Gromk = 0,02X + 100.<br>
+                                        Indsæt X = 5000:<br>
+                                        Gromk(5000) = 0,02 * (5000) + 100<br>
+                                        Gromk(5000) = 100 + 100<br>
+                                        Gromk(5000) = 200<br>
+                                        Grænseomkostningerne ved en produktion på 5000 stk. er <b>Gromk = 200 kr.</b>
+                                        Det betyder, at omkostningen ved at producere den 5001. tablet er ca. 200 kr.
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        Beregn de variable enhedsomkostninger (VE) og de totale enhedsomkostninger (TE)
+                                        for "TabX" (TO = 0,01X² + 100X + 500000), når der produceres 5000 stk. (X=5000).
+                                        <br>
+                                        <small><i>Vink: De totale omkostninger (TO) består af faste omkostninger (FO) og
+                                                variable omkostninger (VO): TO = FO + VO. Find først VO-funktionen.
+                                                Derefter er VE = VO/X og TE = TO/X.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        Vi har TO = 0,01X² + 100X + 500000, og vi ved, at FO = 500.000 kr.<br>
+                                        De variable omkostninger (VO) er den del af TO, der afhænger af X:<br>
+                                        VO = TO - FO = (0,01X² + 100X + 500000) - 500000<br>
+                                        VO = 0,01X² + 100X<br><br>
+                                        <u>Variable Enhedsomkostninger (VE):</u><br>
+                                        VE = VO / X = (0,01X² + 100X) / X<br>
+                                        VE = (0,01X² / X) + (100X / X)<br>
+                                        VE = 0,01X + 100<br>
+                                        Nu indsætter vi X = 5000:<br>
+                                        VE(5000) = 0,01 * (5000) + 100<br>
+                                        VE(5000) = 50 + 100<br>
+                                        <b>VE = 150 kr.</b> (De gennemsnitlige variable omkostninger pr. stk. ved 5000
+                                        stk. er 150 kr.)<br><br>
+                                        <u>Totale Enhedsomkostninger (TE):</u><br>
+                                        TE = TO / X<br>
+                                        Vi beregner først TO ved X = 5000:<br>
+                                        TO(5000) = 0,01 * (5000)² + 100 * (5000) + 500000<br>
+                                        TO(5000) = 0,01 * 25.000.000 + 500.000 + 500.000<br>
+                                        TO(5000) = 250.000 + 500.000 + 500.000<br>
+                                        TO(5000) = 1.250.000 kr.<br>
+                                        Nu beregner vi TE:<br>
+                                        TE(5000) = TO(5000) / 5000 = 1.250.000 / 5000<br>
+                                        <b>TE = 250 kr.</b> (De gennemsnitlige totale omkostninger pr. stk. ved 5000
+                                        stk. er 250 kr.)<br><br>
+                                        (Alternativ beregning for TE: TE = VE + FE. Først find FE = FO / X = 500.000 /
+                                        5000 = 100 kr. Så TE = VE + FE = 150 + 100 = 250 kr.)
+                                    </li>
+
+
+                                    <hr>
+                                    <li>
+                                        Beregn de faste enhedsomkostninger (FE) for "TabX", når der produceres 10.000
+                                        stk. (X=10.000). Hvordan adskiller FE sig fra VE (Variable Enhedsomkostninger)
+                                        med hensyn til, hvordan de ændrer sig, når produktionen (X) stiger?
+                                        <br>
+                                        <small><i>Vink: FE = FO / X. Beregn FE ved X=10.000. Sammenlign med
+                                                VE-funktionen fra tidligere (VE = 0,01X + 100) og forklar forskellen i
+                                                deres opførsel, når X ændres.</i></small>
+                                        <br>
+                                        <strong>Løsningsforslag:</strong><br>
+                                        De faste omkostninger for "TabX" er FO = 500.000 kr.<br>
+                                        Faste enhedsomkostninger (FE) beregnes som FE = FO / X.<br>
+                                        Ved X = 10.000 stk.:<br>
+                                        FE(10.000) = 500.000 / 10.000<br>
+                                        <b>FE = 50 kr.</b><br><br>
+                                        <b>Forskel mellem FE og VE's opførsel når X stiger:</b><br>
+                                        * <b>FE = 500.000 / X:</b> Når produktionen (X) stiger, bliver nævneren i brøken
+                                        større, mens tælleren (FO) er konstant. Derfor vil FE <b>altid falde</b>, når X
+                                        stiger. De faste omkostninger fordeles over flere enheder.<br>
+                                        * <b>VE = 0,01X + 100:</b> Denne funktion er lineært stigende. Når produktionen
+                                        (X) stiger, vil VE <b>altid stige</b> i dette specifikke tilfælde. Hver ekstra
+                                        enhed har en lidt højere gennemsnitlig variabel omkostning.<br><br>
+                                        Konklusion: FE falder altid med stigende produktion (spredning af faste
+                                        omkostninger), mens VE i dette tilfælde stiger med stigende produktion
+                                        (progressive variable omkostninger).
+                                    </li>
+
+
+
+
+                                </ol>
+                            </i>
+                        </li>
+                    </i>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="global.js"></script> <!-- Antager global.js indeholder timeline animation etc. -->
+
+</body>
+
+</html>
