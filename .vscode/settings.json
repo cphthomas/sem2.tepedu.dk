@@ -18,6 +18,9 @@
     // File icon theme - Material Icon Theme er nu aktivt
     "workbench.iconTheme": "material-icon-theme",
     
+    // Editor tab label format - Vis kun filnavn i faner
+    "workbench.editor.labelFormat": "short",
+    
     // Material Icon Theme indstillinger - Alle HTML filer får standard HTML ikon
     "material-icon-theme.files.associations": {},
     "material-icon-theme.folders.associations": {},
@@ -29,57 +32,6 @@
     // Fil nesting skjulte filerne, så vi deaktiverer det igen
     "explorer.fileNesting.enabled": false,
     
-    // File Utils Extension konfiguration (efter installation)
-    // Installer "File Utils" extension for at aktivere labels og farver
-    "fileutils.fileAssociations": {
-        "*.JURA.*.html": {
-            "label": "JURA",
-            "color": "#FF6B6B"
-        },
-        "*.MAKRO.*.html": {
-            "label": "MAKRO",
-            "color": "#4ECDC4"
-        },
-        "*.PR.*.html": {
-            "label": "PR",
-            "color": "#45B7D1"
-        },
-        "*.SR.*.html": {
-            "label": "SR",
-            "color": "#96CEB4"
-        }
-    },
-    
-    // Custom labels for numbered files - gør filer mere overskuelige
-    // Labels vises i editor tabs og explorer med beskrivende navne
-    "workbench.editor.customLabels.patterns": {
-        // JURA filer - viser "JURA - Intro" i stedet for "1.JURA.INTRO.1.html"
-        "**/*.JURA.INTRO.*.html": "JURA - Intro",
-        "**/*.JURA.TEMA.*.html": "JURA - Tema",
-        "**/*.JURA.TEMA.SOL.*.html": "JURA - Tema (Sol)",
-        "**/*.JURA.WORK.*.html": "JURA - Work",
-        "**/*.JURA.WORK.SOL.*.html": "JURA - Work (Sol)",
-        // MAKRO filer
-        "**/*.MAKRO.INTRO.*.html": "MAKRO - Intro",
-        "**/*.MAKRO.TEMA.*.html": "MAKRO - Tema",
-        "**/*.MAKRO.TEMA.SOL.*.html": "MAKRO - Tema (Sol)",
-        "**/*.MAKRO.WORK.*.html": "MAKRO - Work",
-        "**/*.MAKRO.WORK.SOL.*.html": "MAKRO - Work (Sol)",
-        // PR filer
-        "**/*.PR.INTRO.*.html": "PR - Intro",
-        "**/*.PR.TEMA.*.html": "PR - Tema",
-        "**/*.PR.TEMA.SOL.*.html": "PR - Tema (Sol)",
-        "**/*.PR.WORK.*.html": "PR - Work",
-        "**/*.PR.WORK.SOL.*.html": "PR - Work (Sol)",
-        "**/*.PR.WORK.SOL.*.TEST.html": "PR - Work (Sol Test)",
-        // SR filer
-        "**/*.SR.INTRO.*.html": "SR - Intro",
-        "**/*.SR.TEMA.*.html": "SR - Tema",
-        "**/*.SR.TEMA.SOL.*.html": "SR - Tema (Sol)",
-        "**/*.SR.WORK.*.html": "SR - Work",
-        "**/*.SR.WORK.SOL.*.html": "SR - Work (Sol)"
-    },
-    "workbench.editor.customLabels.enabled": true,
     
     // Sort files by name for consistent ordering
     "explorer.sortOrder": "default",

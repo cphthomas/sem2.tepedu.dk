@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro til ugen</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body data-page-id="cbs-intro">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+                <!-- Timeline -->
+                <ul class="timeline">
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <i><h1>Intro til ugen</h1></i>
+                        <br>
+                        <p class="lead">Her finder du en kort introduktion samt vigtige meddelelser.</p>
+                        
+                        <hr class="my-4">
+
+                        <h5>Spørgetime på Mandag!</h5>
+                        <p>Kære studerende, husk at der afholdes spørgetime nu på <strong>mandag, d. 19. maj 2025</strong>.</p>
+                        <p><strong>Tidspunkt:</strong> Kl. 09:00-11:00</p>
+                        <p>
+                            <strong>Zoom-link:</strong> 
+                            <a href="https://cphbusiness.zoom.us/s/7577575555?omn=69081854620#success" class="effectLinks" data-replace="Åbn Zoom-rum" target="_blank">
+                                <span>Deltag i spørgetimen her Thomas's Zoom-rum</span>
+                            </a>
+                        </p>
+                        <p>Dette er en god mulighed for at få afklaret eventuelle spørgsmål vedrørende eksaminerne online på Zoom, 
+                            så jeg håber du kan deltage, hvis du ikke har mulighed for at deltage håber jeg en fra dit team kan deltage.</p>
+                        
+                        
+                        <hr class="my-4">
+
+                        <h5>Detaljeret Eksamensinformation</h5>
+                        <p>For en fuld oversigt over eksamensdatoer, tider, formalia og foreløbige eksamenstider for den mundtlige eksamen, 
+                            bedes du se det detaljerede eksamensdokument:</p>
+                        <a href="../MIX/eksamen2.html" class="effectLinks" data-replace="Se Eksamensplan (eksamen2.html)" target="_blank">
+                            <span>Se Eksamensinformation og Tidsplan (eksamen2.html)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    } else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            }, {
+                threshold: 0.1 // Adjust if necessary to control when the animation starts
+            });
+
+            document.querySelectorAll('.timeline-item').forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html> 
