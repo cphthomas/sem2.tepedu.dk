@@ -1,4 +1,103 @@
 {
     "liveServer.settings.port": 5503,
-    "svn.ignoreMissingSvnWarning": true
+    "svn.ignoreMissingSvnWarning": true,
+    
+    // File associations - Alle HTML filer skal behandles som HTML
+    "files.associations": {
+        "*.JURA.*.html": "html",
+        "*.MAKRO.*.html": "html",
+        "*.PR.*.html": "html",
+        "*.SR.*.html": "html",
+        "*.INTRO.*.html": "html",
+        "*.TEMA.*.html": "html",
+        "*.WORK.*.html": "html",
+        "*.SOL.*.html": "html",
+        "*.TEST.html": "html"
+    },
+    
+    // File icon theme - Material Icon Theme er nu aktivt
+    "workbench.iconTheme": "material-icon-theme",
+    
+    // Material Icon Theme indstillinger - Alle HTML filer får standard HTML ikon
+    "material-icon-theme.files.associations": {},
+    "material-icon-theme.folders.associations": {},
+    "material-icon-theme.hidesExplorerArrows": false,
+    "material-icon-theme.folders.theme": "specific",
+    
+    // Explorer settings for better file organization
+    // FIL NESTING DEAKTIVERET - Alle filer vises individuelt
+    // Fil nesting skjulte filerne, så vi deaktiverer det igen
+    "explorer.fileNesting.enabled": false,
+    
+    // File Utils Extension konfiguration (efter installation)
+    // Installer "File Utils" extension for at aktivere labels og farver
+    "fileutils.fileAssociations": {
+        "*.JURA.*.html": {
+            "label": "JURA",
+            "color": "#FF6B6B"
+        },
+        "*.MAKRO.*.html": {
+            "label": "MAKRO",
+            "color": "#4ECDC4"
+        },
+        "*.PR.*.html": {
+            "label": "PR",
+            "color": "#45B7D1"
+        },
+        "*.SR.*.html": {
+            "label": "SR",
+            "color": "#96CEB4"
+        }
+    },
+    
+    // Custom labels for numbered files - gør filer mere overskuelige
+    // Labels vises i editor tabs og explorer med beskrivende navne
+    "workbench.editor.customLabels.patterns": {
+        // JURA filer - viser "JURA - Intro" i stedet for "1.JURA.INTRO.1.html"
+        "**/*.JURA.INTRO.*.html": "JURA - Intro",
+        "**/*.JURA.TEMA.*.html": "JURA - Tema",
+        "**/*.JURA.TEMA.SOL.*.html": "JURA - Tema (Sol)",
+        "**/*.JURA.WORK.*.html": "JURA - Work",
+        "**/*.JURA.WORK.SOL.*.html": "JURA - Work (Sol)",
+        // MAKRO filer
+        "**/*.MAKRO.INTRO.*.html": "MAKRO - Intro",
+        "**/*.MAKRO.TEMA.*.html": "MAKRO - Tema",
+        "**/*.MAKRO.TEMA.SOL.*.html": "MAKRO - Tema (Sol)",
+        "**/*.MAKRO.WORK.*.html": "MAKRO - Work",
+        "**/*.MAKRO.WORK.SOL.*.html": "MAKRO - Work (Sol)",
+        // PR filer
+        "**/*.PR.INTRO.*.html": "PR - Intro",
+        "**/*.PR.TEMA.*.html": "PR - Tema",
+        "**/*.PR.TEMA.SOL.*.html": "PR - Tema (Sol)",
+        "**/*.PR.WORK.*.html": "PR - Work",
+        "**/*.PR.WORK.SOL.*.html": "PR - Work (Sol)",
+        "**/*.PR.WORK.SOL.*.TEST.html": "PR - Work (Sol Test)",
+        // SR filer
+        "**/*.SR.INTRO.*.html": "SR - Intro",
+        "**/*.SR.TEMA.*.html": "SR - Tema",
+        "**/*.SR.TEMA.SOL.*.html": "SR - Tema (Sol)",
+        "**/*.SR.WORK.*.html": "SR - Work",
+        "**/*.SR.WORK.SOL.*.html": "SR - Work (Sol)"
+    },
+    "workbench.editor.customLabels.enabled": true,
+    
+    // Sort files by name for consistent ordering
+    "explorer.sortOrder": "default",
+    
+    // Sørg for at ingen filer er skjult
+    "files.exclude": {},
+    
+    // Shell environment timeout fix
+    // Øger timeout for shell environment resolution (standard er 10 sekunder)
+    // Din shell tager ~9.7 sekunder at starte, så vi øger timeout til 20 sekunder
+    // VIGTIGT: Værdien er i SEKUNDER, ikke millisekunder!
+    "application.shellEnvironmentResolutionTimeout": 20,
+    "terminal.integrated.environmentChangesRelaunch": false,
+    // Eksplicit shell path for at undgå timeout problemer
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "/bin/zsh"
+        }
+    }
 }

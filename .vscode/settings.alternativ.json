@@ -1,0 +1,52 @@
+{
+    "_comment": "ALTERNATIV KONFIGURATION - Kopier indholdet til settings.json hvis du vil gruppere filer efter kategori",
+    
+    "liveServer.settings.port": 5503,
+    "svn.ignoreMissingSvnWarning": true,
+    
+    "files.associations": {
+        "*.JURA.*.html": "html",
+        "*.MAKRO.*.html": "html",
+        "*.PR.*.html": "html",
+        "*.SR.*.html": "html",
+        "*.INTRO.*.html": "html",
+        "*.TEMA.*.html": "html",
+        "*.WORK.*.html": "html",
+        "*.SOL.*.html": "html",
+        "*.TEST.html": "html"
+    },
+    
+    "workbench.iconTheme": "material-icon-theme",
+    
+    "material-icon-theme.files.associations": {
+        "*.JURA.*.html": "law",
+        "*.MAKRO.*.html": "chart",
+        "*.PR.*.html": "user",
+        "*.SR.*.html": "office",
+        "*.INTRO.*.html": "book",
+        "*.TEMA.*.html": "readme",
+        "*.WORK.*.html": "todo",
+        "*.SOL.*.html": "checklist",
+        "*.TEST.html": "test-ts"
+    },
+    
+    // FIL NESTING AKTIVERET - Grupperer filer efter kategori
+    // Dette vil gruppere alle filer under deres kategori-fil
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        // Grupper alle JURA filer under første JURA fil
+        "*.JURA.INTRO.*.html": "${capture}.JURA.TEMA.*.html, ${capture}.JURA.TEMA.SOL.*.html, ${capture}.JURA.WORK.*.html, ${capture}.JURA.WORK.SOL.*.html",
+        // Grupper alle MAKRO filer under første MAKRO fil
+        "*.MAKRO.INTRO.*.html": "${capture}.MAKRO.TEMA.*.html, ${capture}.MAKRO.TEMA.SOL.*.html, ${capture}.MAKRO.WORK.*.html, ${capture}.MAKRO.WORK.SOL.*.html",
+        // Grupper alle PR filer under første PR fil
+        "*.PR.INTRO.*.html": "${capture}.PR.TEMA.*.html, ${capture}.PR.TEMA.SOL.*.html, ${capture}.PR.WORK.*.html, ${capture}.PR.WORK.SOL.*.html, ${capture}.PR.WORK.SOL.*.TEST.html",
+        // Grupper alle SR filer under første SR fil
+        "*.SR.INTRO.*.html": "${capture}.SR.TEMA.*.html, ${capture}.SR.TEMA.SOL.*.html, ${capture}.SR.WORK.*.html, ${capture}.SR.WORK.SOL.*.html",
+        // Grupper SOL filer under deres TEMA/WORK filer
+        "*.TEMA.*.html": "${capture}.TEMA.SOL.*.html",
+        "*.WORK.*.html": "${capture}.WORK.SOL.*.html, ${capture}.WORK.SOL.*.TEST.html"
+    },
+    
+    "explorer.sortOrder": "default",
+    "files.exclude": {}
+}
