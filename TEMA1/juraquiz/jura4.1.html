@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Jura - Erstatning 1</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af grundbegreber i erstatningsretten og culpa-reglen, herunder skyld, kausalitet, adækvans og betingelser for erstatningsansvar." data-forudsætning-url="https://jura.tepedu.dk/kapitel4.html" data-forudsætning-text="Online-bog Jura Kapitel 4: Erstatning" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Jura - Erstatning</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Jura: Erstatning - Grundbegreber og Culpa-reglen
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad betyder 'Culpa' i erstatningsretten?"
+                                        data-answer="1"
+                                        data-explanation="Culpa betyder 'skyld' på latin og er hovedreglen i dansk erstatningsret. Man betaler kun erstatning, hvis man har gjort noget forkert (har skylden).">
+                                        <div class="option" data-option="Et hændeligt uheld uden skyld"></div>
+                                        <div class="option"
+                                             data-option="Skyld - man har gjort noget forkert"></div>
+                                        <div class="option"
+                                             data-option="En lovparagraf i Erstatningsansvarsloven"></div>
+                                        <div class="option" data-option="En forsikringstype, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem 'forsæt' og 'uagtsomhed'?"
+                                        data-answer="2"
+                                        data-explanation="Forsæt betyder at man gør skade med vilje (bevidst). Uagtsomhed betyder at man 'burde have tænkt sig om' - man er uforsigtig, men ikke bevidst skadelig.">
+                                        <div class="option" data-option="Der er ingen forskel, det er det samme, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Forsæt er mindre alvorligt end uagtsomhed, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Forsæt er bevidst handling med vilje, uagtsomhed er manglende forsigtighed"></div>
+                                        <div class="option" data-option="Forsæt er kun ved personskade, uagtsomhed ved økonomisk skade"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et 'hændeligt uheld'?"
+                                        data-answer="0"
+                                        data-explanation="Et hændeligt uheld er et uheld, hvor ingen har gjort noget forkert. Her skal man IKKE betale erstatning, fordi der ikke er nogen skyld (culpa).">
+                                        <div class="option"
+                                             data-option="Et uheld hvor ingen har gjort noget forkert - man skal ikke betale erstatning"></div>
+                                        <div class="option" data-option="Et uheld hvor man bevidst har forvoldt skade, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Et uheld hvor man har været uagtsom, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Et uheld der er dækket af forsikring, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'culpa-reglen'?"
+                                        data-answer="1"
+                                        data-explanation="Culpa-reglen er den ulovbestemte hovedregel i erstatningsretten: Man hæfter kun for skader, man har forvoldt ved forsæt eller uagtsomhed. Reglen er udviklet gennem domspraksis og er ikke nedfældet i en specifik lovparagraf.">
+                                        <div class="option" data-option="En paragraf i Erstatningsansvarsloven § 1, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option"
+                                             data-option="Den ulovbestemte hovedregel om at man kun hæfter ved skyld (forsæt eller uagtsomhed)"></div>
+                                        <div class="option" data-option="En regel om forsikringsdækning, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option" data-option="En regel om principalansvar, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'kausalitet' i erstatningsretten?"
+                                        data-answer="3"
+                                        data-explanation="Kausalitet betyder årsagssammenhæng mellem handling og skade. Man bruger 'hvis ikke' testen: Hvis ikke handlingen var sket, ville skaden ikke være indtrådt.">
+                                        <div class="option" data-option="At man har handlet med forsæt, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="At skaden er dækket af forsikring, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="At arbejdsgiveren hæfter for ansattes fejl, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option"
+                                             data-option="Årsagssammenhæng mellem handling og skade - 'hvis ikke' testen"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'adækvans' i erstatningsretten?"
+                                        data-answer="2"
+                                        data-explanation="Adækvans betyder påregnelighed - skaden skal være en påregnelig følge af handlingen. Handlingen skal have generel skadeevne i forhold til den type skader, der er sket.">
+                                        <div class="option" data-option="At skaden er stor nok til at kræve erstatning, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option" data-option="At handlingen var bevidst, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Påregnelighed - skaden skal kunne forudses som følge af handlingen"></div>
+                                        <div class="option" data-option="At skaden er dækket af forsikring, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvilke betingelser skal være opfyldt for erstatningsansvar efter culpa-reglen?"
+                                        data-answer="0"
+                                        data-explanation="For erstatningsansvar efter culpa-reglen skal følgende betingelser være opfyldt: 1) Ansvarsgrundlag (Culpa - forsæt eller uagtsomhed), 2) Kausalitet, 3) Adækvans, 4) Tab/Skade, 5) Værnet interesse.">
+                                        <div class="option"
+                                             data-option="Culpa, kausalitet, adækvans, tab og værnet interesse"></div>
+                                        <div class="option" data-option="Kun culpa og tab, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun forsikringsdækning, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun principalansvar, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem 'simpel uagtsomhed' og 'grov uagtsomhed'?"
+                                        data-answer="1"
+                                        data-explanation="Simpel uagtsomhed er manglende forsigtighed - man burde have vidst eller forudset skaden. Grov uagtsomhed er meget manglende forsigtighed - en klar overskridelse af forventet standard, en 'indlysende' fejl man ikke må begå.">
+                                        <div class="option" data-option="Der er ingen forskel, det er det samme, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Grov uagtsomhed er en klar overskridelse af forventet standard, simpel uagtsomhed er mindre alvorlig"></div>
+                                        <div class="option" data-option="Simpel uagtsomhed er bevidst, grov uagtsomhed er ubevidst, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Simpel uagtsomhed er kun ved personskade, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'hvis ikke' testen?"
+                                        data-answer="3"
+                                        data-explanation="'Hvis ikke' testen bruges til at vurdere kausalitet: Hvis ikke handlingen var sket, ville skaden ikke være indtrådt. Hvis svaret er ja, er kausaliteten opfyldt.">
+                                        <div class="option" data-option="En test for om skaden er dækket af forsikring, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En test for om man har handlet med forsæt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En test for om arbejdsgiveren hæfter, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                        <div class="option"
+                                             data-option="En test for kausalitet: Hvis ikke handlingen var sket, ville skaden ikke være indtrådt"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'værnet interesse' i erstatningsretten?"
+                                        data-answer="2"
+                                        data-explanation="Værnet interesse betyder at den interesse, der er krænket, skal være værnberettiget. Det kan være person, ting eller økonomi. Kun værnberettigede interesser kan kræve erstatning.">
+                                        <div class="option" data-option="At skaden skal være stor nok, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At man skal have forsikring, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="At den krænkede interesse skal være værnberettiget (person, ting eller økonomi)"></div>
+                                        <div class="option" data-option="At skaden skal være forudset, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvor findes culpa-reglen?"
+                                        data-answer="1"
+                                        data-explanation="Culpa-reglen er ULOVBESTEMT - den er ikke nedfældet i en specifik lovparagraf, men er udviklet gennem domspraksis. Den er hovedreglen i erstatningsretten uden for kontrakt.">
+                                        <div class="option" data-option="I Erstatningsansvarsloven § 1, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option"
+                                             data-option="Den er ulovbestemt - udviklet gennem domspraksis"></div>
+                                        <div class="option" data-option="I Dansk Lov 3-19-2, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option" data-option="I Erstatningsansvarsloven § 19, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et eksempel på 'forsæt' i finanssektoren?"
+                                        data-answer="0"
+                                        data-explanation="Forsæt betyder bevidst handling med vilje. En bankmand der bevidst snyder en kunde for at tjene penge handler med forsæt. Dette er meget alvorligt og medfører fuldt erstatningsansvar.">
+                                        <div class="option"
+                                             data-option="En bankmand snyder bevidst en kunde for at tjene penge"></div>
+                                        <div class="option"
+                                             data-option="En rådgiver glemmer at tjekke en detalje i en kontrakt"></div>
+                                        <div class="option" data-option="En medarbejder laver en regnefejl ved et uheld"></div>
+                                        <div class="option" data-option="En kunde falder over en løs ledning i bankens filial"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et eksempel på 'uagtsomhed' i finanssektoren?"
+                                        data-answer="3"
+                                        data-explanation="Uagtsomhed betyder manglende forsigtighed - man 'burde have tænkt sig om'. En rådgiver der glemmer at tjekke en vigtig detalje i en kontrakt handler uagtsomt.">
+                                        <div class="option" data-option="En bankmand snyder bevidst en kunde, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Et lyn slår ned i et hus, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En kunde vælger selv at investere i et risikofyldt produkt"></div>
+                                        <div class="option"
+                                             data-option="En rådgiver glemmer at tjekke en vigtig detalje i en kontrakt"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvem har bevisbyrden for at der er opstået en skade?"
+                                        data-answer="2"
+                                        data-explanation="Skadelidte har bevisbyrden - de skal bevise at der er opstået en faktisk skade (økonomisk tab, personskade eller tingsskade).">
+                                        <div class="option" data-option="Skadevolderen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Forsikringsselskabet"></div>
+                                        <div class="option"
+                                             data-option="Skadelidte har bevisbyrden"></div>
+                                        <div class="option" data-option="Domstolen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvilken type skade kan kræve erstatning efter culpa-reglen?"
+                                        data-answer="1"
+                                        data-explanation="Efter culpa-reglen kan man kræve erstatning for økonomisk tab (formueskade), personskade eller tingsskade. Alle tre typer er værnberettigede interesser.">
+                                        <div class="option" data-option="Kun økonomisk tab, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Økonomisk tab, personskade eller tingsskade"></div>
+                                        <div class="option" data-option="Kun personskade, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun tingsskade, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Jura - GDPR og God Skik</title>
+     
+     <!-- Google Fonts - updated with Space Grotesk and italic Roboto -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af GDPR principper og rettigheder, praktiske GDPR cases, samt God Skik i den finansielle sektor." data-forudsætning-url="https://jura.tepedu.dk/kapitel6.html" data-forudsætning-text="Online-bog Jura Kapitel 6: Compliance, Hvidvask og GDPR" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Jura</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Jura: GDPR og God Skik
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad står GDPR for?"
+                                        data-answer="1"
+                                        data-explanation="GDPR står for General Data Protection Regulation (Persondataforordningen). Det beskytter fysiske personers rettigheder og er afgørende for den finansielle sektor.">
+                                        <div class="option" data-option="General Data Processing Rules, som kræver gennemgang af alle relevante dokumenter og beviser"></div>
+                                        <div class="option"
+                                             data-option="General Data Protection Regulation (Persondataforordningen)"></div>
+                                        <div class="option" data-option="General Data Privacy Rules, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="General Data Protection Rules, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvilke data må du som udgangspunkt IKKE behandle ifølge GDPR Artikel 9?"
+                                        data-answer="2"
+                                        data-explanation="Følsomme personoplysninger (Artikel 9) må som udgangspunkt IKKE behandles. Dette inkluderer race, religion, helbredsoplysninger, fagforening, seksuel orientering. Det kræver udtrykkeligt samtykke eller lovhjemmel.">
+                                        <div class="option" data-option="Navn og adresse, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="E-mail og telefonnummer, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Følsomme personoplysninger (race, religion, helbred, fagforening, seksuel orientering)"></div>
+                                        <div class="option" data-option="Økonomiske oplysninger, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'Dataminimering' i GDPR?"
+                                        data-answer="0"
+                                        data-explanation="Dataminimering betyder 'Need to know, not nice to know'. Du skal kun indhente det nødvendige. Det er en af de 6 principper for databehandling (Artikel 5).">
+                                        <div class="option"
+                                             data-option="At kun indhente det nødvendige ('Need to know, not nice to know')"></div>
+                                        <div class="option" data-option="At minimere omkostningerne ved databehandling, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="At slette alle data efter 5 år, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At kryptere alle data og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvor mange principper for databehandling er der i GDPR Artikel 5?"
+                                        data-answer="3"
+                                        data-explanation="Der er 6 principper for databehandling i GDPR Artikel 5: 1) Lovlighed, rimelighed og gennemsigtighed, 2) Formålsbegrænsning, 3) Dataminimering, 4) Rigtighed, 5) Opbevaringsbegrænsning, 6) Integritet og fortrolighed.">
+                                        <div class="option"
+                                             data-option="4 principper"></div>
+                                        <div class="option"
+                                             data-option="5 principper"></div>
+                                        <div class="option"
+                                             data-option="7 principper"></div>
+                                        <div class="option"
+                                             data-option="6 principper"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvordan må CPR-numre sendes ifølge GDPR?"
+                                        data-answer="1"
+                                        data-explanation="CPR-numre må behandles, hvis det følger af lov (fx skatteindberetning, hvidvasklov). Men de må kun sendes krypteret. Aldrig som klar tekst på åben mail.">
+                                        <div class="option"
+                                             data-option="Som klar tekst på normal e-mail"></div>
+                                        <div class="option"
+                                             data-option="Kun krypteret"></div>
+                                        <div class="option"
+                                             data-option="Kun mundtligt"></div>
+                                        <div class="option" data-option="Kun på papir"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'Indsigtsret' i GDPR?"
+                                        data-answer="0"
+                                        data-explanation="Indsigtsret betyder at kunden (den registrerede) har ret til at se, hvad I har registreret om ham/hende. En kunde kan bede om 'at se min sag', og banken skal udlevere kopi af data.">
+                                        <div class="option"
+                                             data-option="Kundens ret til at se hvad der er registreret om ham/hende"></div>
+                                        <div class="option" data-option="Kundens ret til at slette data hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kundens ret til at rette data, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kundens ret til at klage, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'Ret til sletning' (Right to be forgotten) i GDPR?"
+                                        data-answer="3"
+                                        data-explanation="Ret til sletning ('Right to be forgotten') betyder at kunden kan kræve at blive slettet, hvis I ikke har pligt til at gemme. Dog: Hvis hvidvaskloven kræver opbevaring i 5 år, går hvidvaskloven forud -> I må ikke slette endnu.">
+                                        <div class="option" data-option="Kundens ret til at slette alle data med det samme"></div>
+                                        <div class="option" data-option="Kundens ret til at slette data efter 1 år, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kundens ret til at slette data efter 5 år, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Kundens ret til at kræve sletning (hvis ikke pligt til at gemme)"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Du sender en låneaftale med CPR-nummer til kunden 'Jens Hansen', men vælger ved en fejl en anden kunde med samme navn i Outlook. Mailen er ikke krypteret. Hvad er problemet?"
+                                        data-answer="1"
+                                        data-explanation="Der er to problemer: 1) Forkert modtager - uvedkommende har fået adgang til fortrolige data, 2) Ukrypteret - CPR-numre må aldrig sendes som klar tekst på åben mail. Du skal kontakte den forkerte modtager straks, kontakte din DPO, og vurdere om Datatilsynet skal orienteres (ofte ja, inden 72 timer).">
+                                        <div class="option" data-option="Kun at mailen ikke er krypteret, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Forkert modtager og ukrypteret mail (CPR-numre må ikke sendes ukrypteret)"></div>
+                                        <div class="option" data-option="Kun at det er forkert modtager, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At det er en låneaftale, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal du gøre ved et databrud ('Hovsa-mailen')?"
+                                        data-answer="0"
+                                        data-explanation="Ved et databrud skal du: 1) Kontakt straks den forkerte modtager: 'Slet mailen!', 2) Kontakt din DPO (Data Protection Officer) med det samme, 3) Sagen skal vurderes: Skal Datatilsynet orienteres? (ofte ja, inden 72 timer).">
+                                        <div class="option"
+                                             data-option="Kontakt den forkerte modtager straks, kontakt DPO, og vurdere om Datatilsynet skal orienteres"></div>
+                                        <div class="option" data-option="Ignorere det hvis det er en lille fejl hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kun kontakte kunden og beklage, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Vente og se om nogen klager, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Som revisor skal du dele årsregnskab med en kollega. Du sender det via usikker e-mail med CPR-numre og lønoplysninger. Hvad er problemet?"
+                                        data-answer="2"
+                                        data-explanation="Der er to problemer: 1) Usikker kommunikation - følsomme personoplysninger må kun sendes krypteret, 2) Formålsbegrænsning - du må kun dele data, hvis det er nødvendigt for opgaven. Du skal bruge sikker e-mail eller krypteret fil-delingssystem, dele kun nødvendige data, og dokumentere hvorfor data deles.">
+                                        <div class="option" data-option="Kun at det er via e-mail, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun at det er usikker kommunikation, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Usikker kommunikation og formålsbegrænsning - følsomme data må kun sendes krypteret"></div>
+                                        <div class="option" data-option="At det er til en kollega, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er en 'Data Processing Agreement' (databehandleraftale)?"
+                                        data-answer="3"
+                                        data-explanation="En Data Processing Agreement (databehandleraftale) er en kontrakt mellem dataansvarlig (dig) og databehandler (fx ekstern konsulent). Den sikrer at databehandleren overholder GDPR og håndterer data korrekt. Den skal underskrives før data deles.">
+                                        <div class="option" data-option="En aftale om at behandle data hurtigt, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="En aftale om at slette data efter 1 år, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="En aftale om at kryptere data, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="En kontrakt der sikrer at databehandleren overholder GDPR"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'God Skik' i den finansielle sektor?"
+                                        data-answer="1"
+                                        data-explanation="God Skik betyder regler for redelig og loyal adfærd over for kunder (særligt i banker). Det handler om at opføre sig ordentligt og loyalt over for kunden. Det sikrer tillid til den finansielle sektor.">
+                                        <div class="option" data-option="At være venlig over for kunder, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Regler for redelig og loyal adfærd over for kunder"></div>
+                                        <div class="option" data-option="At følge alle love og regler, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option" data-option="At maksimere bankens indtjening, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'Redelig og loyal' i God Skik?"
+                                        data-answer="0"
+                                        data-explanation="Redelig og loyal betyder at virksomheden skal handle ærligt og loyalt. Kundens interesser skal gå forud for bankens indtjening. Det er et centralt princip i God Skik.">
+                                        <div class="option"
+                                             data-option="Kundens interesser skal gå forud for bankens indtjening"></div>
+                                        <div class="option" data-option="Bankens interesser skal gå forud for kundens hvilket er standard praksis"></div>
+                                        <div class="option" data-option="At være neutral, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At maksimere omsætningen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En pensionist (85 år) har 500.000 kr. stående og skal bruge dem om 2 år til indskud i beskyttet bolig. Hvad er 'God Skik' i rådgivning?"
+                                        data-answer="1"
+                                        data-explanation="God Skik er at anbefale sikkerhed: 'Da du skal bruge pengene om kort tid, tør jeg ikke anbefale aktier. Vi sætter dem på en højrentekonto.' Dårlig Skik ville være at sælge højrisiko aktier, da hun kan miste halvdelen inden hun skal bruge dem.">
+                                        <div class="option" data-option="At sælge højrisiko aktier, da de er steget 20% i år, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="At anbefale sikkerhed (højrentekonto), da pengene skal bruges om kort tid"></div>
+                                        <div class="option" data-option="At anbefale kryptovaluta, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At anbefale investeringsforeninger, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er den første punkt på Compliance checklisten?"
+                                        data-answer="0"
+                                        data-explanation="Den første punkt på Compliance checklisten er KYC: Har vi ID på kunden? (Pas/Kørekort). Dette er grundlæggende for at kunne overholde hvidvaskloven.">
+                                        <div class="option"
+                                             data-option="KYC: Har vi ID på kunden? (Pas/Kørekort)"></div>
+                                        <div class="option"
+                                             data-option="Hvidvask: Forstår vi hvor pengene kommer fra?"></div>
+                                        <div class="option"
+                                             data-option="Kreditvurdering: Har vi dokumentation for indtægt?"></div>
+                                        <div class="option" data-option="GDPR: Sender jeg CPR-numre krypteret?"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal du tjekke ved GDPR på Compliance checklisten?"
+                                        data-answer="0"
+                                        data-explanation="Ved GDPR skal du tjekke: Sender jeg CPR-numre krypteret? Har jeg kun indhentet nødvendige data? Dette er vigtigt for at overholde GDPR.">
+                                        <div class="option"
+                                             data-option="Sender jeg CPR-numre krypteret? Har jeg kun indhentet nødvendige data?"></div>
+                                        <div class="option" data-option="Har jeg kundens samtykke?, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Har jeg dokumenteret alt?, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Har jeg slettet gamle data? og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er konsekvensen af manglende SEF-skema (KAL § 7a)?"
+                                        data-answer="0"
+                                        data-explanation="Manglende SEF-skema (KAL § 7a) er lovbrud. Det kan medføre tab af renter og bødestraf. Det er en alvorlig compliance-fejl. SEF-skemaet skal udleveres før underskrift.">
+                                        <div class="option"
+                                             data-option="Tab af renter og bødestraf"></div>
+                                        <div class="option" data-option="Kun bødestraf hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kun tab af renter, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Ingen konsekvenser, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'formålsbegrænsning' i GDPR?"
+                                        data-answer="1"
+                                        data-explanation="Formålsbegrænsning betyder at du må kun samle data til et bestemt formål (fx kreditvurdering). Du må ikke bruge dem til noget helt andet bagefter. Det er en af de 6 principper.">
+                                        <div class="option" data-option="At begrænse antallet af formål, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="At kun samle data til et bestemt formål, ikke bruge dem til noget andet bagefter"></div>
+                                        <div class="option" data-option="At begrænse hvem der kan se data, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At begrænse hvor længe data gemmes og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'Opbevaringsbegrænsning' i GDPR?"
+                                        data-answer="2"
+                                        data-explanation="Opbevaringsbegrænsning betyder at du skal slette data, når de ikke længere er nødvendige (fx efter 5 år). Dog kan hvidvaskloven kræve opbevaring i 5 år, hvilket går forud for GDPR's sletningsret.">
+                                        <div class="option" data-option="At begrænse hvor mange data man må gemme"></div>
+                                        <div class="option" data-option="At begrænse hvor data må gemmes, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="At slette data når de ikke længere er nødvendige"></div>
+                                        <div class="option" data-option="At begrænse adgangen til data, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Jura - Ejendomshandel og Proces</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af ejendomshandel, købsaftale, fortrydelsesret, mangler og proces ved bolighandel." data-forudsætning-url="https://jura.tepedu.dk/kapitel6.html" data-forudsætning-text="Online-bog Jura Kapitel 6: Ejendomshandel, Tinglysning & Pant" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Jura - Ejendomshandel og Proces</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Jura: Ejendomshandel og Proces
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er kravet til købsaftalens form ved fast ejendom?"
+                                        data-answer="2"
+                                        data-explanation="Købsaftalen om fast ejendom skal være skriftlig for at være gyldig (AFTL § 4). Mundtlig aftale er ikke gyldig ved fast ejendom. Ejendomsmægleren udarbejder skriftlig købsaftale, som begge parter underskriver.">
+                                        <div class="option" data-option="Mundtlig aftale er nok, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Email er nok, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Skriftlig form er påkrævet for at være gyldig"></div>
+                                        <div class="option" data-option="Telefonopkald er nok, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal en købsaftale indeholde?"
+                                        data-answer="1"
+                                        data-explanation="Købsaftalen skal indeholde alle væsentlige vilkår, herunder købesum, overdragelsesdato og eventuelle betingelser. Eksempel: Købesum (3 mio. kr.), overdragelsesdato (1. juni), betingelser (finansiering, byggesag) og fortrydelsesret (6 hverdage).">
+                                        <div class="option" data-option="Kun købesum, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Alle væsentlige vilkår: købesum, overdragelsesdato og eventuelle betingelser"></div>
+                                        <div class="option" data-option="Kun overdragelsesdato, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun betingelser, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvor lang er fortrydelsesretten ved køb af fast ejendom til privat brug?"
+                                        data-answer="3"
+                                        data-explanation="Ved køb af fast ejendom til privat brug har køberen en fortrydelsesret på 6 hverdage. Fortrydelsesretten koster 1% af den nominelle købesum, medmindre køberen har taget et advokat- eller finansieringsforbehold.">
+                                        <div class="option" data-option="14 dage"></div>
+                                        <div class="option" data-option="30 dage"></div>
+                                        <div class="option" data-option="3 dage, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="6 hverdage"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad koster fortrydelsesretten ved almindelig fortrydelsesret?"
+                                        data-answer="0"
+                                        data-explanation="Almindelig fortrydelsesret koster 1% af den nominelle købesum. Eksempel: Køber køber hus for 3 mio. kr. Køber har 6 hverdage til at fortryde. Hvis køber fortryder, skal køber betale 30.000 kr. (1% af 3 mio.) til sælger.">
+                                        <div class="option"
+                                             data-option="1% af den nominelle købesum"></div>
+                                        <div class="option"
+                                             data-option="5% af den nominelle købesum"></div>
+                                        <div class="option"
+                                             data-option="10% af den nominelle købesum"></div>
+                                        <div class="option" data-option="Ingen omkostning, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er konsekvensen ved advokatforbehold eller finansieringsforbehold?"
+                                        data-answer="2"
+                                        data-explanation="Med advokatforbehold eller finansieringsforbehold er der ingen omkostning ved fortrydelse. Eksempel: Køber har taget advokatforbehold i købsaftalen. Hvis køber fortryder, skal køber ikke betale noget. Advokatforbeholdet giver køberen mulighed for at få advokatens vurdering før endeligt køb.">
+                                        <div class="option"
+                                             data-option="Højere omkostning ved fortrydelse"></div>
+                                        <div class="option"
+                                             data-option="Samme omkostning ved fortrydelse"></div>
+                                        <div class="option"
+                                             data-option="Ingen omkostning ved fortrydelse"></div>
+                                        <div class="option" data-option="Længere fortrydelsesret"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er sælgers pligt ved skjulte fejl?"
+                                        data-answer="1"
+                                        data-explanation="Sælger har pligt til at oplyse om kendte fejl og mangler i ejendommen. Hvis sælger fortier fejl, kan køber kræve erstatning eller nedsættelse af købesummen. Eksempel: Sælger ved om fugtskader i kælderen, men fortier det. Køber opdager fejlene efter køb. Køber kan kræve erstatning for reparationsomkostninger eller nedsættelse af købesummen.">
+                                        <div class="option" data-option="Ingen pligt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="At oplyse om kendte fejl og mangler i ejendommen"></div>
+                                        <div class="option" data-option="Kun om synlige fejl, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun om store fejl, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er købers rettigheder ved skjulte fejl?"
+                                        data-answer="3"
+                                        data-explanation="Ved skjulte fejl kan køber kræve erstatning eller nedsættelse af købesummen. Eksempel: Sælger ved om fugtskader i kælderen, men fortier det. Køber opdager fejlene efter køb. Køber kan kræve erstatning for reparationsomkostninger (fx 200.000 kr.) eller nedsættelse af købesummen.">
+                                        <div class="option" data-option="Ingen rettigheder, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun nedsættelse af købesum, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun erstatning, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option"
+                                             data-option="Erstatning eller nedsættelse af købesummen"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er kravet til formidlingsaftalen ifølge LOFE § 29?"
+                                        data-answer="0"
+                                        data-explanation="Formidlingsaftalen skal være skriftlig og underskrevet af begge parter. Vederlagets størrelse eller beregningsprincipper skal fremgå af aftalen. Eksempel: Ejendomsmægleren udarbejder skriftlig formidlingsaftale, som sælger underskriver. Uden skriftlig aftale er formidlingsaftalen ugyldig.">
+                                        <div class="option"
+                                             data-option="Skriftlig form og underskrift af begge parter, samt oplysning om vederlag"></div>
+                                        <div class="option" data-option="Kun mundtlig aftale hvilket er standard praksis, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun email, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun telefonopkald, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er det første trin i proces ved bolighandel?"
+                                        data-answer="2"
+                                        data-explanation="Det første trin i proces ved bolighandel er formidlingsaftale. Sælger indgår skriftlig formidlingsaftale med ejendomsmægler. Ejendomsmægleren udarbejder formidlingsaftale, som sælger underskriver. Aftalen angiver vederlag (fx 2% af købesummen) og ansvarlig ejendomsmægler.">
+                                        <div class="option" data-option="Købsaftale, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Finansiering, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Formidlingsaftale - sælger indgår skriftlig aftale med ejendomsmægler"></div>
+                                        <div class="option" data-option="Tinglysning, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er skæringsdagen ved ejendomskøb?"
+                                        data-answer="1"
+                                        data-explanation="Skæringsdagen er den dag, pr. hvilken renter, bidrag, ejendomsskatter m.v. fordeles mellem sælger og køber. Skæringsdagen er normalt pr. overtagelsesdagen. Eksempel: Skæringsdagen er 1. juni. Sælger betaler renter og bidrag for maj, køber betaler for juni.">
+                                        <div class="option" data-option="Dagen hvor købsaftalen underskrives, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Dagen pr. hvilken renter, bidrag og skatter fordeles mellem sælger og køber - normalt overtagelsesdagen"></div>
+                                        <div class="option" data-option="Dagen hvor tinglysning foregår, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Dagen hvor finansiering godkendes, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvordan fordeles renter og bidrag ved skæringsdag?"
+                                        data-answer="3"
+                                        data-explanation="Renter og bidrag på sælgers lån i ejendommen fordeles så sælger betaler op til skæringsdagen, køber betaler efter skæringsdagen. Eksempel: Sælger har realkreditlån med månedlig betaling. Skæringsdagen er 1. juni. Sælger betaler renter og bidrag for maj, køber betaler for juni.">
+                                        <div class="option" data-option="Kun sælger betaler, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun køber betaler og skal overholdes, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Begge betaler lige meget og kan anvendes i forskellige sammenhænge"></div>
+                                        <div class="option"
+                                             data-option="Sælger betaler op til skæringsdagen, køber betaler efter skæringsdagen"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er skødet?"
+                                        data-answer="0"
+                                        data-explanation="Skødet er det dokument, der overfører ejendomsretten fra sælger til køber. Det skal tinglyses for at være gyldigt mod sælgers kreditorer. Eksempel: Ejendomsmægleren eller advokaten udarbejder skødet, som sælger underskriver digitalt eller fysisk. Skødet angiver købesum, ejendomsbeskrivelse og overdragelsesdato.">
+                                        <div class="option"
+                                             data-option="Det dokument, der overfører ejendomsretten fra sælger til køber"></div>
+                                        <div class="option" data-option="Et pantebrev hvilket er standard praksis, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="En lejekontrakt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En købsaftale, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er kravet til skødet?"
+                                        data-answer="2"
+                                        data-explanation="Skødet skal være underskrevet af sælger og indeholde korrekt beskrivelse af ejendommen. Det skal tinglyses for at være gyldigt mod sælgers kreditorer. Eksempel: Sælger underskriver skødet digitalt eller fysisk. Uden underskrift er skødet ugyldigt. Skødet angiver matrikelnummer, areal og beliggenhed.">
+                                        <div class="option" data-option="Kun underskrift af køber, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun beskrivelse af ejendommen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Underskrift af sælger, korrekt beskrivelse og tinglysning"></div>
+                                        <div class="option" data-option="Kun tinglysning, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er konsekvensen, hvis skødet ikke tinglyses?"
+                                        data-answer="1"
+                                        data-explanation="Hvis skødet ikke tinglyses, er købers ret ikke sikret mod sælgers kreditorer. Ved konkurs kan køber miste ejendommen. Eksempel: Skødet tinglyses digitalt via tinglysning.dk. Uden tinglysning kan sælgers kreditorer tage ejendommen ved konkurs.">
+                                        <div class="option" data-option="Ingen konsekvens, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Købers ret er ikke sikret - kan miste ejendommen ved konkurs"></div>
+                                        <div class="option" data-option="Kun advarsel, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun nedsættelse af købesum, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er betalingsformen ved bolighandel?"
+                                        data-answer="3"
+                                        data-explanation="Betalingsformen ved bolighandel er normalt kontanthandel med bankgaranti. Køber deponerer kontant udbetaling hos ejendomsmægleren. Banken stiller bankgaranti for restkøbesummen. Bankgarantien afløses af kontant deponering i sælgers bank på overtagelsesdagen. Først når skødet er tinglyst og anmærkningsfrit, kan sælger disponere over beløbet.">
+                                        <div class="option" data-option="Kun kontant, hvilket indebærer en analyse af de faktiske forhold og relevante lovbestemmelser"></div>
+                                        <div class="option" data-option="Kun bankgaranti, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun check, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Kontanthandel med bankgaranti - først når skødet er tinglyst kan sælger disponere over beløbet"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er tidsfristen for finansieringsforbehold?"
+                                        data-answer="0"
+                                        data-explanation="Finansieringsforbeholdet har normalt en tidsfrist (fx 14 dage). Efter tidsfristen er forbeholdet bortfaldet, og købet er bindende. Eksempel: Finansieringsforbeholdet har en tidsfrist på 14 dage. Efter 14 dage er købet bindende, medmindre køber har trækket sig.">
+                                        <div class="option"
+                                             data-option="Normalt 14 dage - efter tidsfristen er købet bindende"></div>
+                                        <div class="option" data-option="30 dage hvilket er standard praksis, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="60 dage, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Ingen tidsfrist, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er kravet til tilbagelevering ved fortrydelse?"
+                                        data-answer="2"
+                                        data-explanation="Ved fortrydelse skal ejendommen tilbageleveres i 'samme stand og mængde'. Hvis køber har lavet skader på ejendommen under fortrydelsesperioden, skal køber betale for reparationerne. Ejendommen skal være i samme stand som ved købet.">
+                                        <div class="option" data-option="Ejendommen kan være i dårligere stand, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Ejendommen kan være i bedre stand, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Ejendommen skal tilbageleveres i samme stand og mængde - køber skal betale for skader"></div>
+                                        <div class="option" data-option="Ingen krav, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er rækkefølgen i proces ved bolighandel?"
+                                        data-answer="1"
+                                        data-explanation="Rækkefølgen i proces ved bolighandel er: 1) Formidlingsaftale, 2) Købsaftale, 3) Finansiering, 4) Skøde, 5) Tinglysning, 6) Overdragelse, 7) Betaling. Alle trin skal gennemføres korrekt for at sikre, at handlen er gyldig og at købers ret er sikret.">
+                                        <div class="option" data-option="Tinglysning først, derefter købsaftale, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Formidlingsaftale → Købsaftale → Finansiering → Skøde → Tinglysning → Overdragelse → Betaling"></div>
+                                        <div class="option" data-option="Betaling først, derefter tinglysning, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Overdragelse først, derefter tinglysning, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

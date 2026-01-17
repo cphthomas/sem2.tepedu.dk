@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Aftaleloven - Svage Ugyldighedsgrunde</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+     <body data-formål="Forståelse af de svage ugyldighedsgrunde i Aftaleloven, herunder svig, simpel tvang, udnyttelse og fejlskrift." data-forudsætning-url="https://jura.tepedu.dk/kapitel2.html" data-forudsætning-text="Aftaleloven - Kapitel 2" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Aftaleloven - Svage Ugyldighedsgrunde</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Aftaleloven: Svage Ugyldighedsgrunde
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er kendetegnende for svage ugyldighedsgrunde?"
+                                        data-answer="2"
+                                        data-explanation="Svag ugyldighedsgrunde gør kun aftalen ugyldig, hvis modparten var i ond tro (vidste eller burde vide om problemet). Var modparten i god tro, er aftalen gyldig og bindende. Eksempler er svig, simpel tvang, udnyttelse og fejlskrift.">
+                                        <div class="option" data-option="De virker altid, uanset modpartens tro, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="De kræver altid skriftlig dokumentation og skal overholdes"></div>
+                                        <div class="option"
+                                             data-option="De kræver ond tro hos modparten - hvis modparten var i god tro, er aftalen gyldig"></div>
+                                        <div class="option" data-option="De kan kun anvendes af forbrugeren og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er svig efter AFTL § 30?"
+                                        data-answer="1"
+                                        data-explanation="Efter AFTL § 30 er svig, når nogen mod bedre vidende giver urigtige oplysninger eller fortier sandheden for at få en aftale i stand. Det kræver forsæt - altså at det sker med vilje. Der er to former: Aktiv svig (løgn) og passiv svig (fortielse).">
+                                        <div class="option" data-option="En uagtsom fejl i oplysningerne, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Løgn eller fortielse af sandheden ved ond tro med forsæt"></div>
+                                        <div class="option" data-option="En fejl i beregningen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En uklar formulering i kontrakten, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bankrådgiver lyver bevidst om renten (siger 2%, men kontrakten siger 5%). Kunden underskriver. Hvad er konsekvensen?"
+                                        data-answer="3"
+                                        data-explanation="Efter AFTL § 30 er aftalen ugyldig, hvis banken var i ond tro (vidste om løgnen). Dette er svig - en bevidst løgn for at få kunden til at underskrive. Hvis banken var i god tro (rådgiveren handlede på eget initiativ), er aftalen gyldig, men banken kan være erstatningsansvarlig.">
+                                        <div class="option" data-option="Aftalen er altid gyldig til 2%, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Aftalen er altid gyldig til 5%, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Aftalen er altid ugyldig, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Aftalen er ugyldig, hvis banken var i ond tro"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem aktiv svig og passiv svig?"
+                                        data-answer="0"
+                                        data-explanation="Aktiv svig er en bevidst løgn (fx 'Bilen har kun kørt 50.000 km' når den har kørt 250.000 km). Passiv svig er fortielse af sandheden (fx sælger fortier, at huset har skimmelsvamp i kælderen). Begge kræver forsæt og ond tro.">
+                                        <div class="option"
+                                             data-option="Aktiv svig er løgn, passiv svig er fortielse"></div>
+                                        <div class="option" data-option="Aktiv svig er værre end passiv svig hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Aktiv svig kræver skriftlig dokumentation"></div>
+                                        <div class="option" data-option="Der er ingen forskel, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er simpel tvang efter AFTL § 29?"
+                                        data-answer="2"
+                                        data-explanation="Efter AFTL § 29 er simpel tvang tvang, der ikke er voldelig (fx afpresning, trusler om boykot, rygter). Aftalen er kun ugyldig, hvis modparten selv udøvede tvangen eller vidste om den (ond tro). Eksempel: Trusler om at afsløre hemmeligheder eller RKI-registrering.">
+                                        <div class="option" data-option="Vold eller trussel om øjeblikkelig vold"></div>
+                                        <div class="option" data-option="Økonomisk pres, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Afpresning (ikke vold) - kun ugyldig ved ond tro"></div>
+                                        <div class="option" data-option="Psykisk påvirkning, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Et inkassofirma truer med RKI-registrering af et omtvistet krav. Kunden betaler af frygt. Hvad er konsekvensen?"
+                                        data-answer="1"
+                                        data-explanation="Efter AFTL § 29 kan betalingen være ugyldig pga. simpel tvang, hvis truslen var retsstridig og inkassofirmaet var i ond tro. Det er ulovligt at registrere omtvistede krav i RKI. Hvis inkassofirmaet vidste eller burde vide dette, er betalingen ugyldig. Inkassofirmaet kan miste deres autorisation.">
+                                        <div class="option" data-option="Betalingen er altid gyldig, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Betalingen kan være ugyldig, hvis inkassofirmaet var i ond tro"></div>
+                                        <div class="option" data-option="Kunden skal betale halvdelen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Betalingen er ugyldig, uanset inkassofirmaets tro"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er udnyttelse (åger) efter AFTL § 31?"
+                                        data-answer="3"
+                                        data-explanation="Efter AFTL § 31 er udnyttelse, når man udnytter en andens 'nød, letfærdighed, forstandssvaghed, uerfarenhed eller naivitet' til at opnå en ydelse, der står i 'væsentligt misforhold' til modydelsen. Det kræver ond tro. Eksempler: Dement person tegner dyr forsikring, udnyttelse af nød ved tvangsauktion.">
+                                        <div class="option" data-option="At tage høj rente på et lån, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At sælge en vare til markedspris, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At give rabat til en kunde, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Udnyttelse af nød, letfærdighed eller manglende indsigt til urimelig fordel ved ond tro"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En dement person tegner en dyr forsikring til 500.000 kr. årligt. Forsikringsselskabet vidste ikke om demensen. Hvad er konsekvensen?"
+                                        data-answer="0"
+                                        data-explanation="Efter AFTL § 31 er forsikringen ugyldig ved ond tro. Hvis selskabet vidste eller burde vide om demensen (fx hvis personen var tinglyst under værgemål), er aftalen ugyldig. Hvis selskabet var i god tro og ikke kunne vide om demensen, er aftalen gyldig, men kan stadig være ugyldig efter Værgemålsloven § 46.">
+                                        <div class="option"
+                                             data-option="Aftalen er ugyldig, hvis selskabet var i ond tro (vidste eller burde vide om demensen)"></div>
+                                        <div class="option" data-option="Aftalen er altid gyldig, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Aftalen er altid ugyldig, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Præmien kan nedsættes til markedspris og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er fejlskrift efter AFTL § 32, stk. 1?"
+                                        data-answer="2"
+                                        data-explanation="Efter AFTL § 32, stk. 1 er fejlskrift en tastefejl eller skrivefejl, der gør aftalen ugyldig, hvis modtageren burde have indset fejlen (ond tro). Eksempel: 100 kr. i stedet for 100.000 kr., eller 0,3% rente i stedet for 3% - hvis det er åbenlyst forkert.">
+                                        <div class="option" data-option="En bevidst løgn, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En fejl i transmission og skal overholdes, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Tastefejl eller skrivefejl, hvis modtageren burde have indset fejlen"></div>
+                                        <div class="option" data-option="En fejl i beregningen og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En webshop sælger en MacBook til 500 kr. i stedet for 15.000 kr. ved en fejl. En kunde køber 10 stk. Hvad er konsekvensen?"
+                                        data-answer="1"
+                                        data-explanation="Efter AFTL § 32, stk. 1 er købet ugyldig, hvis kunden burde have indset fejlen (ond tro). 500 kr. for en MacBook er så åbenlyst forkert, at kunden burde have indset fejlen. Hvis prisen var 14.000 kr., var kunden måske i god tro → Aftalen gyldig.">
+                                        <div class="option" data-option="Aftalen er gyldig, da kunden accepterede prisen"></div>
+                                        <div class="option"
+                                             data-option="Aftalen er ugyldig, hvis kunden burde have indset fejlen (ond tro)"></div>
+                                        <div class="option" data-option="Kunden skal betale markedspris, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Aftalen er altid ugyldig på grund af fejlen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem fejlskrift (AFTL § 32, stk. 1) og forvanskning (AFTL § 32, stk. 2)?"
+                                        data-answer="3"
+                                        data-explanation="Fejlskrift (stk. 1) er afsenderens egen fejl (tastefejl, skrivefejl) og kræver ond tro hos modtageren. Forvanskning (stk. 2) er en fejl i transmission (IT-fejl, SMS, email) og kræver, at afsenderen reklamerer straks. Forvanskning er en stærk ugyldighedsgrund, fejlskrift er en svag.">
+                                        <div class="option" data-option="Der er ingen forskel, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Fejlskrift kræver skriftlig dokumentation, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Forvanskning er altid ugyldig, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Fejlskrift er afsenderens fejl, forvanskning er fejl i transmission"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvornår er der pligt til at oplyse ved svig?"
+                                        data-answer="0"
+                                        data-explanation="Der er pligt til at oplyse ved svig, når: 1) Man bliver spurgt direkte, 2) Oplysningen er afgørende for aftalen (væsentlig), 3) Man har særlig ekspertise (fx ejendomsmægler, bilforhandler), 4) Man har en tillidsposition (advokat, revisor, bankrådgiver).">
+                                        <div class="option"
+                                             data-option="Når man bliver spurgt direkte, oplysningen er væsentlig, man har ekspertise eller tillidsposition"></div>
+                                        <div class="option" data-option="Kun når man bliver spurgt direkte hvilket er standard praksis, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun når man er ekspert, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Der er aldrig pligt til at oplyse, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En kunde forfalsker sin lønseddel fra 25.000 til 45.000 kr. for at få et lån. Banken bevilger lånet i god tro. Hvad er konsekvensen?"
+                                        data-answer="2"
+                                        data-explanation="Efter AFTL § 30 er låneaftalen ugyldig pga. svig. Kunden har bevidst givet urigtige oplysninger for at få banken til at indgå en aftale, de ellers ikke ville have indgået. Banken kan ophæve lånet straks. Kunden bliver politianmeldt for dokumentfalsk og bedrageri.">
+                                        <div class="option" data-option="Lånet er gyldig, da banken var i god tro"></div>
+                                        <div class="option" data-option="Lånet er gyldig, men kunden skal betale højere rente"></div>
+                                        <div class="option"
+                                             data-option="Lånet er ugyldig pga. svig, banken kan ophæve det straks"></div>
+                                        <div class="option" data-option="Kunden skal betale erstatning til banken"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er bevisbyrden ved svage ugyldighedsgrunde efter AFTL § 39?"
+                                        data-answer="1"
+                                        data-explanation="Efter AFTL § 39 påhviler det den, der påstår, at modparten var i ond tro, at bevise dette. Hvis en kunde påstår, at banken var i ond tro ved svig, skal kunden bevise det. Dette er vigtigt ved vurdering af ugyldighedsgrunde.">
+                                        <div class="option"
+                                             data-option="Modparten skal bevise, at de var i god tro"></div>
+                                        <div class="option"
+                                             data-option="Den, der påstår ond tro, skal bevise det"></div>
+                                        <div class="option" data-option="Begge parter skal bevise deres påstande"></div>
+                                        <div class="option" data-option="Domstolen skal bevise ond tro"></div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Jura - Erstatning 2</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af principalansvar (DL 3-19-2) og professionel standard i finanssektoren, herunder hvornår arbejdsgiveren hæfter for ansattes fejl." data-forudsætning-url="https://jura.tepedu.dk/kapitel4.html" data-forudsætning-text="Online-bog Jura Kapitel 4: Erstatning" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Jura - Erstatning</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Jura: Erstatning - Principalansvar og Professionel Standard
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er principalansvar?"
+                                        data-answer="1"
+                                        data-explanation="Principalansvar betyder at arbejdsgiveren hæfter for sine ansattes handlinger i tjenesten. Dette er hjemlet i Dansk Lov 3-19-2 og er meget vigtigt i finanssektoren.">
+                                        <div class="option" data-option="At ansatte hæfter for deres egne fejl, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option"
+                                             data-option="At arbejdsgiveren hæfter for ansattes handlinger i tjenesten"></div>
+                                        <div class="option" data-option="At forsikringsselskabet hæfter for skader, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option" data-option="At skadelidte hæfter for deres egne skader"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvor findes principalansvar hjemlet?"
+                                        data-answer="2"
+                                        data-explanation="Principalansvar er hjemlet i Dansk Lov 3-19-2. Det er ikke en del af Erstatningsansvarsloven, men en separat regel i Dansk Lov.">
+                                        <div class="option"
+                                             data-option="I Erstatningsansvarsloven § 1"></div>
+                                        <div class="option"
+                                             data-option="I Erstatningsansvarsloven § 19"></div>
+                                        <div class="option"
+                                             data-option="I Dansk Lov 3-19-2"></div>
+                                        <div class="option"
+                                             data-option="I Erstatningsansvarsloven § 25"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvilke betingelser skal være opfyldt for principalansvar?"
+                                        data-answer="0"
+                                        data-explanation="For principalansvar skal følgende betingelser være opfyldt: 1) Ansættelsesforhold mellem principal og agent, 2) Handling skal være sket i tjenesten, 3) Den ansatte skal have handlet culpøst (med forsæt eller uagtsomhed).">
+                                        <div class="option"
+                                             data-option="Ansættelsesforhold, i tjenesten, og culpa hos ansatte"></div>
+                                        <div class="option" data-option="Kun ansættelsesforhold, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun forsikringsdækning, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun at skaden er stor nok, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'i tjenesten' i forbindelse med principalansvar?"
+                                        data-answer="3"
+                                        data-explanation="'I tjenesten' betyder at handlingen skal være sket i arbejdstiden og som led i arbejdet. Hvis en medarbejder laver fejl i fritiden, hæfter arbejdsgiveren typisk ikke.">
+                                        <div class="option" data-option="At medarbejderen er ansat, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="At medarbejderen har en kontrakt, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="At medarbejderen har forsikring, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="At handlingen er sket i arbejdstiden og som led i arbejdet"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvem hæfter over for skadelidte ved principalansvar?"
+                                        data-answer="1"
+                                        data-explanation="Ved principalansvar hæfter arbejdsgiveren fuldt ud over for skadelidte. Kunden kan kræve fuld erstatning af arbejdsgiveren (fx banken), ikke af den ansatte medarbejder.">
+                                        <div class="option" data-option="Kun den ansatte medarbejder, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Arbejdsgiveren hæfter fuldt ud over for skadelidte"></div>
+                                        <div class="option" data-option="Kun forsikringsselskabet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Skadelidte hæfter selv, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Kan arbejdsgiveren søge regres mod ansatte ved principalansvar?"
+                                        data-answer="2"
+                                        data-explanation="Ja, arbejdsgiveren kan søge regres mod ansatte ved forsæt eller grov uagtsomhed. Ved simpel uagtsomhed kan ansvar lempes efter EAL § 23, så ansatte typisk ikke skal betale af egen lomme.">
+                                        <div class="option" data-option="Nej, aldrig, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Ja, altid, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option"
+                                             data-option="Ja, ved forsæt eller grov uagtsomhed, men ved simpel uagtsomhed kan ansvar lempes"></div>
+                                        <div class="option" data-option="Kun hvis ansatte har forsikring, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'professionel standard' i finanssektoren?"
+                                        data-answer="0"
+                                        data-explanation="Professionel standard betyder at finansielle virksomheder og deres medarbejdere skal udvise en højere standard end privatpersoner. Man hæfter ved simpel uagtsomhed (ikke kun grov uagtsomhed) og skal udvise særlig omhu og professionalisme.">
+                                        <div class="option"
+                                             data-option="Højere standard - man hæfter ved simpel uagtsomhed og skal udvise særlig omhu"></div>
+                                        <div class="option" data-option="Samme standard som privatpersoner hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kun ved grov uagtsomhed, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun ved forsæt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem standard for privatpersoner og professionel standard?"
+                                        data-answer="3"
+                                        data-explanation="Privatpersoner hæfter typisk kun ved grov uagtsomhed eller forsæt. Professionelle (fx bankrådgivere, ejendomsmæglere) hæfter ved simpel uagtsomhed, fordi de er professionelle og forventes at kende lovgivning og regler.">
+                                        <div class="option" data-option="Der er ingen forskel, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Professionelle hæfter kun ved grov uagtsomhed og skal overholdes"></div>
+                                        <div class="option" data-option="Privatpersoner hæfter ved simpel uagtsomhed og kan anvendes i forskellige sammenhænge"></div>
+                                        <div class="option"
+                                             data-option="Professionelle hæfter ved simpel uagtsomhed, privatpersoner typisk kun ved grov uagtsomhed"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvilke brancher i finanssektoren er omfattet af professionel standard?"
+                                        data-answer="1"
+                                        data-explanation="Alle finansielle brancher er omfattet af professionel standard: Bankrådgivning, forsikringsrådgivning, ejendomsmægling, realkredit og revision. Alle skal udvise høj professionel standard.">
+                                        <div class="option" data-option="Kun banker, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Bankrådgivning, forsikring, ejendomsmægling, realkredit og revision"></div>
+                                        <div class="option" data-option="Kun forsikringsselskaber, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun revisorer, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal en bankrådgiver gøre for at leve op til professionel standard?"
+                                        data-answer="2"
+                                        data-explanation="En bankrådgiver skal give kvalificeret rådgivning, tjekke kundens økonomi grundigt (fx RKI, rådighedsbeløb), oplyse om alle omkostninger og risici. Ved fejl hæfter banken (principalansvar).">
+                                        <div class="option" data-option="Kun give rådgivning, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun tjekke RKI, hvilket indebærer en analyse af de faktiske forhold og relevante lovbestemmelser"></div>
+                                        <div class="option"
+                                             data-option="Give kvalificeret rådgivning, tjekke kundens økonomi grundigt, oplyse om omkostninger og risici"></div>
+                                        <div class="option" data-option="Kun oplyse om priser, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal en ejendomsmægler gøre for at leve op til professionel standard?"
+                                        data-answer="0"
+                                        data-explanation="En ejendomsmægler skal oplyse om alle kendte fejl, lave grundig ejendomsbeskrivelse og beskytte begge parter. Ved fejl hæfter mægleren (principalansvar).">
+                                        <div class="option"
+                                             data-option="Oplyse om alle kendte fejl, lave grundig ejendomsbeskrivelse og beskytte begge parter"></div>
+                                        <div class="option" data-option="Kun sælge ejendommen hvilket er standard praksis, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun tjekke tilstandsrapport, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun sikre korrekt salg, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal en revisor gøre for at leve op til professionel standard?"
+                                        data-answer="3"
+                                        data-explanation="En revisor skal revidere regnskaber grundigt efter revisionsstandard, opdage fejl i regnskabet og kontrollere interne kontroller. Ved fejl hæfter revisoren.">
+                                        <div class="option" data-option="Kun godkende regnskabet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun tjekke tal, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun kontrollere interne kontroller, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Revidere grundigt efter revisionsstandard, opdage fejl og kontrollere interne kontroller"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hæfter banken for bankrådgiverens fejl?"
+                                        data-answer="1"
+                                        data-explanation="Ja, banken hæfter fuldt ud over for kunden efter principalansvar (DL 3-19-2), hvis fejlen skete i tjenesten. Banken kan søge regres mod bankrådgiveren ved forsæt eller grov uagtsomhed.">
+                                        <div class="option" data-option="Nej, kun bankrådgiveren hæfter, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option"
+                                             data-option="Ja, banken hæfter fuldt ud over for kunden (principalansvar)"></div>
+                                        <div class="option" data-option="Kun hvis banken har forsikring, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun hvis fejlen var grov, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad sker der, hvis en bankrådgiver giver fejlagtig investeringsrådgivning?"
+                                        data-answer="2"
+                                        data-explanation="Hvis en bankrådgiver giver fejlagtig investeringsrådgivning, hæfter banken fuldt ud over for kunden efter principalansvar. Kunden kan kræve erstatning af banken. Banken kan søge regres mod bankrådgiveren ved grov uagtsomhed eller forsæt.">
+                                        <div class="option" data-option="Kun bankrådgiveren hæfter, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                        <div class="option" data-option="Kun forsikringsselskabet hæfter, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                        <div class="option"
+                                             data-option="Banken hæfter fuldt ud over for kunden, kan søge regres mod bankrådgiveren"></div>
+                                        <div class="option" data-option="Ingen hæfter, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad sker der, hvis en ejendomsmægler fortier skjulte fejl ved salg?"
+                                        data-answer="0"
+                                        data-explanation="Hvis en ejendomsmægler fortier skjulte fejl, hæfter mæglervirksomheden fuldt ud over for køberen efter principalansvar. Dette er typisk forsæt eller grov uagtsomhed. Mæglervirksomheden kan søge regres mod medarbejderen.">
+                                        <div class="option"
+                                             data-option="Mæglervirksomheden hæfter fuldt ud, kan søge regres mod medarbejderen"></div>
+                                        <div class="option" data-option="Kun medarbejderen hæfter hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kun forsikringsselskabet hæfter, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                        <div class="option" data-option="Ingen hæfter, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

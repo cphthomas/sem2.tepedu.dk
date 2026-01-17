@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Købeloven - Misligholdelse og Ejendomsforbehold</title>
+     
+     <!-- Google Fonts - updated with Space Grotesk and italic Roboto -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af misligholdelse og ejendomsforbehold i Købeloven, herunder sælgerens og køberens misligholdelse samt konsekvenser." data-forudsætning-url="https://jura.tepedu.dk/kapitel3.html" data-forudsætning-text="Købeloven - Kapitel 3" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Købeloven - Misligholdelse og Ejendomsforbehold</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Købeloven: Misligholdelse og Ejendomsforbehold
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er sælgerens misligholdelse ifølge KBL § 47 og § 28?"
+                                        data-answer="2"
+                                        data-explanation="Sælgerens misligholdelse opstår, hvis sælgeren ikke leverer rettidigt eller leverer en mangelfuld vare, jf. KBL § 47 og § 28. Ved sælgerens misligholdelse kan køberen kræve opfyldelse, ophæve købet eller kræve erstatning for tab.">
+                                        <div class="option" data-option="Når køberen ikke betaler, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Når køberen ikke modtager varen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Når sælgeren ikke leverer rettidigt eller leverer en mangelfuld vare"></div>
+                                        <div class="option" data-option="Når varen er for dyr, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad kan køberen gøre ved sælgerens misligholdelse ifølge KBL § 47 og § 28?"
+                                        data-answer="3"
+                                        data-explanation="Ved sælgerens misligholdelse kan køberen kræve opfyldelse (at sælgeren leverer varen), ophæve købet eller kræve erstatning for tab, jf. KBL § 47 og § 28.">
+                                        <div class="option" data-option="Kun kræve opfyldelse, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun ophæve købet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kræve erstatning, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option"
+                                             data-option="Kræve opfyldelse, ophæve købet eller kræve erstatning"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er køberens misligholdelse ifølge KBL § 52?"
+                                        data-answer="1"
+                                        data-explanation="Køberens misligholdelse opstår, hvis køberen ikke betaler rettidigt eller ikke modtager varen, jf. KBL § 52. Ved køberens misligholdelse kan sælgeren kræve opfyldelse, ophæve købet eller kræve erstatning for tab.">
+                                        <div class="option" data-option="Når sælgeren ikke leverer, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Når køberen ikke betaler rettidigt eller ikke modtager varen"></div>
+                                        <div class="option" data-option="Når varen er mangelfuld, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Når leveringstiden er for lang, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad kan sælgeren gøre ved køberens misligholdelse ifølge KBL § 52?"
+                                        data-answer="0"
+                                        data-explanation="Ved køberens misligholdelse kan sælgeren kræve opfyldelse (at køberen betaler), ophæve købet eller kræve erstatning for tab, jf. KBL § 52. Sælgeren kan også kræve renter ved forsinket betaling.">
+                                        <div class="option"
+                                             data-option="Kræve opfyldelse, ophæve købet eller kræve erstatning (og renter ved forsinket betaling)"></div>
+                                        <div class="option" data-option="Kun kræve opfyldelse hvilket er standard praksis, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun ophæve købet, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun kræve erstatning, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er ejendomsforbehold ifølge KBL § 6?"
+                                        data-answer="2"
+                                        data-explanation="Ifølge KBL § 6 kan sælgeren forbeholde sig ejendomsretten til varen, indtil købesummen er fuldt betalt. Dette kaldes ejendomsforbehold. Ejendomsforbehold betyder, at sælgeren beholder ejendomsretten til varen, selvom varen er leveret til køberen.">
+                                        <div class="option" data-option="At køberen beholder ejendomsretten, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At risikoen overgår til køberen og skal overholdes, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="At sælgeren kan forbeholde sig ejendomsretten til varen, indtil købesummen er fuldt betalt"></div>
+                                        <div class="option" data-option="At levering skal ske inden rimelig tid og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad sker der ved ejendomsforbehold, hvis køberen misligholder betalingen?"
+                                        data-answer="1"
+                                        data-explanation="Hvis køberen misligholder betalingen ved ejendomsforbehold, kan sælgeren kræve varen tilbage, da sælgeren stadig ejer varen. Eksempel: En finansieringsselskab sælger en bil på afbetaling og forbeholder sig ejendomsretten, indtil sidste afdrag er betalt. Hvis køberen misligholder betalingen, kan sælgeren kræve bilen tilbage.">
+                                        <div class="option" data-option="Køberen beholder varen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Sælgeren kan kræve varen tilbage"></div>
+                                        <div class="option" data-option="Varen tilfalder staten, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Købet ophæves automatisk"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad sker der med risikoen ved ejendomsforbehold ifølge KBL § 13?"
+                                        data-answer="3"
+                                        data-explanation="Selvom sælgeren har forbeholdt sig ejendomsretten, overgår risikoen for varen til køberen ved levering, jf. KBL § 13. Det betyder, at hvis varen går i stykker efter levering, er det køberens problem, selvom sælgeren stadig ejer varen.">
+                                        <div class="option" data-option="Risikoen forbliver hos sælgeren, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Risikoen deles mellem parterne, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Risikoen overgår ved betaling, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Risikoen overgår til køberen ved levering, selvom ejendomsretten er forbeholdt"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et eksempel på sælgerens misligholdelse?"
+                                        data-answer="0"
+                                        data-explanation="Eksempel: En bank venter på levering af servere, der skulle være leveret for en uge siden. Banken kan kræve levering eller ophæve købet og kræve erstatning for tabt drift. Et andet eksempel: En financial controller har bestilt et nyt regnskabssystem, men leverandøren leverer systemet 3 måneder for sent, og det viser sig at have alvorlige fejl.">
+                                        <div class="option"
+                                             data-option="En bank venter på levering af servere, der skulle være leveret for en uge siden"></div>
+                                        <div class="option" data-option="En bank undlader at betale for leveret IT-udstyr hvilket er standard praksis"></div>
+                                        <div class="option" data-option="En bank modtager ikke varen rettidigt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En bank er utilfreds med prisen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et eksempel på køberens misligholdelse?"
+                                        data-answer="2"
+                                        data-explanation="Eksempel: En bank undlader at betale for leveret IT-udstyr. Leverandøren kan efter at have givet en rimelig frist ophæve købet og kræve erstatning for tabt omsætning. Leverandøren kan også kræve renter.">
+                                        <div class="option" data-option="En bank venter på levering af servere"></div>
+                                        <div class="option" data-option="En bank opdager en mangel ved varen"></div>
+                                        <div class="option"
+                                             data-option="En bank undlader at betale for leveret IT-udstyr"></div>
+                                        <div class="option" data-option="En bank reklamerer over en mangel, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et eksempel på ejendomsforbehold?"
+                                        data-answer="1"
+                                        data-explanation="Eksempel: En finansieringsselskab sælger en bil på afbetaling og forbeholder sig ejendomsretten, indtil sidste afdrag er betalt. Hvis køberen misligholder betalingen, kan sælgeren kræve bilen tilbage, da sælgeren stadig ejer bilen. Et andet eksempel: En bank sælger IT-udstyr på afbetaling med ejendomsforbehold.">
+                                        <div class="option" data-option="En bank køber en bil kontant, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="En finansieringsselskab sælger en bil på afbetaling og forbeholder sig ejendomsretten"></div>
+                                        <div class="option" data-option="En bank leaser en bil, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En bank køber en bil med kontant betaling og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad sker der ved ejendomsforbehold, hvis køberen går konkurs?"
+                                        data-answer="3"
+                                        data-explanation="Hvis køberen går konkurs ved ejendomsforbehold, kan sælgeren kræve varen tilbage, da sælgeren stadig ejer varen. Eksempel: En virksomhed køber inventar på afbetaling til 500.000 kr. Sælgeren har taget ejendomsforbehold. Virksomheden går konkurs efter 6 måneder, og kun halvdelen er betalt. Sælgeren kan kræve inventaret tilbage.">
+                                        <div class="option" data-option="Varen tilfalder konkursboet"></div>
+                                        <div class="option" data-option="Køberen beholder varen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Varen sælges på auktion"></div>
+                                        <div class="option"
+                                             data-option="Sælgeren kan kræve varen tilbage"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal køberen gøre, før købet kan ophæves ved sælgerens misligholdelse?"
+                                        data-answer="0"
+                                        data-explanation="Køberen skal give sælgeren en rimelig frist før ophævelse ved sælgerens misligholdelse, jf. KBL § 47. Det betyder, at køberen skal give sælgeren mulighed for at rette misligholdelsen først.">
+                                        <div class="option"
+                                             data-option="Give sælgeren en rimelig frist før ophævelse"></div>
+                                        <div class="option" data-option="Umiddelbart ophæve købet hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kun kræve erstatning, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option" data-option="Kun kræve opfyldelse, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal sælgeren gøre, før købet kan ophæves ved køberens misligholdelse?"
+                                        data-answer="2"
+                                        data-explanation="Sælgeren skal give køberen en rimelig frist før ophævelse ved køberens misligholdelse, jf. KBL § 52. Det betyder, at sælgeren skal give køberen mulighed for at rette misligholdelsen først.">
+                                        <div class="option" data-option="Umiddelbart ophæve købet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun kræve erstatning, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option"
+                                             data-option="Give køberen en rimelig frist før ophævelse"></div>
+                                        <div class="option" data-option="Kun kræve opfyldelse, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad kan køberen kræve ved forsinkelse ved levering ifølge KBL § 28?"
+                                        data-answer="1"
+                                        data-explanation="Ifølge KBL § 28 kan køberen ved forsinkelse ved levering kræve opfyldelse eller ophæve købet. Køberen kan også kræve erstatning for tab ved forsinkelsen.">
+                                        <div class="option" data-option="Kun kræve opfyldelse, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Kræve opfyldelse eller ophæve købet, samt erstatning"></div>
+                                        <div class="option" data-option="Kun ophæve købet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kræve erstatning, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad kan sælgeren kræve ved forsinket betaling ifølge KBL § 42 og § 52?"
+                                        data-answer="3"
+                                        data-explanation="Ifølge KBL § 42 og § 52 kan sælgeren ved forsinket betaling kræve renter. Sælgeren kan også kræve opfyldelse, ophæve købet eller kræve erstatning for tab.">
+                                        <div class="option" data-option="Kun kræve opfyldelse, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun ophæve købet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kræve erstatning, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                        <div class="option"
+                                             data-option="Kræve renter samt opfyldelse, ophævelse eller erstatning"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem ejendomsretten og risikoen ved ejendomsforbehold?"
+                                        data-answer="0"
+                                        data-explanation="Ved ejendomsforbehold beholder sælgeren ejendomsretten til varen, indtil købesummen er fuldt betalt. Men risikoen for varen overgår til køberen ved levering, jf. KBL § 13. Det betyder, at hvis varen går i stykker efter levering, er det køberens problem, selvom sælgeren stadig ejer varen.">
+                                        <div class="option"
+                                             data-option="Ejendomsretten kan være forbeholdt, men risikoen overgår ved levering"></div>
+                                        <div class="option" data-option="Begge forbliver hos sælgeren hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Begge overgår ved levering, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Der er ingen forskel, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et eksempel på, hvornår ejendomsforbehold er relevant?"
+                                        data-answer="2"
+                                        data-explanation="Ejendomsforbehold er relevant ved afbetalingskøb, hvor sælgeren ønsker sikkerhed for betalingen. Eksempler: En finansieringsselskab sælger en bil på afbetaling, en bank sælger IT-udstyr på afbetaling, eller et leasingfirma sælger kontormøbler med ejendomsforbehold.">
+                                        <div class="option" data-option="Ved kontant betaling, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Ved leje af vare, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Ved afbetalingskøb, hvor sælgeren ønsker sikkerhed"></div>
+                                        <div class="option" data-option="Ved forbrugerkøb, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

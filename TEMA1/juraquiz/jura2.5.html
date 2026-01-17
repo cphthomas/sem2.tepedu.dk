@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Aftaleloven - Urimelige Aftaler & Standardvilkår</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+     <body data-formål="Forståelse af generalklausulen og forbrugeraftaleloven, herunder urimelige aftaler, standardvilkår og forbrugerbeskyttelse." data-forudsætning-url="https://jura.tepedu.dk/kapitel2.html" data-forudsætning-text="Aftaleloven - Kapitel 2" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Aftaleloven - Urimelige Aftaler & Standardvilkår</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Aftaleloven: Urimelige Aftaler & Standardvilkår
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er generalklausulen efter AFTL § 36?"
+                                        data-answer="1"
+                                        data-explanation="Efter AFTL § 36 er generalklausulen en 'gummiparagraf', der kan tilsidesætte enhver aftale, hvis den er urimelig eller i strid med redelig handlemåde. Den bruges især til at beskytte forbrugere mod store virksomheder. Eksempel: En bank tager 5.000 kr. gebyr for rykkerskrivelse → Tilsidesat som urimeligt.">
+                                        <div class="option" data-option="En regel om, at alle aftaler skal være skriftlige, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option"
+                                             data-option="En regel, der kan tilsidesætte urimelige aftaler eller aftaler i strid med redelig handlemåde"></div>
+                                        <div class="option" data-option="En regel om, at forbrugeraftaler altid er ugyldige, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option" data-option="En regel om, at alle standardvilkår er ugyldige og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank tager 5.000 kr. gebyr for at sende en rykkerskrivelse. Hvad er konsekvensen efter AFTL § 36?"
+                                        data-answer="2"
+                                        data-explanation="Efter AFTL § 36 vil dette gebyr blive tilsidesat som urimeligt. 5.000 kr. for en rykkerskrivelse er i væsentligt misforhold til den faktiske omkostning og er i strid med redelig handlemåde. Domstolene kan tilsidesætte dette gebyr helt eller delvist.">
+                                        <div class="option" data-option="Gebyret er gyldigt, da det er aftalt"></div>
+                                        <div class="option" data-option="Gebyret kan nedsættes til markedspris"></div>
+                                        <div class="option"
+                                             data-option="Gebyret vil blive tilsidesat som urimeligt"></div>
+                                        <div class="option" data-option="Kunden skal betale halvdelen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er en forbrugeraftale efter AFTL § 38a?"
+                                        data-answer="0"
+                                        data-explanation="Efter AFTL § 38a er en forbrugeraftale en aftale mellem en erhvervsdrivende og en forbruger. Bankens låneaftaler med private er forbrugeraftaler. Dette giver særlig beskyttelse til forbrugeren. Note: Teknisk set er § 38a-d ikke en del af den 'rigtige' Aftalelov, men af Forbrugeraftaleloven.">
+                                        <div class="option"
+                                             data-option="En aftale mellem en erhvervsdrivende og en forbruger"></div>
+                                        <div class="option" data-option="En aftale mellem to erhvervsdrivende hvilket er standard praksis"></div>
+                                        <div class="option" data-option="En aftale mellem to forbrugere, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="En skriftlig aftale, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvordan fortolkes forbrugeraftaler efter AFTL § 38b?"
+                                        data-answer="3"
+                                        data-explanation="Efter AFTL § 38b fortolkes forbrugeraftaler til fordel for forbrugeren (formålsfortolkning). Ved tvivl om, hvad en forbrugeraftale betyder, fortolkes den til fordel for forbrugeren. Dette sikrer forbrugerbeskyttelse. Uklare vilkår i bankens låneaftale → Fortolkes til fordel for kunden.">
+                                        <div class="option"
+                                             data-option="Til fordel for erhvervsdrivende"></div>
+                                        <div class="option"
+                                             data-option="Bogstaveligt efter ordlyden"></div>
+                                        <div class="option"
+                                             data-option="Til fordel for den stærkeste part"></div>
+                                        <div class="option"
+                                             data-option="Til fordel for forbrugeren"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad siger AFTL § 38c om urimelige standardvilkår i forbrugeraftaler?"
+                                        data-answer="1"
+                                        data-explanation="Efter AFTL § 38c kan urimelige standardvilkår i forbrugeraftaler tilsidesættes til fordel for forbrugeren. Dette giver ekstra beskyttelse ud over AFTL § 36. Kombineret med AFTL § 36 giver dette stærk forbrugerbeskyttelse. Efter 2016 bruges den nye AFTL § 38c ofte i stedet for AFTL § 36 ved forbrugeraftaler.">
+                                        <div class="option" data-option="Standardvilkår kan aldrig tilsidesættes, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Urimelige standardvilkår kan tilsidesættes til fordel for forbrugeren"></div>
+                                        <div class="option" data-option="Standardvilkår er altid ugyldige, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun skriftlige standardvilkår kan tilsidesættes, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder det, at Forbrugeraftaleloven er præceptiv efter AFTL § 38d?"
+                                        data-answer="2"
+                                        data-explanation="Efter AFTL § 38d betyder præceptivitet, at Forbrugeraftaleloven ikke kan fraviges til skade for forbrugeren. Banken kan ikke aftale med kunden, at forbrugerbeskyttelsen ikke gælder. Man kan give forbrugeren bedre vilkår, men ikke dårligere. Dette sikrer minimumsbeskyttelse.">
+                                        <div class="option" data-option="Forbrugeraftaleloven kan altid fraviges, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option" data-option="Forbrugeraftaleloven gælder kun for skriftlige aftaler"></div>
+                                        <div class="option"
+                                             data-option="Forbrugeraftaleloven kan ikke fraviges til skade for forbrugeren"></div>
+                                        <div class="option" data-option="Forbrugeraftaleloven gælder kun for erhvervsaftaler"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem AFTL § 36 og AFTL § 38c?"
+                                        data-answer="0"
+                                        data-explanation="AFTL § 36 (generalklausulen) gælder for alle aftaler (både forbruger- og erhvervsaftaler). AFTL § 38c gælder kun for forbrugeraftaler og giver særlig beskyttelse. I praksis overlapper de meget. Efter 2016 bruges AFTL § 38c ofte i stedet for AFTL § 36 ved forbrugeraftaler, mens AFTL § 36 bruges mest i erhvervsaftaler.">
+                                        <div class="option"
+                                             data-option="AFTL § 36 gælder for alle aftaler, AFTL § 38c kun for forbrugeraftaler"></div>
+                                        <div class="option" data-option="AFTL § 36 er stærkere end AFTL § 38c, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="AFTL § 38c gælder for alle aftaler, AFTL § 36 kun for erhvervsaftaler"></div>
+                                        <div class="option" data-option="Der er ingen forskel og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank har urimelige standardvilkår i sin låneaftale med en forbruger. Hvilke paragraffer kan anvendes?"
+                                        data-answer="3"
+                                        data-explanation="Både AFTL § 36 og AFTL § 38c kan anvendes. AFTL § 38c er specifikt for forbrugeraftaler og giver særlig beskyttelse. AFTL § 36 er generalklausulen, der også kan anvendes. I praksis overlapper de meget. Efter 2016 bruges AFTL § 38c ofte i stedet for AFTL § 36 ved forbrugeraftaler.">
+                                        <div class="option" data-option="Kun AFTL § 36, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun AFTL § 38c, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun AFTL § 38d, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Både AFTL § 36 og AFTL § 38c"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er standardvilkår (almindelige forretningsbetingelser)?"
+                                        data-answer="1"
+                                        data-explanation="Standardvilkår (almindelige forretningsbetingelser) er forudformulerede kontraktvilkår, som en part (typisk erhvervsdrivende) bruger i mange lignende aftaler. I finanssektoren bruges næsten kun standardkontrakter. Disse kan være urimelige og tilsidesættes efter AFTL § 36 eller AFTL § 38c.">
+                                        <div class="option" data-option="Individuelle vilkår for hver aftale, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Forudformulerede kontraktvilkår, som bruges i mange lignende aftaler"></div>
+                                        <div class="option" data-option="Vilkår, der kun gælder for forbrugeraftaler, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Vilkår, der kun gælder for erhvervsaftaler, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank kan ikke aftale med kunden, at forbrugerbeskyttelsen ikke gælder. Hvilken paragraf sikrer dette?"
+                                        data-answer="2"
+                                        data-explanation="Efter AFTL § 38d er Forbrugeraftaleloven præceptiv - den kan ikke fraviges til skade for forbrugeren. Banken kan ikke aftale med kunden, at forbrugerbeskyttelsen ikke gælder. Man kan give forbrugeren bedre vilkår, men ikke dårligere. Dette sikrer minimumsbeskyttelse.">
+                                        <div class="option" data-option="AFTL § 36"></div>
+                                        <div class="option"
+                                             data-option="AFTL § 38c"></div>
+                                        <div class="option"
+                                             data-option="AFTL § 38d"></div>
+                                        <div class="option" data-option="AFTL § 39"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er formålsfortolkning ved forbrugeraftaler?"
+                                        data-answer="0"
+                                        data-explanation="Formålsfortolkning betyder, at forbrugeraftaler fortolkes til fordel for forbrugeren efter AFTL § 38b. Ved tvivl om, hvad en forbrugeraftale betyder, fortolkes den til fordel for forbrugeren. Dette sikrer forbrugerbeskyttelse. Uklare vilkår i bankens låneaftale → Fortolkes til fordel for kunden.">
+                                        <div class="option"
+                                             data-option="Fortolkning til fordel for forbrugeren"></div>
+                                        <div class="option"
+                                             data-option="Bogstavelig fortolkning efter ordlyden"></div>
+                                        <div class="option"
+                                             data-option="Fortolkning til fordel for erhvervsdrivende"></div>
+                                        <div class="option"
+                                             data-option="Fortolkning efter almindelig handelsbrug"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem deklaratorisk og præceptiv lovgivning?"
+                                        data-answer="3"
+                                        data-explanation="Deklaratorisk lovgivning (fx Aftaleloven) betyder, at parterne kan aftale anden fremgangsmåde end den i loven. Præceptiv lovgivning (fx Forbrugeraftaleloven) betyder, at loven ikke kan fraviges til skade for forbrugeren. Man kan give forbrugeren bedre vilkår, men ikke dårligere.">
+                                        <div class="option" data-option="Der er ingen forskel, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Deklaratorisk er stærkere end præceptiv, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Præceptiv kan altid fraviges, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Deklaratorisk kan fraviges, præceptiv kan ikke fraviges til skade for forbrugeren"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank har urimelige standardvilkår i en erhvervsaftale (ikke forbrugeraftale). Hvilken paragraf kan anvendes?"
+                                        data-answer="1"
+                                        data-explanation="Ved erhvervsaftaler (ikke forbrugeraftaler) kan kun AFTL § 36 (generalklausulen) anvendes. AFTL § 38c gælder kun for forbrugeraftaler. AFTL § 36 kan tilsidesætte urimelige aftaler eller aftaler i strid med redelig handlemåde, også ved erhvervsaftaler.">
+                                        <div class="option"
+                                             data-option="Kun AFTL § 38c"></div>
+                                        <div class="option"
+                                             data-option="Kun AFTL § 36"></div>
+                                        <div class="option"
+                                             data-option="Både AFTL § 36 og AFTL § 38c"></div>
+                                        <div class="option"
+                                             data-option="Ingen paragraffer kan anvendes ved erhvervsaftaler"></div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

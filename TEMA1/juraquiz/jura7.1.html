@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Jura - Tinglysning og Grundbegreber</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af tinglysning, grundbegreber og retsvirkninger af tinglysning." data-forudsætning-url="https://jura.tepedu.dk/kapitel7.html" data-forudsætning-text="Online-bog Jura Kapitel 7: Ejendomshandel, Tinglysning & Pant" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Jura - Tinglysning og Grundbegreber</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Jura: Tinglysning og Grundbegreber
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er definitionen på fast ejendom?"
+                                        data-answer="1"
+                                        data-explanation="Fast ejendom er et stykke jord (grund) med tilhørende bygninger. Den identificeres ved matrikelnummer. Eksempel: Et parcelhus på 'Matr. nr. 7a, Odense Jorder'.">
+                                        <div class="option" data-option="En bil eller andet køretøj, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Et stykke jord (grund) med tilhørende bygninger, identificeret ved matrikelnummer"></div>
+                                        <div class="option" data-option="Maskiner og inventar i en virksomhed, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Varelager i en butik, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er tinglysning?"
+                                        data-answer="2"
+                                        data-explanation="Tinglysning er offentlig registrering af rettigheder. Det fungerer som digital 'opslagstavle'. Når du køber hus, skal dit ejerskab (skødet) tinglyses for at være gyldigt mod andre.">
+                                        <div class="option" data-option="En privat registrering af ejerskab, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En betaling til staten og skal overholdes, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Offentlig registrering af rettigheder, der fungerer som digital opslagstavle"></div>
+                                        <div class="option" data-option="En kontrakt mellem køber og sælger og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et skøde?"
+                                        data-answer="1"
+                                        data-explanation="Skødet er det officielle dokument, der overdrager ejendomsretten fra sælger til køber. Eksempel: 'Sælger A overdrager hermed ejendommen til Køber B for 3 mio. kr.'">
+                                        <div class="option" data-option="Et dokument, der beviser pant i ejendommen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Det officielle dokument, der overdrager ejendomsretten fra sælger til køber"></div>
+                                        <div class="option" data-option="En lejekontrakt for en ejendom, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En vurdering af ejendommens værdi og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et pantebrev?"
+                                        data-answer="2"
+                                        data-explanation="Pantebrev er bevis på, at banken/kreditforeningen har sikkerhed i ejendommen for et lån. Eksempel: Banken låner dig 2 mio. kr. og får tinglyst pant i huset. Betaler du ikke, kan huset sælges på tvangsauktion.">
+                                        <div class="option" data-option="Et dokument, der beviser ejerskab, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En kontrakt mellem køber og sælger, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Bevis på, at banken/kreditforeningen har sikkerhed i ejendommen for et lån"></div>
+                                        <div class="option" data-option="En lejekontrakt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er en servitut?"
+                                        data-answer="3"
+                                        data-explanation="Servitut er en byrde eller begrænsning på ejendommen. Eksempler: Naboen har ret til at køre hen over din grund (færdselsret). Eller du må ikke bygge højere end 8 meter.">
+                                        <div class="option" data-option="Et pantebrev, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Et skøde, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="En lejekontrakt, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="En byrde eller begrænsning på ejendommen"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er de tre retsvirkninger af tinglysning ifølge TL § 1?"
+                                        data-answer="0"
+                                        data-explanation="De tre retsvirkninger af tinglysning er: 1) Gyldighed - En tinglyst ret skal respekteres af alle. En utinglyst ret kan blive fortrængt. 2) Prioritet - Rettigheder dækkes i den rækkefølge, de er anmeldt til tinglysning (tidsfølge). 'Først i tid, bedst i ret'. 3) God tro - Man kan stole på tingbogen. Hvis der ikke står noget pant, er der (som udgangspunkt) ikke noget pant.">
+                                        <div class="option"
+                                             data-option="Gyldighed, prioritet og god tro"></div>
+                                        <div class="option"
+                                             data-option="Prioritet, betaling og registrering"></div>
+                                        <div class="option"
+                                             data-option="God tro, dokumentation og underskrift"></div>
+                                        <div class="option"
+                                             data-option="Gyldighed, betaling og godkendelse"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'først i tid, bedst i ret' ved tinglysning?"
+                                        data-answer="1"
+                                        data-explanation="'Først i tid, bedst i ret' betyder at rettigheder dækkes i den rækkefølge, de er anmeldt til tinglysning (tidsfølge). Dette er afgørende ved tvangsauktion. Realkreditpantebrev tinglyses først → 1. prioritet. Bankpantebrev tinglyses derefter → 2. prioritet.">
+                                        <div class="option" data-option="Den første der betaler får bedst ret, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Rettigheder dækkes i den rækkefølge, de er anmeldt til tinglysning (tidsfølge)"></div>
+                                        <div class="option" data-option="Den første der køber ejendommen får bedst ret, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Den første der underskriver kontrakten får bedst ret, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvor foregår tinglysning i Danmark?"
+                                        data-answer="2"
+                                        data-explanation="Tinglysning foregår i Tinglysningsretten, nu 100% digitalt via tinglysning.dk. Alle tinglysninger skal anmeldes digitalt. Ejendomsmægler eller advokat logger ind med MitID og uploader dokumenter digitalt.">
+                                        <div class="option" data-option="Fysisk på kommunen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Via telefon, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="100% digitalt via tinglysning.dk i Tinglysningsretten"></div>
+                                        <div class="option" data-option="Via email til banken, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvordan beregnes tinglysningsafgiften ifølge TL § 3?"
+                                        data-answer="1"
+                                        data-explanation="Tinglysningsafgiften består af et fast beløb (pt. 1.850 kr.) + 0,6% af værdien (købesum eller pantbeløb). Eksempel: Ved bolighandel på 3 mio. kr.: 1.850 kr. + 18.000 kr. (0,6% af 3 mio.) = 19.850 kr.">
+                                        <div class="option" data-option="Kun 0,6% af købesummen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Fast beløb (1.850 kr.) + 0,6% af værdien (købesum eller pantbeløb)"></div>
+                                        <div class="option" data-option="Kun 1.850 kr. uanset værdi, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="1% af købesummen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'god tro' ved tinglysning (TL § 6)?"
+                                        data-answer="3"
+                                        data-explanation="God tro betyder at man kan stole på tingbogen. Hvis der ikke står noget pant, er der (som udgangspunkt) ikke noget pant. Køber tjekker tingbogen før køb. Hvis der ikke står pant, kan køber stole på det. Hvis pantet senere viser sig at være utinglyst, er køber beskyttet.">
+                                        <div class="option" data-option="At man skal tro på hvad sælger siger, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At man skal betale kontant, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At man skal have godkendelse fra banken, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Man kan stole på tingbogen - hvis der ikke står pant, er der ikke pant"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder 'fortrængning' ved tinglysning (TL § 7)?"
+                                        data-answer="0"
+                                        data-explanation="Fortrængning betyder at en utinglyst ret kan blive fortrængt af en tinglyst ret. Dette er afgørende ved konkurs og tvangsauktion. Pantebrev uden tinglysning kan blive fortrængt af senere tinglyst pantebrev. Ved konkurs kan utinglyst pant miste sin sikkerhed.">
+                                        <div class="option"
+                                             data-option="En utinglyst ret kan blive fortrængt af en tinglyst ret"></div>
+                                        <div class="option"
+                                             data-option="En tinglyst ret kan blive fortrængt af en utinglyst ret"></div>
+                                        <div class="option" data-option="At man skal betale ekstra gebyr, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="At ejendommen skal sælges, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er formålet med at tinglyse lejekontrakter (TL § 8)?"
+                                        data-answer="2"
+                                        data-explanation="Lejekontrakter kan tinglyses for at sikre lejers ret. Dette er vigtigt ved ejendomskøb med lejere. Lejekontrakt tinglyses → Lejer er beskyttet ved ejendomskøb. Ny ejer kan ikke opsige lejer.">
+                                        <div class="option" data-option="At sikre sælgers ret, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="At sikre bankens ret, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="At sikre lejers ret ved ejendomskøb"></div>
+                                        <div class="option" data-option="At sikre ejendomsmæglerens ret"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er servitutter (TL § 9)?"
+                                        data-answer="1"
+                                        data-explanation="Servitutter (fx retsvej, brugsret, ledningsret) kan tinglyses. Dette sikrer rettigheder ved ejendomskøb. Eksempel: Nabo har retsvej over ejendom. Dette tinglyses → Retsvejen er sikret ved ejendomskøb.">
+                                        <div class="option" data-option="Pantebreve, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Rettigheder som retsvej, brugsret eller ledningsret, der kan tinglyses"></div>
+                                        <div class="option" data-option="Lejekontrakter, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Skøder, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvordan ophæves et pantebrev (TL § 10)?"
+                                        data-answer="3"
+                                        data-explanation="Tinglyste rettigheder kan ophæves ved tinglysning af ophævelsesdokument. Dette er nødvendigt ved indfrielse af pantebreve. Pantebrev ophæves ved tinglysning af ophævelsesdokument, når lånet er indfriet. Pantet er derefter bortfaldet.">
+                                        <div class="option" data-option="Ved at betale lånet tilbage, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Ved at slette dokumentet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Ved at kontakte banken, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Ved tinglysning af ophævelsesdokument, når lånet er indfriet"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvem anmelder typisk dokumenter til tinglysning (TL § 15)?"
+                                        data-answer="0"
+                                        data-explanation="Ejendomsmægler eller advokat anmelder skøde og pantebreve til tinglysning digitalt. Anmeldelsestidspunktet afgør prioritetsordenen. Fejl i anmeldelsen kan betyde, at prioritet går tabt.">
+                                        <div class="option"
+                                             data-option="Ejendomsmægler eller advokat"></div>
+                                        <div class="option" data-option="Køber eller sælger direkte hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Banken, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Tinglysningsretten, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er det første trin i digital tinglysning?"
+                                        data-answer="2"
+                                        data-explanation="Det første trin i digital tinglysning er forberedelse. Dokumenter skal være klar (skøde, pantebrev osv.). Ejendomsmægleren eller advokaten forbereder skødet og pantebrevene. Alle dokumenter skal være underskrevet digitalt eller fysisk.">
+                                        <div class="option" data-option="Login til tinglysning.dk, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Betaling af afgift, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Forberedelse - dokumenter skal være klar og underskrevet"></div>
+                                        <div class="option" data-option="Upload af dokumenter, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvem betaler normalt tinglysningsafgiften?"
+                                        data-answer="1"
+                                        data-explanation="Køber betaler normalt tinglysningsafgiften, men dette kan aftales anderledes i købsaftalen. Tinglysningsafgift betales digitalt (1.850 kr. + 0,6% af købesummen).">
+                                        <div class="option" data-option="Sælger, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Køber (normalt, men kan aftales anderledes)"></div>
+                                        <div class="option" data-option="Ejendomsmægleren, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Banken, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvor hurtigt behandles tinglysningen normalt?"
+                                        data-answer="3"
+                                        data-explanation="Tinglysningen behandles normalt samme dag. Køber får bekræftelse via email. Tinglysningen behandles automatisk af Tinglysningsretten efter upload og betaling.">
+                                        <div class="option" data-option="Inden for en uge"></div>
+                                        <div class="option"
+                                             data-option="Inden for en måned"></div>
+                                        <div class="option" data-option="Inden for 3 dage"></div>
+                                        <div class="option"
+                                             data-option="Normalt samme dag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er konsekvensen, hvis et pantebrev ikke tinglyses?"
+                                        data-answer="0"
+                                        data-explanation="Uden tinglysning er pantet ikke gyldigt mod andre kreditorer. Ved konkurs kan utinglyst pant blive fortrængt af tinglyst pant. Pantebrev uden tinglysning kan blive fortrængt af senere tinglyst pantebrev.">
+                                        <div class="option"
+                                             data-option="Pantet er ikke gyldigt mod andre kreditorer og kan blive fortrængt ved konkurs"></div>
+                                        <div class="option" data-option="Pantet er stadig gyldigt, men koster ekstra, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Pantet er gyldigt, men kun mod sælger, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Pantet skal tinglyses senere, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

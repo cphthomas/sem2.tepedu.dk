@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Købeloven - Praktiske Eksempler</title>
+     
+     <!-- Google Fonts - updated with Space Grotesk and italic Roboto -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af praktiske anvendelser af Købeloven i finanssektoren, herunder eksempler fra forskellige brancher og praktiske råd." data-forudsætning-url="https://jura.tepedu.dk/kapitel3.html" data-forudsætning-text="Købeloven - Kapitel 3" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Købeloven - Praktiske Eksempler</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Købeloven: Praktiske Eksempler
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="En bank køber IT-udstyr for 500.000 kr. Efter 3 måneder opdager banken, at udstyret ikke fungerer som aftalt. Kan banken umiddelbart kræve pengene tilbage?"
+                                        data-answer="2"
+                                        data-explanation="Nej, banken kan ikke umiddelbart kræve pengene tilbage. Sælgeren har ret til at afhjælpe manglen eller levere en ny vare først, jf. KBL § 23. Først hvis sælgeren ikke afhjælper manglen inden for rimelig tid, kan banken ophæve købet og kræve pengene tilbage, jf. KBL § 24.">
+                                        <div class="option" data-option="Ja, altid, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Ja, hvis det er handelskøb, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Nej, sælgeren har ret til afhjælpning først"></div>
+                                        <div class="option" data-option="Kun hvis det er forbrugerkøb, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En virksomhed køber nyt regnskabssystem til 800.000 kr. Efter 2 måneder opdages det, at systemet ikke kan håndtere danske momsregler korrekt. Hvad skal virksomheden gøre?"
+                                        data-answer="1"
+                                        data-explanation="Virksomheden skal reklamere straks (inden for rimelig tid, typisk 1-2 uger ved handelskøb) efter opdagelsen, jf. KBL § 21. Leverandøren har ret til at afhjælpe fejlen først, jf. KBL § 23. Hvis leverandøren ikke kan/vil rette fejlen, kan virksomheden ophæve købet eller kræve prisafslag efter KBL § 24, samt kræve erstatning efter KBL § 27.">
+                                        <div class="option" data-option="Vente og se om problemet løser sig selv, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Reklamere straks og give leverandøren mulighed for afhjælpning"></div>
+                                        <div class="option" data-option="Umiddelbart kræve pengene tilbage, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun kontakte leverandøren hvis problemet er alvorligt"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En virksomhed bestiller 20 computere med leveringsfrist 'senest 1. marts'. Leverandøren leverer først 15. marts. Hvad kan virksomheden gøre?"
+                                        data-answer="3"
+                                        data-explanation="Virksomheden kan kræve erstatning for tabt drift efter KBL § 28, men tabet skal bevises. Ved væsentlig forsinkelse kan virksomheden ophæve købet og købe hos anden leverandør. Det er vigtigt at dokumentere forsinkelsen og konsekvenserne (tabt arbejdstid, produktivitetstab).">
+                                        <div class="option" data-option="Kun acceptere forsinkelsen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kræve erstatning og skal overholdes, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option" data-option="Kun ophæve købet og kan anvendes i forskellige sammenhænge"></div>
+                                        <div class="option"
+                                             data-option="Kræve erstatning eller ophæve købet (tabet skal dokumenteres)"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Ved gennemgang af virksomhedens indkøb opdages det, at der blev købt en dyr maskine for 6 måneder siden, men ingen har tjekket om den virker korrekt. Nu er reklamationsfristen måske overskredet. Hvad er problemet?"
+                                        data-answer="0"
+                                        data-explanation="Problemet er, at virksomheden har sandsynligvis mistet sin reklamationsret ved ikke at undersøge varen inden for rimelig tid (normalt 1-2 uger ved handelskøb), jf. KBL § 25. Løsningen er at undersøge varen straks nu. Hvis der er fejl, reklamer straks. Selv ved forsinkelse kan der være reklamationsret ved skjulte fejl.">
+                                        <div class="option"
+                                             data-option="Manglende vareundersøgelse kan have begrænset reklamationsretten"></div>
+                                        <div class="option" data-option="Maskinen er for dyr hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Der er ingen problem, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Maskinen er for gammel, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En virksomhed køber inventar på afbetaling til 500.000 kr. Sælgeren har taget ejendomsforbehold. Virksomheden går konkurs efter 6 måneder, og kun halvdelen er betalt. Kan sælgeren kræve inventaret tilbage?"
+                                        data-answer="1"
+                                        data-explanation="Ja, sælgeren kan kræve inventaret tilbage, da de har ejendomsforbehold, jf. KBL § 6. Virksomheden (konkursboet) skal tilbagelevere inventaret. Læringspointe: Vær opmærksom på ejendomsforbehold ved køb på afbetaling. Ved konkurs eller betalingsvanskeligheder kan virksomheden miste værdifuldt udstyr.">
+                                        <div class="option" data-option="Nej, inventaret tilfalder konkursboet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Ja, sælgeren kan kræve inventaret tilbage pga. ejendomsforbehold"></div>
+                                        <div class="option" data-option="Kun hvis det er aftalt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun hvis halvdelen er betalt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank køber 50 nye tællermaskiner til kontanthåndtering. Efter 3 måneder begynder flere maskiner at fejltælle sedler. Hvad skal banken gøre?"
+                                        data-answer="2"
+                                        data-explanation="Banken skal reklamere straks (inden for 1-2 uger) efter KBL § 21, dokumentere fejltællingerne og diskrepanserne. Leverandøren har ret til at reparere eller omlevere efter KBL § 23. Banken kan kræve erstatning for ekstra arbejdstid ved manuel optælling efter KBL § 27.">
+                                        <div class="option" data-option="Vente og se om problemet løser sig selv, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Umiddelbart kræve pengene tilbage, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Reklamere straks, dokumentere fejlene og give leverandøren mulighed for afhjælpning"></div>
+                                        <div class="option" data-option="Kun kontakte leverandøren hvis problemet er alvorligt, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Et forsikringsselskab køber nyt skadesbehandlingssystem til 1,2 mio. kr. Systemet leveres 4 måneder for sent. Hvad kan forsikringsselskabet gøre?"
+                                        data-answer="0"
+                                        data-explanation="Forsikringsselskabet kan dokumentere forsinkelsen og beregne omkostninger ved forsinket sagsbehandling. Selskabet kan kræve erstatning for tabt omsætning og ekstra lønomkostninger efter KBL § 28. Ved væsentlig forsinkelse kan købet ophæves, og selskabet kan købe hos anden leverandør.">
+                                        <div class="option"
+                                             data-option="Dokumentere forsinkelsen og kræve erstatning eller ophæve købet"></div>
+                                        <div class="option" data-option="Kun acceptere forsinkelsen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kræve erstatning, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                        <div class="option" data-option="Kun ophæve købet og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Et ejendomsmæglerkontor køber nyt CRM-system. Efter 6 måneder viser det sig, at systemet ikke kan eksportere data til e-tinglysning som lovet. Hvad er problemet?"
+                                        data-answer="3"
+                                        data-explanation="Problemet er, at reklamation efter 6 måneder kan være problematisk, men da manglen er skjult (ikke opdagelig ved normal undersøgelse), er der stadig reklamationsret. Løsningen er at reklamere straks nu. Kræv afhjælpning eller omlevering. Hvis ikke muligt, kræv prisafslag eller ophæv købet efter KBL § 24. Kræv erstatning for tabt arbejdstid ved manuel håndtering.">
+                                        <div class="option" data-option="Der er ingen problem, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Systemet er for dyrt, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Systemet er for gammelt, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option"
+                                             data-option="Reklamation efter 6 måneder kan være problematisk, men skjulte fejl giver stadig reklamationsret"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Et revisionsfirma køber ny revisionssoftware, der skulle kunne håndtere IFRS. Efter implementering viser det sig, at softwaren kun håndterer danske regler. Hvad skal revisionsfirmaet gøre?"
+                                        data-answer="1"
+                                        data-explanation="Revisionsfirmaet skal reklamere straks (inden for 1-2 uger) efter opdagelsen. Leverandøren har ret til at levere en opdateret version med IFRS-funktionalitet. Hvis leverandøren ikke kan/vil afhjælpe, kan købet ophæves, og firmaet kan købe hos anden leverandør. Firmaet kan kræve erstatning for tabt omsætning ved udskudte internationale revisionssager.">
+                                        <div class="option" data-option="Vente og se om problemet løser sig selv, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Reklamere straks, kræve afhjælpning eller ophæve købet og kræve erstatning"></div>
+                                        <div class="option" data-option="Umiddelbart kræve pengene tilbage, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kontakte leverandøren hvis problemet er alvorligt"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er det første skridt ved arbejde med Købeloven?"
+                                        data-answer="2"
+                                        data-explanation="Det første skridt er at identificere købstypen: Er det et handelskøb eller et forbrugerkøb? Dette afgør, hvilke regler der gælder. Ved handelskøb gælder skærpede regler om reklamation og misligholdelse.">
+                                        <div class="option" data-option="Reklamere straks, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kræve erstatning og skal overholdes, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option"
+                                             data-option="Identificere købstypen (handelskøb eller forbrugerkøb)"></div>
+                                        <div class="option" data-option="Ophæve købet og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er vigtigt ved reklamation ved handelskøb?"
+                                        data-answer="0"
+                                        data-explanation="Ved handelskøb skal der reklameres hurtigere end ved civilkøb. Reklamer inden for rimelig tid efter opdagelse af manglen (typisk 1-2 uger). Reklamationsfristen er 2 år, men kan fraviges ved aftale (kun til køberens fordel).">
+                                        <div class="option"
+                                             data-option="Reklamere hurtigt (typisk inden for 1-2 uger) efter opdagelse"></div>
+                                        <div class="option" data-option="Vente og se om problemet løser sig selv hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kun reklamere hvis problemet er alvorligt, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Reklamere inden for 6 måneder, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er vigtigt ved dokumentation ved arbejde med Købeloven?"
+                                        data-answer="3"
+                                        data-explanation="Det er vigtigt at dokumentere alt: Gem alle købskontrakter, reklamationsbreve, emails og notater om mangler. Dokumentation er afgørende ved tvist. Bevisbyrden kan ligge hos køber. Ved krav om erstatning skal tabet kunne bevises og dokumenteres præcist.">
+                                        <div class="option" data-option="Kun gemme kontrakter, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun gemme emails, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun gemme notater, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Gemme alle kontrakter, reklamationsbreve, emails og notater om mangler"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal man være opmærksom på ved køb på afbetaling?"
+                                        data-answer="1"
+                                        data-explanation="Ved køb på afbetaling skal man være opmærksom på ejendomsforbehold. Det kan betyde tab af udstyr ved konkurs eller betalingsvanskeligheder. Tjek altid kontrakten for ejendomsforbehold. Ved konkurs kan virksomheden miste værdifuldt udstyr, hvis sælgeren har taget ejendomsforbehold.">
+                                        <div class="option" data-option="Kun prisen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Ejendomsforbehold (kan betyde tab af udstyr ved konkurs)"></div>
+                                        <div class="option" data-option="Kun leveringstiden, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun betalingsbetingelserne, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er vigtigt ved beregning af tab ved erstatningskrav?"
+                                        data-answer="2"
+                                        data-explanation="Ved krav om erstatning skal tabet kunne bevises og dokumenteres præcist. Brug regnskabstal og dokumentation. Tabet skal beregnes præcist. Ved forsinkelse eller mangler skal man dokumentere alle omkostninger, tabt omsætning og ekstra arbejdstid.">
+                                        <div class="option" data-option="Kun estimere tabet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun angive et cirkatal, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Beregne og dokumentere tabet præcist med regnskabstal"></div>
+                                        <div class="option" data-option="Kun angive et omtrentligt beløb, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er vigtigt ved implementering af kontrolprocedurer?"
+                                        data-answer="0"
+                                        data-explanation="Det er vigtigt at implementere kontrolprocedurer: Sikr, at virksomheden har rutiner for varemodtagelse, undersøgelse og reklamation. Implementer rutiner for varemodtagelse og kontrol. Sikr procedurer for at undersøge varer straks. Ved handelskøb skal køber undersøge varen inden for rimelig tid (normalt 1-2 uger).">
+                                        <div class="option"
+                                             data-option="Rutiner for varemodtagelse, undersøgelse og reklamation"></div>
+                                        <div class="option" data-option="Kun rutiner for betaling, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun rutiner for levering, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun rutiner for dokumentation, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er vigtigt ved læsning af kontrakten?"
+                                        data-answer="3"
+                                        data-explanation="Det er vigtigt at læse kontrakten grundigt: Tjek, om der er særlige aftaler om reklamationsfrister eller andre vilkår, der afviger fra købeloven. Ved handelskøb kan købeloven fraviges ved aftale, så det er vigtigt at kende kontraktens indhold.">
+                                        <div class="option" data-option="Kun prisen, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun leveringstiden, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun betalingsbetingelserne, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Særlige aftaler om reklamationsfrister eller andre vilkår, der afviger fra købeloven"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et vigtigt råd ved arbejde med Købeloven?"
+                                        data-answer="1"
+                                        data-explanation="Et vigtigt råd er at spørge ved tvivl: Købeloven er kompleks. Kontakt en jurist ved usikkerhed. Det er bedre at spørge end at gøre noget forkert, som kan koste penge eller rettigheder.">
+                                        <div class="option" data-option="Altid handle hurtigt uden at spørge, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Spørge ved tvivl - kontakt en jurist ved usikkerhed"></div>
+                                        <div class="option" data-option="Kun handle efter egen vurdering, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Ignorere komplekse situationer, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

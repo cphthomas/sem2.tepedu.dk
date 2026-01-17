@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Jura - Kreditaftaleloven: Kreditvurdering og ansvarlig långivning</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af kreditvurdering, ansvarlig långivning og konsekvenserne ved uansvarlig långivning." data-forudsætning-url="https://jura.tepedu.dk/kapitel5.html" data-forudsætning-text="Online-bog Jura Kapitel 5: Kreditaftale, Kaution & Gældsbreve" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Jura</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Jura: Kreditaftaleloven - Kreditvurdering og ansvarlig långivning
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er bankens pligt ifølge KAL § 7c?"
+                                        data-answer="1"
+                                        data-explanation="Banken har pligt til at kreditvurdere kunden grundigt før bevilling. Dette kaldes 'ansvarlig långivning'. Banken skal indhente lønsedler, årsopgørelser, budget, tjekke RKI og Debitor Registret, beregne rådighedsbeløb og gældsfaktor.">
+                                        <div class="option" data-option="At låne penge til alle, der ansøger, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="At kreditvurdere kunden grundigt før bevilling (ansvarlig långivning)"></div>
+                                        <div class="option" data-option="Kun at tjekke kundens navn, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At låne penge til kunder med høj indtægt, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal banken indhente som del af kreditvurderingen?"
+                                        data-answer="0"
+                                        data-explanation="Banken skal indhente lønsedler (min. 3 måneder), årsopgørelse, budget og bevis for indtægt. Banken skal også tjekke kreditregistre (RKI, Debitor Registret) og beregne rådighedsbeløb og gældsfaktor.">
+                                        <div class="option"
+                                             data-option="Lønsedler (min. 3 måneder), årsopgørelse, budget og bevis for indtægt"></div>
+                                        <div class="option" data-option="Kun kundens navn og adresse, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kundens alder, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kundens telefonnummer og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvilke kreditregistre skal banken tjekke ifølge KAL § 7c?"
+                                        data-answer="2"
+                                        data-explanation="Banken skal tjekke RKI (Ribers Kredit Information), Debitor Registret og RKI B2B. Hvis kunden er registreret, skal banken vurdere risikoen grundigt.">
+                                        <div class="option" data-option="Kun Google, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun Facebook og skal overholdes, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="RKI (Ribers Kredit Information), Debitor Registret og RKI B2B"></div>
+                                        <div class="option" data-option="Kun telefonbogen og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er rådighedsbeløb?"
+                                        data-answer="3"
+                                        data-explanation="Rådighedsbeløb er indtægt minus faste udgifter. Dette skal være tilstrækkeligt til at betale lånet. Eksempel: Kunden har 30.000 kr. i indtægt og 20.000 kr. i faste udgifter → Rådighedsbeløb er 10.000 kr.">
+                                        <div class="option" data-option="Kun indtægten, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun de faste udgifter, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun lånebeløbet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Indtægt minus faste udgifter - skal være tilstrækkeligt til at betale lånet"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er gældsfaktor?"
+                                        data-answer="1"
+                                        data-explanation="Gældsfaktor er samlet gæld divideret med årsindtægt. Normalt maks 4-5 for boliglån. Eksempel: Kunden har 2 mio. kr. i gæld og 500.000 kr. i årsindtægt → Gældsfaktor er 4.">
+                                        <div class="option" data-option="Kun månedlig indtægt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Samlet gæld divideret med årsindtægt - normalt maks 4-5 for boliglån"></div>
+                                        <div class="option" data-option="Kun lånebeløbet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun renterne, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er konsekvensen ved uansvarlig långivning ifølge KAL § 7c?"
+                                        data-answer="0"
+                                        data-explanation="Hvis banken svigter kreditvurderingen (uansvarlig långivning), kan de miste retten til renter og gebyrer. Hvis lånet også er urimeligt, kan hele lånet blive ugyldigt (§ 36).">
+                                        <div class="option"
+                                             data-option="Banken kan miste retten til renter og gebyrer. Hvis lånet også er urimeligt, kan hele lånet blive ugyldigt"></div>
+                                        <div class="option" data-option="Ingen konsekvens - det er kun en anbefaling hvilket er standard praksis, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun et lille gebyr, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kunden skal bare betale mere i renter, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvornår kan hele lånet blive ugyldigt ifølge KAL § 36?"
+                                        data-answer="2"
+                                        data-explanation="Hele lånet kan blive ugyldigt, hvis der er både uansvarlig långivning (§ 7c) og urimelig aftale (§ 36). Banken mister retten til renter, gebyrer OG hovedstol. Hvis kun den ene betingelse er opfyldt, er konsekvenserne mindre alvorlige.">
+                                        <div class="option" data-option="Kun hvis renten er høj, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun hvis banken ikke har kreditvurderet og skal overholdes"></div>
+                                        <div class="option"
+                                             data-option="Hvis der er både uansvarlig långivning (§ 7c) og urimelig aftale (§ 36)"></div>
+                                        <div class="option" data-option="Altid, hvis kunden klager og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem uansvarlig långivning og urimelig aftale?"
+                                        data-answer="1"
+                                        data-explanation="Uansvarlig långivning (§ 7c) betyder, at banken ikke har kreditvurderet kunden grundigt. Urimelig aftale (§ 36) betyder, at aftalen er urimelig (fx meget høj rente). For at hele lånet skal blive ugyldigt, skal der være begge dele.">
+                                        <div class="option" data-option="Der er ingen forskel - det er det samme, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Uansvarlig långivning = manglende kreditvurdering. Urimelig aftale = urimelige vilkår (fx høj rente). Begge skal være til stede for at hele lånet bliver ugyldigt"></div>
+                                        <div class="option" data-option="Uansvarlig långivning = høj rente. Urimelig aftale = manglende kreditvurdering, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng"></div>
+                                        <div class="option" data-option="Kun uansvarlig långivning er vigtigt, hvilket kræver dokumentation af de faktiske omstændigheder og årsagssammenhæng, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvis banken låner til person uden indtægt uden grundig kreditvurdering, hvad er konsekvensen?"
+                                        data-answer="3"
+                                        data-explanation="Dette er uansvarlig långivning (brud på § 7c). Banken mister retten til renter og gebyrer, men kan kræve hovedstolen tilbage. Hvis lånet også er urimeligt (fx meget høj rente), kan hele lånet blive ugyldigt.">
+                                        <div class="option" data-option="Ingen konsekvens, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun et lille gebyr, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kunden skal bare betale mere, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option"
+                                             data-option="Banken mister retten til renter og gebyrer. Hvis lånet også er urimeligt, kan hele lånet blive ugyldigt"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal banken vurdere ved kreditvurderingen?"
+                                        data-answer="0"
+                                        data-explanation="Banken skal vurdere: Indtægt (stabil?), gæld, rådighedsbeløb, gældsfaktor, fremtidig indtægt (risiko for jobtab?), sikkerhed (værdi af sikkerheden?) og kreditregistre. Alt skal dokumenteres grundigt.">
+                                        <div class="option"
+                                             data-option="Indtægt, gæld, rådighedsbeløb, gældsfaktor, fremtidig indtægt, sikkerhed og kreditregistre"></div>
+                                        <div class="option" data-option="Kun kundens navn hvilket er standard praksis, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun kundens alder, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun kundens telefonnummer, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvis kunden er registreret i RKI, skal banken automatisk afvise lånet?"
+                                        data-answer="2"
+                                        data-explanation="Nej, banken skal ikke automatisk afvise lånet. Banken skal vurdere risikoen grundigt. Hvis RKI-registreringen er gammel og gælden er betalt, kan lånet stadig bevilges. Banken skal dokumentere vurderingen.">
+                                        <div class="option" data-option="Ja, altid, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Ja, hvis gælden er over 10.000 kr. og skal overholdes"></div>
+                                        <div class="option"
+                                             data-option="Nej, banken skal vurdere risikoen grundigt og dokumentere vurderingen"></div>
+                                        <div class="option" data-option="Kun hvis kunden er under 25 år og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvis gældsfaktoren er 6 (over grænsen på 4-5), skal banken automatisk afvise lånet?"
+                                        data-answer="1"
+                                        data-explanation="Nej, banken skal ikke automatisk afvise lånet. Banken skal vurdere risikoen grundigt. Hvis sikkerheden er god (fx høj boligværdi), kan lånet stadig bevilges. Banken skal dokumentere vurderingen.">
+                                        <div class="option" data-option="Ja, altid, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Nej, banken skal vurdere risikoen grundigt og dokumentere vurderingen"></div>
+                                        <div class="option" data-option="Kun hvis lånet er over 5 mio. kr., baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun hvis kunden er over 60 år og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvis rådighedsbeløbet er 2.000 kr./måned, mens lånet kræver 8.000 kr./måned, hvad skal banken gøre?"
+                                        data-answer="3"
+                                        data-explanation="Banken skal afvise lånet, da kunden ikke har råd. Hvis banken bevilger lånet alligevel, er det uansvarlig långivning. Banken mister retten til renter og gebyrer.">
+                                        <div class="option" data-option="Bevilge lånet alligevel, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun hvis kunden lover at betale, baseret på etableret retspraksis og anerkendte juridiske principper"></div>
+                                        <div class="option" data-option="Kun hvis kunden er under 30 år, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Afvise lånet, da kunden ikke har råd. Hvis banken bevilger alligevel, er det uansvarlig långivning"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'ansvarlig långivning'?"
+                                        data-answer="0"
+                                        data-explanation="Ansvarlig långivning betyder, at banken skal kreditvurdere kunden grundigt før bevilling. Banken må ikke låne penge til folk, der ikke har råd til at betale dem tilbage. Processen skal dokumenteres grundigt.">
+                                        <div class="option"
+                                             data-option="At banken skal kreditvurdere kunden grundigt før bevilling - må ikke låne til folk, der ikke har råd"></div>
+                                        <div class="option" data-option="At banken skal låne til alle, der ansøger hvilket er standard praksis, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="At banken kun skal låne til rige mennesker, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="At banken skal låne så meget som muligt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvorfor er kreditvurdering vigtig?"
+                                        data-answer="2"
+                                        data-explanation="Kreditvurdering er vigtig for at sikre, at kunden har råd til lånet og kan betale det tilbage. Det beskytter både kunden (mod at påtage sig for meget gæld) og banken (mod tab ved misligholdelse). Uansvarlig långivning kan føre til store problemer for begge parter.">
+                                        <div class="option" data-option="Kun for at beskytte banken, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun for at beskytte kunden, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option"
+                                             data-option="For at sikre, at kunden har råd til lånet og kan betale det tilbage - beskytter både kunden og banken"></div>
+                                        <div class="option" data-option="Kun for at opfylde lovkrav, hvilket er etableret gennem en række præcedenssager og retsafgørelser"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal banken dokumentere ved kreditvurderingen?"
+                                        data-answer="1"
+                                        data-explanation="Banken skal dokumentere alle dokumenter (lønsedler, årsopgørelse, budget), kreditregistre (RKI, Debitor Registret), beregninger (rådighedsbeløb, gældsfaktor) og vurderingen. Ved klage skal banken kunne dokumentere vurderingen.">
+                                        <div class="option" data-option="Kun kundens navn, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option"
+                                             data-option="Alle dokumenter, kreditregistre, beregninger og vurderingen - skal kunne dokumenteres ved klage"></div>
+                                        <div class="option" data-option="Kun lånebeløbet, hvilket indebærer en analyse af de faktiske forhold og relevante lovbestemmelser"></div>
+                                        <div class="option" data-option="Kun renterne, hvilket indebærer en analyse af de faktiske forhold og relevante lovbestemmelser"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvis banken har givet uansvarligt lån til person uden indtægt, og renten er 15% p.a. (urimelig), hvad er konsekvensen?"
+                                        data-answer="3"
+                                        data-explanation="Dette er både uansvarlig långivning (§ 7c) og urimelig aftale (§ 36). Kunden kan få hele lånet annulleret. Banken mister alt - både renter, gebyrer og hovedstol.">
+                                        <div class="option" data-option="Kun et lille gebyr, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Banken mister kun retten til renter, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kunden skal bare betale mere, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Hele lånet kan blive ugyldigt - banken mister retten til renter, gebyrer OG hovedstol"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem konsekvenserne ved kun uansvarlig långivning vs. både uansvarlig långivning og urimelig aftale?"
+                                        data-answer="0"
+                                        data-explanation="Ved kun uansvarlig långivning: Banken mister retten til renter og gebyrer, men kan kræve hovedstolen tilbage. Ved både uansvarlig långivning og urimelig aftale: Hele lånet kan blive ugyldigt - banken mister retten til renter, gebyrer OG hovedstol.">
+                                        <div class="option"
+                                             data-option="Kun uansvarlig långivning: Mister retten til renter og gebyrer. Begge: Hele lånet kan blive ugyldigt - mister også hovedstolen"></div>
+                                        <div class="option" data-option="Der er ingen forskel hvilket er standard praksis, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun uansvarlig långivning: Hele lånet bliver ugyldigt. Begge: Kun renter mistes, baseret på en vurdering af omstændighederne og den konkrete situation"></div>
+                                        <div class="option" data-option="Begge har samme konsekvens, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

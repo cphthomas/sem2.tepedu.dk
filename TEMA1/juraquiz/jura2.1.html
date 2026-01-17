@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Aftaleloven - Aftaleindgåelse</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+     <body data-formål="Forståelse af aftaleindgåelse i Aftaleloven, herunder tilbud, accept, acceptfrist og tilbagekaldelse." data-forudsætning-url="https://jura.tepedu.dk/kapitel2.html" data-forudsætning-text="Aftaleloven - Kapitel 2" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Aftaleloven - Aftaleindgåelse</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Aftaleloven: Aftaleindgåelse (Tilbud og Accept)
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er hovedreglen i AFTL § 1 om tilbud og svar?"
+                                        data-answer="1"
+                                        data-explanation="AFTL § 1 fastslår, at tilbud og svar på tilbud er bindende for afgiveren. Dette er grundreglen i aftaleloven - når man fremsætter et tilbud, er man bundet af det, indtil det accepteres eller afslås.">
+                                        <div class="option"
+                                             data-option="Tilbud og svar er kun bindende, hvis de er skriftlige"></div>
+                                        <div class="option"
+                                             data-option="Tilbud og svar på tilbud er bindende for afgiveren"></div>
+                                        <div class="option"
+                                             data-option="Tilbud er kun bindende, hvis de accepteres inden for 24 timer"></div>
+                                        <div class="option" data-option="Tilbud er aldrig bindende før accept"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank sender et lånetilbud med frist 'Svar senest 14 dage'. Hvad sker der, hvis kunden sender accept efter 15 dage?"
+                                        data-answer="2"
+                                        data-explanation="Efter AFTL § 4 gælder en sen accept som et nyt tilbud. Kunden har sendt accept efter fristens udløb, så accepten bliver til et nyt tilbud, som banken nu kan acceptere eller afslå. Undtagelse: Hvis kunden med rette kan gå ud fra, at accepten nåede frem i tide, skal banken meddele, hvis de ikke accepterer, ellers anses aftalen for sluttet.">
+                                        <div class="option" data-option="Aftalen er automatisk indgået, da accepten er sendt"></div>
+                                        <div class="option" data-option="Tilbuddet er bortfaldet og kan ikke accepteres, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Accepten bliver til et nyt tilbud, som banken kan acceptere eller afslå"></div>
+                                        <div class="option" data-option="Kunden skal betale et gebyr for at acceptere efter fristen"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad siger AFTL § 2 om acceptfrist?"
+                                        data-answer="0"
+                                        data-explanation="AFTL § 2 fastslår, at hvis tilbudsgiveren har fastsat en frist for antagelse af tilbudet, må antagende svar være kommet frem til ham inden fristens udløb. Fristen regnes fra den dag, brevet er dateret, eller fra den tid på dagen, da telegrammet er indleveret.">
+                                        <div class="option"
+                                             data-option="Accept skal være kommet frem inden fristens udløb"></div>
+                                        <div class="option" data-option="Accept skal være sendt inden fristens udløb hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Fristen gælder kun for skriftlige tilbud"></div>
+                                        <div class="option" data-option="Fristen kan forlænges automatisk med 7 dage"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank sender et lånetilbud pr. email uden frist. Hvornår skal kunden svare?"
+                                        data-answer="3"
+                                        data-explanation="Efter AFTL § 3 skal kunden svare inden udløbet af det tidsrum, som ved tilbudet afgivelsen eller ved handelsbrug eller anden sædvane er fastsat til betænkning og forsendelse - altså inden for 'rimelig tid'. Mundtlige tilbud skal accepteres straks.">
+                                        <div class="option" data-option="Kunden skal svare inden for 24 timer, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kunden skal svare inden for 7 dage, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kunden behøver ikke svare, tavshed er accept, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Kunden skal svare inden for rimelig tid (betænkningstid + forsendelsestid)"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad sker der, hvis en kunde afslår et tilbud efter AFTL § 5?"
+                                        data-answer="1"
+                                        data-explanation="Efter AFTL § 5 bortfalder tilbuddet straks ved afslag, selv om fristen for svar endnu ikke er udløbet. Kunden kan ikke fortryde sit afslag og acceptere bagefter - banken er ikke længere bundet.">
+                                        <div class="option" data-option="Tilbuddet forbliver gyldigt indtil fristens udløb"></div>
+                                        <div class="option"
+                                             data-option="Tilbuddet bortfalder straks, selv om fristen endnu ikke er udløbet"></div>
+                                        <div class="option" data-option="Kunden kan fortryde afslaget og acceptere senere"></div>
+                                        <div class="option" data-option="Tilbuddet kan genaktiveres mod et gebyr, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank tilbyder lån til 5% rente. Kunden svarer: 'Ja tak, men kun til 3% rente'. Hvad er konsekvensen efter AFTL § 6?"
+                                        data-answer="2"
+                                        data-explanation="Efter AFTL § 6 er dette en uoverensstemmende accept, som anses som afslag i forbindelse med nyt tilbud. Kunden har afslået tilbuddet og fremsat et nyt tilbud til 3%, som banken nu skal acceptere. Undtagelse: Hvis kunden med rette kan gå ud fra, at banken accepterer 3%, skal banken meddele, hvis de ikke accepterer, ellers anses aftalen for sluttet.">
+                                        <div class="option" data-option="Aftalen er indgået til 3% rente, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Aftalen er indgået til 5% rente, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Dette er et afslag + nyt tilbud til 3%, som banken skal acceptere"></div>
+                                        <div class="option" data-option="Aftalen er ugyldig på grund af uoverensstemmelse"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank sender et lånetilbud pr. email, men opdager en fejl i renten 5 minutter efter. Kan banken tilbagekalde tilbuddet efter AFTL § 7?"
+                                        data-answer="0"
+                                        data-explanation="Efter AFTL § 7 kan et tilbud tilbagekaldes, hvis tilbagekaldelsen kommer frem til den anden part forinden eller samtidigt med, at tilbuddet kommer til hans kundskab. Hvis kunden ikke har læst emailen endnu, kan tilbuddet tilbagekaldes. Hvis kunden allerede har læst det, kan det ikke tilbagekaldes.">
+                                        <div class="option"
+                                             data-option="Ja, hvis kunden ikke har læst emailen endnu"></div>
+                                        <div class="option" data-option="Nej, tilbud kan aldrig tilbagekaldes"></div>
+                                        <div class="option" data-option="Ja, men kun hvis banken betaler et gebyr"></div>
+                                        <div class="option"
+                                             data-option="Nej, email-tilbud er altid bindende ved afsendelse"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad siger AFTL § 8 om tavshed som accept?"
+                                        data-answer="3"
+                                        data-explanation="Hovedreglen er, at tavshed IKKE er accept. Men efter AFTL § 8 er der en undtagelse: Hvis tilbudsgiveren har erklæret, at han vil anse den anden parts tavshed for antagelse af tilbuddet, eller hvis det fremgår af forholdene, at han ikke venter udtrykkeligt svar, er den anden part bundet ved sin tavshed.">
+                                        <div class="option" data-option="Tavshed er altid accept, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Tavshed er aldrig accept, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Tavshed er accept efter 7 dage, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Tavshed er normalt ikke accept, men kan være det, hvis det er aftalt eller fremgår af forholdene"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad siger AFTL § 9 om opfordring til tilbud?"
+                                        data-answer="1"
+                                        data-explanation="Efter AFTL § 9 er prisangivelser på nettet eller i butikker ofte opfordringer til tilbud, ikke bindende tilbud. Kunden laver et tilbud ved at lægge varen i kurven. Bankens generelle rentesatser på hjemmesiden er opfordringer til tilbud, ikke bindende tilbud.">
+                                        <div class="option" data-option="Alle prisangivelser er bindende tilbud, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Prisangivelser med 'uden forbindtlighed' eller lignende er opfordringer til tilbud, ikke bindende tilbud"></div>
+                                        <div class="option" data-option="Opfordringer til tilbud er altid bindende, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Der er ingen forskel mellem tilbud og opfordring til tilbud, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er det grundlæggende princip i dansk aftaleret?"
+                                        data-answer="2"
+                                        data-explanation="Det grundlæggende princip i dansk aftaleret er 'Pacta sunt servanda' - aftaler skal holdes. Dette er et af hjørnestenene i dansk ret og sikrer retssikkerhed og forudsigelighed i handelsforhold.">
+                                        <div class="option" data-option="Aftaler kan altid ophæves, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun skriftlige aftaler er bindende"></div>
+                                        <div class="option"
+                                             data-option="Pacta sunt servanda - aftaler skal holdes"></div>
+                                        <div class="option" data-option="Aftaler er kun bindende for forbrugeren"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvornår er en aftale perfekteret (endeligt indgået)?"
+                                        data-answer="0"
+                                        data-explanation="En aftale er perfekteret (endeligt indgået), når accepten når frem til tilbudsgiveren inden fristens udløb. Det er tidspunktet for modtagelse af accepten, ikke afsendelsen, der er afgørende.">
+                                        <div class="option"
+                                             data-option="Når accepten når frem til tilbudsgiveren inden fristens udløb"></div>
+                                        <div class="option" data-option="Når accepten er sendt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Når tilbuddet er sendt, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Når begge parter har underskrevet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="En bank sender et lånetilbud med frist 'Svar senest fredag kl. 12.00'. Kunden sender accept fredag kl. 11.30, men den når først frem mandag. Hvad er konsekvensen?"
+                                        data-answer="3"
+                                        data-explanation="Efter AFTL § 4 er accepten for sent fremme, da den ikke nåede frem inden fristens udløb (fredag kl. 12.00). Accepten bliver til et nyt tilbud. Undtagelse: Hvis kunden med rette kan gå ud fra, at accepten nåede frem i tide (fx pga. forsendelsestid), skal banken meddele, hvis de ikke accepterer, ellers anses aftalen for sluttet.">
+                                        <div class="option"
+                                             data-option="Aftalen er indgået, da accepten blev sendt inden fristen"></div>
+                                        <div class="option" data-option="Aftalen er ugyldig på grund af forsinkelse"></div>
+                                        <div class="option" data-option="Banken skal automatisk acceptere det nye tilbud"></div>
+                                        <div class="option"
+                                             data-option="Accepten er for sent fremme og bliver til et nyt tilbud"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem et tilbud og en opfordring til tilbud?"
+                                        data-answer="1"
+                                        data-explanation="Et tilbud er bindende for afsenderen (AFTL § 1), mens en opfordring til tilbud ikke er bindende. Prisangivelser på nettet eller i butikker er ofte opfordringer til tilbud. Kunden laver et tilbud ved at lægge varen i kurven eller acceptere prisen.">
+                                        <div class="option" data-option="Der er ingen forskel, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Et tilbud er bindende, en opfordring til tilbud er ikke bindende"></div>
+                                        <div class="option" data-option="En opfordring til tilbud er altid skriftlig, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Et tilbud kræver accept, en opfordring til tilbud gør ikke"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder det, at Aftaleloven er deklaratorisk?"
+                                        data-answer="2"
+                                        data-explanation="At Aftaleloven er deklaratorisk betyder, at parterne kan aftale anden fremgangsmåde end den, der er beskrevet i loven. Dog kan præceptive (ufravigelige) lovregler ikke fraviges til skade for forbrugeren (fx Kreditaftaleloven, Forbrugeraftaleloven).">
+                                        <div class="option" data-option="Aftaleloven er bindende og kan ikke fraviges, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option" data-option="Aftaleloven gælder kun for forbrugeraftaler, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option"
+                                             data-option="Parterne kan aftale anden fremgangsmåde end den i loven, men ikke til skade for forbrugeren"></div>
+                                        <div class="option" data-option="Aftaleloven gælder kun for erhvervsaftaler, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

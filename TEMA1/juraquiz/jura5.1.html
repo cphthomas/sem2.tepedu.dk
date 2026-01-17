@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="Content-Language" content="da">
+     <title>Quiz Jura - Kreditaftaleloven: Grundbegreber og SEF-skema</title>
+     
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.svg">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body data-formål="Forståelse af Kreditaftalelovens grundbegreber, anvendelsesområde og SEF-skemaet." data-forudsætning-url="https://jura.tepedu.dk/kapitel5.html" data-forudsætning-text="Online-bog Jura Kapitel 5: Kreditaftale, Kaution & Gældsbreve" data-forudsætning="">
+     <header> <a href="index.html"
+             target="_blank"><img src="tepedulogo.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Jura</h2>
+     </header>
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h1>
+                                             Jura: Kreditaftaleloven - Grundbegreber og SEF-skema
+                                        </h1>
+                                   </div>
+                              </div>
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+                            <div id="quiz-data" style="display: none;">
+                                
+                                   <div class="question"
+                                        data-question="Hvad er definitionen på en kreditaftale ifølge KAL § 4, nr. 3?"
+                                        data-answer="1"
+                                        data-explanation="En kreditaftale er en aftale, hvorved en kreditgiver yder eller giver tilsagn om at yde en forbruger kredit i form af henstand med betalingen, lån eller anden tilsvarende form for finansiel ordning. Undtaget er aftaler om løbende levering af tjenesteydelser eller varer af samme art, hvor forbrugeren betaler i rater, så længe de leveres.">
+                                        <div class="option" data-option="En aftale mellem to virksomheder om lån, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option"
+                                             data-option="En aftale om henstand med betalingen, lån eller anden tilsvarende finansiel ordning mellem kreditgiver og forbruger"></div>
+                                        <div class="option" data-option="Kun et banklån til privatpersoner, hvilket indebærer en analyse af de faktiske forhold og relevante lovbestemmelser"></div>
+                                        <div class="option" data-option="En aftale om køb af varer på afbetaling, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvem er kreditgiver ifølge KAL § 4, nr. 2?"
+                                        data-answer="2"
+                                        data-explanation="Kreditgiver er den (typisk juridiske person), der i forhold til forbrugeren yder kredit. Eksempler er bank, realkreditinstitut, finansieringsselskab eller sælger ved kreditkøb.">
+                                        <div class="option" data-option="Den, der låner penge, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="En privatperson, der låner penge til en ven, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Den erhvervsdrivende, der yder kredit til forbrugeren (fx bank, realkreditinstitut eller sælger ved kreditkøb)"></div>
+                                        <div class="option" data-option="Kun banker og realkreditinstitutter, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvornår gælder Kreditaftaleloven ifølge KAL § 1?"
+                                        data-answer="0"
+                                        data-explanation="Kreditaftaleloven gælder for kreditaftaler mellem erhvervsdrivende långiver og forbruger. Loven gælder IKKE for erhverv til erhverv eller privatperson til privatperson.">
+                                        <div class="option"
+                                             data-option="Kun når långiver er erhvervsdrivende og låntager er forbruger"></div>
+                                        <div class="option" data-option="For alle typer lån, uanset hvem der låner hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kun når det er et banklån, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun når lånet er over 100.000 kr., hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Gælder Kreditaftaleloven, når en bank låner penge til en virksomhed?"
+                                        data-answer="3"
+                                        data-explanation="Kreditaftaleloven gælder kun når låntageren er forbruger (privatperson). Når banken låner til virksomhed, er det erhverv til erhverv, og KAL gælder ikke. Aftaleloven gælder i stedet.">
+                                        <div class="option" data-option="Ja, altid, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Ja, hvis lånet er over 500.000 kr., hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Ja, hvis virksomheden er lille, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Nej, KAL gælder kun når låntageren er forbruger (privatperson)"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er ÅOP (Årlige Omkostninger i Procent)?"
+                                        data-answer="1"
+                                        data-explanation="ÅOP er det vigtigste tal for at sammenligne lån. Det inkluderer både renter, gebyrer og renters rente. ÅOP viser den 'sande' pris på lånet og gør det muligt at sammenligne lån på tværs af banker.">
+                                        <div class="option" data-option="Kun den nominelle rente på lånet, hvilket indebærer en analyse af de faktiske forhold og relevante lovbestemmelser"></div>
+                                        <div class="option"
+                                             data-option="Den 'sande' pris på lånet, der inkluderer renter, gebyrer og renters rente - det vigtigste tal for sammenligning"></div>
+                                        <div class="option" data-option="Det samlede beløb, lånet koster i kroner, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun gebyrerne på lånet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal banken udlevere ifølge KAL § 7a før kunden underskriver kreditaftalen?"
+                                        data-answer="2"
+                                        data-explanation="Banken SKAL udlevere SEF-skemaet (Standardiserede Europæiske Forbrugerkreditoplysninger) før aftalen indgås. Skemaet indeholder ÅOP, kreditbeløb, samlede omkostninger osv. Hvis banken glemmer det, kan lånet være ugyldigt eller banken mister retten til renter.">
+                                        <div class="option" data-option="Kun låneaftalen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun ÅOP-tallet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="SEF-skemaet (Standardiserede Europæiske Forbrugerkreditoplysninger) med ÅOP, kreditbeløb og samlede omkostninger"></div>
+                                        <div class="option" data-option="Kun kreditvurderingen, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er konsekvensen, hvis banken ikke udleverer SEF-skemaet før underskrift?"
+                                        data-answer="0"
+                                        data-explanation="Hvis banken ikke udleverer SEF-skemaet før underskrift, kan kunden kræve lånet ophævet eller få erstatning. Banken kan miste retten til renter og gebyrer. I grove tilfælde kan hele lånet blive ugyldigt.">
+                                        <div class="option"
+                                             data-option="Kunden kan kræve lånet ophævet eller få erstatning. Banken kan miste retten til renter og gebyrer"></div>
+                                        <div class="option" data-option="Ingen konsekvens - det er kun en anbefaling hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Kunden skal bare bede om skemaet senere, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Banken skal betale et lille gebyr, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad viser 'kreditbeløbet' i SEF-skemaet?"
+                                        data-answer="3"
+                                        data-explanation="Kreditbeløbet er det beløb, der faktisk udbetales til kunden. Dette er forskelligt fra det samlede tilbagebetalingsbeløb, som også inkluderer renter og gebyrer.">
+                                        <div class="option"
+                                             data-option="Det samlede beløb, kunden skal betale tilbage"></div>
+                                        <div class="option" data-option="Kun renterne på lånet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun gebyrerne på lånet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Det beløb, der faktisk udbetales til kunden"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad viser 'det samlede tilbagebetalingsbeløb' i SEF-skemaet?"
+                                        data-answer="1"
+                                        data-explanation="Det samlede tilbagebetalingsbeløb er hvad kunden i alt kommer til at betale (kreditbeløb + omkostninger). Dette er summen af kreditbeløbet og de samlede kreditomkostninger.">
+                                        <div class="option" data-option="Kun kreditbeløbet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Hvad kunden i alt kommer til at betale (kreditbeløb + omkostninger)"></div>
+                                        <div class="option" data-option="Kun renterne, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun gebyrerne, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem nominel rente og ÅOP?"
+                                        data-answer="2"
+                                        data-explanation="Nominel rente er kun renten uden gebyrer. ÅOP inkluderer både renter, gebyrer og renters rente. ÅOP er det vigtigste tal for sammenligning, da det viser den 'sande' pris på lånet.">
+                                        <div class="option" data-option="Der er ingen forskel - det er det samme, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Nominel rente er højere end ÅOP, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option"
+                                             data-option="Nominel rente er kun renten, mens ÅOP inkluderer renter, gebyrer og renters rente - ÅOP er det vigtigste tal for sammenligning"></div>
+                                        <div class="option" data-option="ÅOP er kun renten, mens nominel rente inkluderer gebyrer, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvilket af følgende er IKKE omfattet af Kreditaftaleloven?"
+                                        data-answer="0"
+                                        data-explanation="Kreditaftaleloven gælder kun for kreditaftaler mellem erhvervsdrivende långiver og forbruger. Privatperson til privatperson er IKKE omfattet, da långiveren ikke er erhvervsdrivende.">
+                                        <div class="option"
+                                             data-option="Privatperson låner penge til privatperson"></div>
+                                        <div class="option" data-option="Bank låner til privatperson og skal overholdes"></div>
+                                        <div class="option"
+                                             data-option="Realkreditinstitut låner til privatperson"></div>
+                                        <div class="option"
+                                             data-option="Bilforhandler finansierer bilkøb til privatperson"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er et 'oprindeligt trepartsforhold' ifølge KAL § 4, nr. 15, litra b?"
+                                        data-answer="1"
+                                        data-explanation="Oprindeligt trepartsforhold er når kreditgiver og sælger er forskellige personer, men kreditaftalen indgås samtidig med købsaftalen. Eksempel: Køber køber bil hos bilforhandler, men finansierer gennem bank. Banken og bilforhandleren har aftale om finansiering.">
+                                        <div class="option" data-option="Når tre personer låner penge sammen, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Når kreditgiver og sælger er forskellige personer, men kreditaftalen indgås samtidig med købsaftalen"></div>
+                                        <div class="option" data-option="Når køberen betaler kontant til sælgeren, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Når sælgeren selv finansierer købet, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er forskellen mellem kreditkøb og kontantlån?"
+                                        data-answer="3"
+                                        data-explanation="Ved kreditkøb er sælgeren kreditgiver, og køberen får henstand med betalingen. Ved kontantlån er banken kreditgiver, og pengene udbetales til kunden eller direkte til sælgeren. Begge er omfattet af KAL, men ved kreditkøb kan sælgeren forbeholde sig ejendomsretten (ejendomsforbehold).">
+                                        <div class="option" data-option="Der er ingen forskel - det er det samme, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kreditkøb er kun for virksomheder, kontantlån er for private"></div>
+                                        <div class="option" data-option="Kontantlån er billigere end kreditkøb, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="Ved kreditkøb er sælgeren kreditgiver, ved kontantlån er banken kreditgiver"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'samlede kreditomkostninger' i SEF-skemaet?"
+                                        data-answer="2"
+                                        data-explanation="Samlede kreditomkostninger er renter + gebyrer i kroner (det totale beløb, lånet koster). Dette er forskelligt fra ÅOP, som er i procent.">
+                                        <div class="option" data-option="Kun renterne i procent, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun gebyrerne i kroner og skal overholdes"></div>
+                                        <div class="option"
+                                             data-option="Renter + gebyrer i kroner (det totale beløb, lånet koster)"></div>
+                                        <div class="option" data-option="Kun kreditbeløbet og kan anvendes i forskellige sammenhænge"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad betyder det, at Kreditaftaleloven er 'præceptiv'?"
+                                        data-answer="0"
+                                        data-explanation="Præceptiv betyder, at loven ikke kan fraviges til skade for forbrugeren. Dette betyder, at banken ikke kan lave aftaler, der er dårligere for forbrugeren end hvad loven foreskriver.">
+                                        <div class="option"
+                                             data-option="Loven kan ikke fraviges til skade for forbrugeren"></div>
+                                        <div class="option" data-option="Loven kan altid fraviges ved aftale hvilket er standard praksis"></div>
+                                        <div class="option" data-option="Loven gælder kun for banker, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                        <div class="option" data-option="Loven er kun en anbefaling, som er fastlagt gennem retspraksis og domstolenes fortolkning"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvilket af følgende er et eksempel på en kreditaftale?"
+                                        data-answer="1"
+                                        data-explanation="Alle de nævnte er eksempler på kreditaftaler: Banklån, kreditkøb, afbetalingskøb og leasingaftaler (hvis de opfylder definitionen). Undtaget er aftaler om løbende levering af tjenesteydelser eller varer af samme art, hvor forbrugeren betaler i rater, så længe de leveres.">
+                                        <div class="option" data-option="Kun banklån, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option"
+                                             data-option="Banklån, kreditkøb, afbetalingskøb og leasingaftaler (hvis de opfylder definitionen)"></div>
+                                        <div class="option" data-option="Kun kreditkøb, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun leasingaftaler, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad er 'forbruger' ifølge KAL § 1?"
+                                        data-answer="3"
+                                        data-explanation="Forbruger er en fysisk person, der handler uden for erhvervsmæssig eller erhvervslignende virksomhed. Det betyder privatpersoner, der låner penge til fx boligkøb eller bilkøb. Ikke: Virksomheder, der låner penge til investering.">
+                                        <div class="option" data-option="En virksomhed, der låner penge, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="En bank eller realkreditinstitut, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Kun personer under 30 år, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option"
+                                             data-option="En fysisk person, der handler uden for erhvervsmæssig eller erhvervslignende virksomhed"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvis et lån har nominel rente 3,5% og ÅOP 4,2%, hvad betyder det?"
+                                        data-answer="2"
+                                        data-explanation="ÅOP er højere end nominel rente, fordi ÅOP inkluderer både renter, gebyrer og renters rente. Forskellen på 0,7% (4,2% - 3,5%) repræsenterer gebyrerne og renters rente. ÅOP er det vigtigste tal for sammenligning.">
+                                        <div class="option" data-option="Lånet er billigere end det ser ud til, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                        <div class="option" data-option="Nominel rente er forkert angivet, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option"
+                                             data-option="ÅOP er højere, fordi det inkluderer gebyrer og renters rente - ÅOP er det vigtigste tal for sammenligning"></div>
+                                        <div class="option" data-option="Der er ingen forskel mellem de to tal, baseret på en gennemgang af relevante dokumenter og bevisforhold"></div>
+                                   </div>
+
+                                   <div class="question"
+                                        data-question="Hvad skal SEF-skemaet indeholde?"
+                                        data-answer="0"
+                                        data-explanation="SEF-skemaet skal indeholde: Kreditbeløbet, ÅOP, samlede kreditomkostninger, det samlede tilbagebetalingsbeløb, nominel rente, løbetid og månedlig ydelse. Dette gør det muligt at sammenligne lån på tværs af banker.">
+                                        <div class="option"
+                                             data-option="Kreditbeløbet, ÅOP, samlede kreditomkostninger, det samlede tilbagebetalingsbeløb, nominel rente, løbetid og månedlig ydelse"></div>
+                                        <div class="option" data-option="Kun ÅOP og nominel rente hvilket er standard praksis, som skal vurderes ud fra de konkrete omstændigheder og gældende retspraksis"></div>
+                                        <div class="option" data-option="Kun kreditbeløbet, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                        <div class="option" data-option="Kun løbetiden, hvilket kræver en konkret vurdering af de faktiske omstændigheder i den enkelte sag"></div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
