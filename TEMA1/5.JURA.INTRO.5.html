@@ -1,20 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jura</title>
+    <title>Intro til ugen</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
+
 <body data-page-id="cbs2">
     <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+                <ul class="timeline">
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <p>
+                            <i>
+                                <h1>Intro til ugen</h1>
+                            </i>
+                            <br>
+                            <img src="../images/jura_property_house.jpg" width="100%">
+                            <i>
+                                <br><br>
+                                <h3>Indhold</h3>
+                                <p>
+                                    <h5>Ugens emne</h5>
+                                    <p>Emnet for denne uge er Ejendomshandel, Tinglysning & Pant.</p>
+                                    
+                                    <p>
+                                        <strong>Ejendomshandel, Tinglysning & Pant</strong><br>
+                                        Dette kapitel omhandler handel med fast ejendom, tinglysning og pant. Disse områder er centrale for finans-uddannede, 
+                                        da bolighandel og sikkerhedsstillelse er fundamentale dele af den finansielle hverdag. 
+                                        Tinglysning er det offentlige register, der sikrer rettigheder over fast ejendom og visse typer løsøre.<br><br>
+
+                                        <strong>Centrale emner:</strong><br>
+                                        - Ejendomshandel: Regler om køb og salg af fast ejendom<br>
+                                        - Tinglysning: Det offentlige register for ejendomsrettigheder<br>
+                                        - Pant: Sikkerhedsstillelse i fast ejendom<br>
+                                        - Pantebreve: Forskellige typer af pantebreve<br>
+                                        - Tvangssalg: Processen ved tvangssalg af ejendom<br>
+                                        - Prioritetsorden: Rækkefølgen ved fordeling af salgssum<br>
+                                    </p>
+
+                                    <p>Kapitlet vi kommer igennem i denne uge er:
+                                    <ul>
+                                        <li>7. Ejendomshandel, Tinglysning & Pant</li>
+                                    </ul></p>
+
+                                    <br>
+                                    <h5>Formål</h5>
+                                    <p>
+                                        Kunne forstå processen ved ejendomshandel og tinglysning. Kunne vurdere forskellige typer af pantebreve 
+                                        og forstå prioritetsordenen ved tvangssalg.
+                                    </p>
+                                    
+                                    <h5>Ugens vejleder</h5>
+                                    Thomas Petersen
+                                    <br><br>
+                                </p>
+                            </i>
+                        </p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <p><i>
+                            <h5>Materiale til ugen</h5>
+                            Du skal i denne uge benytte følgende materialer:<br>
+                            <a href="jurakapitler/kapitel7.html" class="effectLinks" data-replace="Gå til Kapitel 7: Ejendomshandel" target="_blank">
+                                <span>Kapitel 7: Ejendomshandel, Tinglysning & Pant</span>
+                            </a>
+                            <br><br>
+
+                            <h5>Links til relevante sider</h5>
+                            <a href="https://www.tinglysning.dk" class="effectLinks" data-replace="Gå til Tinglysning.dk" target="_blank">
+                                <span>Tinglysning.dk - Det offentlige register</span>
+                            </a>
+                            <br>
+                        </i></p>
+                    </li>
+    
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h5>Aktivitetsoversigt</h5>
+                        Ugen består af aktiviteter og et temaprojekt. Du skal forvente at bruge ca. 30 timer for at komme i mål med 
+                        alle aktiviteter og lave ugens opgaver. Hertil skal du lægge den tid, hvor du får vejledning og feedback.<br>
+                        Hvad du præcis skal læse, er gengivet i forbindelse med hver aktivitet.<br>
+                        <hr>
+                        <h5>Feedback</h5>
+                        Feedback på aktiviteter:<br>
+                        Aktiviteter som f.eks. quizzer vil der være feedback i form af korrekte svar og en forklaring.<br><br>
+                        <h5>Feedback på temaprojekt:</h5>
+                        Hvis dit team har uploadet temaprojektet inden deadline, vil teamet få feedback fra underviseren inden for 5 hverdage.
+                        Feedback kan være skriftligt, en lydfil, en videooptagelse eller en invitation til et Zoommøde, afhængigt af hvad der 
+                        passer bedst til formatet.
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    } else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.timeline-item').forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
 </body>
 </html>

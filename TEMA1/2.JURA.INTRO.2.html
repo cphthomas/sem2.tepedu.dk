@@ -1,20 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jura</title>
+    <title>Intro til ugen</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
+
 <body data-page-id="cbs2">
     <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-7 mx-auto">
+                <ul class="timeline">
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <p>
+                            <i>
+                                <h1>Intro til ugen</h1>
+                            </i>
+                            <br>
+                            <img src="../images/jura_buy_sell.jpg" width="100%">
+                            <i>
+                                <br><br>
+                                <h3>Indhold</h3>
+                                <p>
+                                    <h5>Ugens emne</h5>
+                                    <p>Emnet for denne uge er Købeloven.</p>
+                                    
+                                    <p>
+                                        <strong>Købeloven</strong><br>
+                                        Købeloven regulerer køb af løsøre. For finans-uddannede er dette vigtigt, da købeloven også finder anvendelse på finansielle produkter og handler. 
+                                        Købeloven regulerer både handelskøb mellem erhvervsdrivende og forbrugerkøb.<br><br>
+
+                                        <strong>Centrale emner:</strong><br>
+                                        - Hvad er et køb: Definition og anvendelsesområde<br>
+                                        - Handelskøb vs. civilkøb: Forskelle i reglerne<br>
+                                        - Forbrugerkøb: Særlige beskyttelsesregler<br>
+                                        - Reklamationsret: Ret til at reklamere over mangler<br>
+                                        - Mangler ved varen: Hvornår er der tale om en mangel?<br>
+                                        - Misligholdelse: Hvad sker der ved manglende levering eller betaling?<br>
+                                    </p>
+
+                                    <p>Kapitlet vi kommer igennem i denne uge er:
+                                    <ul>
+                                        <li>3. Købeloven</li>
+                                    </ul></p>
+
+                                    <br>
+                                    <h5>Formål</h5>
+                                    <p>
+                                        Kunne identificere, hvornår Købeloven finder anvendelse og forstå forskellen mellem handelskøb og forbrugerkøb. 
+                                        Kunne vurdere, hvornår der er tale om en mangel ved en vare og hvilke rettigheder køber har.
+                                    </p>
+                                    
+                                    <h5>Ugens vejleder</h5>
+                                    Thomas Petersen
+                                    <br><br>
+                                </p>
+                            </i>
+                        </p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <p><i>
+                            <h5>Materiale til ugen</h5>
+                            Du skal i denne uge benytte følgende materialer:<br>
+                            <a href="jurakapitler/kapitel3.html" class="effectLinks" data-replace="Gå til Kapitel 3: Købeloven" target="_blank">
+                                <span>Kapitel 3: Købeloven</span>
+                            </a>
+                            <br><br>
+
+                            <h5>Links til relevante sider</h5>
+                            <a href="https://www.retsinformation.dk/eli/lta/2021/1853" class="effectLinks" data-replace="Gå til Købeloven" target="_blank">
+                                <span>Købeloven (Lovbekendtgørelse nr. 1853 af 15. december 2021)</span>
+                            </a>
+                            <br>
+                        </i></p>
+                    </li>
+    
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h5>Aktivitetsoversigt</h5>
+                        Ugen består af aktiviteter og et temaprojekt. Du skal forvente at bruge ca. 30 timer for at komme i mål med 
+                        alle aktiviteter og lave ugens opgaver. Hertil skal du lægge den tid, hvor du får vejledning og feedback.<br>
+                        Hvad du præcis skal læse, er gengivet i forbindelse med hver aktivitet.<br>
+                        <hr>
+                        <h5>Feedback</h5>
+                        Feedback på aktiviteter:<br>
+                        Aktiviteter som f.eks. quizzer vil der være feedback i form af korrekte svar og en forklaring.<br><br>
+                        <h5>Feedback på temaprojekt:</h5>
+                        Hvis dit team har uploadet temaprojektet inden deadline, vil teamet få feedback fra underviseren inden for 5 hverdage.
+                        Feedback kan være skriftligt, en lydfil, en videooptagelse eller en invitation til et Zoommøde, afhængigt af hvad der 
+                        passer bedst til formatet.
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    } else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.timeline-item').forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
 </body>
 </html>
