@@ -19,6 +19,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="theme-dark.css">
     <link rel="icon" type="image/x-icon" href="favicon.svg">
     <style>
         .table-hover tbody tr:hover {
@@ -82,6 +83,28 @@
                 <i class="bi bi-house-door"></i>
             </a>
             <ul class="navbar-nav ml-auto align-items-center">
+                <!-- Theme Toggle Button -->
+                <li class="nav-item">
+                    <a class="nav-link" id="theme-toggle" href="#" role="button" aria-label="Skift tema">
+                        <div class="theme-icon-wrapper">
+                            <svg class="theme-icon-sun active" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link search-icon-nav" id="search-icon-nav" role="button" aria-label="Søg">
                         <i class="bi bi-search"></i>
@@ -134,21 +157,55 @@
                 </div>
 
                 <div class="info-box">
-                    <p>Dette kapitel handler om <span class="legal-term" data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser." data-example="Hvis staten øger de offentlige udgifter (G), stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren." data-slug="keynes-modellen"><b>Keynes-modellen</b></span> og varemarkedet på kort sigt, samt <span class="legal-term" data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation." data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse; ved positivt outputgab vil den primært drive inflation op." data-slug="se-su-modellen"><b>SE-SU modellen</b></span> (også kaldt AD-AS modellen på engelsk). Vi fokuserer på,
+                    <p>Dette kapitel handler om <span class="legal-term" id="term-keynes-modellen"
+                            data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                            data-example="Hvis staten øger de offentlige udgifter (G), stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                            data-slug="keynes-modellen"><b>Keynes-modellen</b></span> og varemarkedet på kort sigt, samt
+                        <span class="legal-term" id="term-se-su-modellen"
+                            data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                            data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse; ved positivt outputgab vil den primært drive inflation op."
+                            data-slug="se-su-modellen"><b>SE-SU modellen</b></span> (også kaldt AD-AS modellen på
+                        engelsk). Vi fokuserer på,
                         hvordan den samlede efterspørgsel bestemmer nationalindkomsten, og hvordan politiske indgreb kan
                         stabilisere økonomien.
                         Som finansøkonom skal du forstå, hvordan ændringer i forbrug, investeringer og offentlige
-                        udgifter forplanter sig gennem økonomien via <span class="legal-term" data-definition="Fænomenet hvor en indledende ændring i efterspørgslen fører til en større samlet ændring i BNP." data-example="Hvis staten bygger en bro for 1 mia. kr., tjener entreprenøren penge, som han bruger på forbrug osv. Den samlede effekt bliver større end 1 mia." data-slug="multiplikatoreffekt"><b>multiplikatoren</b></span>, samt hvordan både nationalindkomst
-                        og inflation bestemmes i <span class="legal-term" data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation." data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse; ved positivt outputgab vil den primært drive inflation op." data-slug="se-su-modellen">SE-SU modellen</span>.
+                        udgifter forplanter sig gennem økonomien via <span class="legal-term"
+                            data-definition="Fænomenet hvor en indledende ændring i efterspørgslen fører til en større samlet ændring i BNP."
+                            data-example="Hvis staten bygger en bro for 1 mia. kr., tjener entreprenøren penge, som han bruger på forbrug osv. Den samlede effekt bliver større end 1 mia."
+                            data-slug="multiplikatoreffekt"><b>multiplikatoren</b></span>, samt hvordan både
+                        nationalindkomst
+                        og inflation bestemmes i <span class="legal-term"
+                            data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                            data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse; ved positivt outputgab vil den primært drive inflation op."
+                            data-slug="se-su-modellen">SE-SU modellen</span>.
                     </p>
 
                     <h4>Centrale emner</h4>
                     <ul>
-                        <li><span class="legal-term" data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser." data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren." data-slug="keynes-modellen"><b>Keynes-modellen:</b></span> Forstå efterspørgselsstyret ligevægt (Y = <span class="legal-term" data-definition="Den samlede efterspørgsel efter varer og tjenester i hele økonomien. Inkluderer C, I, G og nettoeksport." data-example="Hvis alle øger deres forbrug samtidigt, stiger den samlede efterspørgsel. Virksomhederne får flere ordrer." data-slug="samlet-efterspoergsel">SE</span>).</li>
-                        <li><span class="legal-term" data-definition="Fænomenet hvor en indledende ændring i efterspørgslen fører til en større samlet ændring i BNP." data-example="Hvis staten bygger en bro for 1 mia. kr., tjener entreprenøren penge, som han bruger på forbrug osv." data-slug="multiplikatoreffekt"><b>Multiplikatoreffekten:</b></span> Hvorfor små ændringer kan få stor effekt.</li>
-                        <li><span class="legal-term" data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation." data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse." data-slug="se-su-modellen"><b>SE-SU modellen:</b></span> Forstå samspillet mellem efterspørgsel, udbud, nationalindkomst og
+                        <li><span class="legal-term"
+                                data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                                data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                                data-slug="keynes-modellen"><b>Keynes-modellen:</b></span> Forstå efterspørgselsstyret
+                            ligevægt (Y = <span class="legal-term"
+                                data-definition="Den samlede efterspørgsel efter varer og tjenester i hele økonomien. Inkluderer C, I, G og nettoeksport."
+                                data-example="Hvis alle øger deres forbrug samtidigt, stiger den samlede efterspørgsel. Virksomhederne får flere ordrer."
+                                data-slug="samlet-efterspoergsel">SE</span>).</li>
+                        <li><span class="legal-term"
+                                data-definition="Fænomenet hvor en indledende ændring i efterspørgslen fører til en større samlet ændring i BNP."
+                                data-example="Hvis staten bygger en bro for 1 mia. kr., tjener entreprenøren penge, som han bruger på forbrug osv."
+                                data-slug="multiplikatoreffekt"><b>Multiplikatoreffekten:</b></span> Hvorfor små
+                            ændringer kan få stor effekt.</li>
+                        <li><span class="legal-term"
+                                data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                                data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse."
+                                data-slug="se-su-modellen"><b>SE-SU modellen:</b></span> Forstå samspillet mellem
+                            efterspørgsel, udbud, nationalindkomst og
                             inflation.</li>
-                        <li><b>Økonomisk politik:</b> Erfaringer med finans- og pengepolitik og deres effekter i <span class="legal-term" data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation." data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse." data-slug="se-su-modellen">SE-SU modellen</span>.</li>
+                        <li><b>Økonomisk politik:</b> Erfaringer med finans- og pengepolitik og deres effekter i <span
+                                class="legal-term"
+                                data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                                data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse."
+                                data-slug="se-su-modellen">SE-SU modellen</span>.</li>
                         <li><b>Afledte effekter:</b> Hvordan politik påvirker saldo, beskæftigelse og betalingsbalance.
                         </li>
                     </ul>
@@ -157,7 +214,10 @@
 
                 <h2>Hvad er varemarkedet?</h2>
                 <div class="info-box">
-                    <p>Varemarkedet er markedet for varer og tjenester. I <span class="legal-term" data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser." data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren." data-slug="keynes-modellen">Keynes-modellen</span> antager vi, at det er
+                    <p>Varemarkedet er markedet for varer og tjenester. I <span class="legal-term"
+                            data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                            data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                            data-slug="keynes-modellen">Keynes-modellen</span> antager vi, at det er
                         <b>efterspørgselsstyret</b> på kort sigt. Det betyder, at produktionen (BNP) tilpasser sig den
                         samlede efterspørgsel.
                     </p>
@@ -233,8 +293,18 @@
                         </table>
                     </div>
 
-                    <h3>2. <span class="legal-term" data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser." data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren." data-slug="keynes-modellen">Keynes-modellen</span>: Ligevægt på varemarkedet</h3>
-                    <p><span class="legal-term" data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser." data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren." data-slug="keynes-modellen">Keynes-modellen</span> viser, hvordan den samlede efterspørgsel (<span class="legal-term" data-definition="Den samlede efterspørgsel efter varer og tjenester i hele økonomien. Inkluderer C, I, G og nettoeksport." data-example="Hvis alle øger deres forbrug samtidigt, stiger den samlede efterspørgsel. Virksomhederne får flere ordrer." data-slug="samlet-efterspoergsel">SE</span>) bestemmer produktionen (<span
+                    <h3>2. <span class="legal-term"
+                            data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                            data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                            data-slug="keynes-modellen">Keynes-modellen</span>: Ligevægt på varemarkedet</h3>
+                    <p><span class="legal-term"
+                            data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                            data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                            data-slug="keynes-modellen">Keynes-modellen</span> viser, hvordan den samlede efterspørgsel
+                        (<span class="legal-term"
+                            data-definition="Den samlede efterspørgsel efter varer og tjenester i hele økonomien. Inkluderer C, I, G og nettoeksport."
+                            data-example="Hvis alle øger deres forbrug samtidigt, stiger den samlede efterspørgsel. Virksomhederne får flere ordrer."
+                            data-slug="samlet-efterspoergsel">SE</span>) bestemmer produktionen (<span
                             class="legal-term"
                             data-definition="Nationalindkomst/Produktion: Landets samlede produktion eller nationalindkomst. I ligevægt er Y = SE (samlet efterspørgsel)."
                             data-example="Hvis Y = 2.850 mia. kr., betyder det at Danmark producerer varer og tjenester til en værdi af 2.850 mia. kr."
@@ -256,7 +326,8 @@
                             data-definition="Nationalindkomst/Produktion: Landets samlede produktion eller nationalindkomst. I ligevægt er Y = SE (samlet efterspørgsel)."
                             data-example="Hvis Y = 2.850 mia. kr., betyder det at Danmark producerer varer og tjenester til en værdi af 2.850 mia. kr."
                             data-slug="symbol-y">Y</span>), også
-                        bliver efterspurgt (SE).</p>
+                        bliver efterspurgt (SE).
+                    </p>
 
                     <div class="chart-container mb-1" style="position: relative; height: 400px; width: 100%;">
                         <canvas id="keynesBasicChart" data-chart-type="keynes-basic"></canvas>
@@ -320,7 +391,10 @@
                             multiplikatorprocessen, hvor den oprindelige investering skaber nye indkomster, som igen
                             skaber nyt forbrug.</small></p>
 
-                    <h3>4. Økonomisk politik i <span class="legal-term" data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser." data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren." data-slug="keynes-modellen">Keynes-modellen</span></h3>
+                    <h3>4. Økonomisk politik i <span class="legal-term"
+                            data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                            data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                            data-slug="keynes-modellen">Keynes-modellen</span></h3>
                     <p>Staten og centralbanken kan bruge politik til at påvirke efterspørgslen og derved
                         nationalindkomsten.</p>
 
@@ -443,14 +517,29 @@
                 <br>
                 <h2>SE-SU modellen</h2>
                 <div class="info-box">
-                    <p>Efter at have forstået <b>Keynes-modellen</b>, som fokuserer på efterspørgslen og
-                        nationalindkomsten, skal vi nu introducere <b>SE-SU modellen</b> (også kaldet AD-AS modellen på
+                    <p>Efter at have forstået <span class="legal-term"
+                            data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                            data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                            data-slug="keynes-modellen"><b>Keynes-modellen</b></span>, som fokuserer på efterspørgslen
+                        og
+                        nationalindkomsten, skal vi nu introducere <span class="legal-term"
+                            data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                            data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse; ved positivt outputgab vil den primært drive inflation op."
+                            data-slug="se-su-modellen"><b>SE-SU modellen</b></span> (også kaldet AD-AS modellen på
                         engelsk). Denne model kombinerer efterspørgslen med udbuddet og viser, hvordan både
                         nationalindkomsten og inflationen bestemmes samtidigt.</p>
+                </div>
 
-                    <h3>1. Hvad er SE-SU modellen?</h3>
-                    <p>SE-SU modellen er en central makroøkonomisk model, der viser samspillet mellem <span
-                            class="legal-term"
+                <h3>6. Hvad er <span class="legal-term"
+                        data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                        data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse."
+                        data-slug="se-su-modellen">SE-SU modellen</span>?</h3>
+                <div class="info-box">
+                    <p><span class="legal-term"
+                            data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                            data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse."
+                            data-slug="se-su-modellen">SE-SU modellen</span> er en central makroøkonomisk model, der
+                        viser samspillet mellem <span class="legal-term"
                             data-definition="Samlet Efterspørgsel: Den samlede mængde af varer og tjenester, som husholdninger, virksomheder, staten og udlandet ønsker at købe ved forskellige prisniveauer."
                             data-example="Hvis husholdninger vil købe for 1.500 mia. kr., virksomheder investere for 500 mia. kr., staten bruge 700 mia. kr. og nettoeksport er 100 mia. kr., er SE = 2.800 mia. kr."
                             data-slug="samlet-efterspoergsel">samlet
@@ -464,12 +553,22 @@
                                 data-example="Hvis Y = 2.850 mia. kr., betyder det at Danmark producerer varer og tjenester til en værdi af 2.850 mia. kr."
                                 data-slug="symbol-y">Y</span>)</b> og <b>inflationen (π)</b> bestemmes i ligevægt.</p>
 
-                    <p>I modsætning til Keynes-modellen, hvor vi antog, at priserne var faste, tager SE-SU modellen
+                    <p>I modsætning til <span class="legal-term"
+                            data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                            data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                            data-slug="keynes-modellen">Keynes-modellen</span>, hvor vi antog, at priserne var faste,
+                        tager <span class="legal-term"
+                            data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                            data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse."
+                            data-slug="se-su-modellen">SE-SU modellen</span>
                         højde for, at priserne kan ændre sig. Dette giver os en mere realistisk forståelse af, hvordan
                         økonomien fungerer både på kort og lang sigt.</p>
 
                     <h4>1.1 De tre centrale kurver</h4>
-                    <p>SE-SU modellen består af tre vigtige kurver:</p>
+                    <p><span class="legal-term"
+                            data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                            data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse."
+                            data-slug="se-su-modellen">SE-SU modellen</span> består af tre vigtige kurver:</p>
                     <ul>
                         <li><b>SE (Samlet Efterspørgsel):</b> En nedadgående kurve, der viser, at når inflationen
                             stiger, falder den samlede efterspørgsel efter varer og tjenester. Dette skyldes, at højere
@@ -485,7 +584,10 @@
                             På lang sigt kan økonomien ikke producere mere end sit potentiale, uanset prisniveauet.</li>
                     </ul>
 
-                    <h3>2. Outputgab og ligevægt</h3>
+                </div>
+
+                <h3>7. Outputgab og ligevægt</h3>
+                <div class="info-box">
                     <p>En central del af SE-SU modellen er forståelsen af <span class="legal-term"
                             data-definition="Forskellen mellem den faktiske produktion og den potentielle produktion. Et negativt outputgab betyder, at økonomien producerer mindre end sit potentiale."
                             data-example="Hvis faktisk BNP er 2.700 mia. kr. og potentielt BNP er 2.850 mia. kr., er outputgabet (2.700 - 2.850) / 2.850 = -5,3%."
@@ -545,22 +647,59 @@
                         <div class="chart-legend" style="text-align: center; margin-top: 10px;"></div>
                     </div>
                     <p><small><b>Figur 6.11: SE/SU model – Negativt output gab.</b>
-                            <br><b>SE-kurven (rød):</b> Viser den samlede efterspørgsel. Den er nedadgående, fordi
+                            <br><b>SE-kurven (rød, tyk):</b> Samlet efterspørgsel. Den er nedadgående, fordi
                             højere inflation reducerer købekraften.
-                            <br><b>SU<sub>KORT</sub>-kurven (blå):</b> Viser det kortsigtede udbud. Den er opadgående,
-                            fordi virksomhederne producerer mere ved højere priser.
-                            <br><b>SU<sub>LANG</sub>-linjen (grå lodret):</b> Viser økonomiens potentiale. Den er
-                            lodret, fordi potentialet ikke afhænger af prisniveauet på lang sigt.
-                            <br><b>Punkt 0 (gult punkt):</b> Den kortsigtede ligevægt, hvor SE-kurven (rød) og
-                            SU<sub>KORT</sub>-kurven (blå) krydser hinanden. Ved dette gule punkt er Y₀ &lt; Y*
-                            (markeret på x-aksen), hvilket betyder et negativt outputgab - økonomien producerer mindre
-                            end sit potentiale. Inflationen er π₀ (markeret på y-aksen). Dette gule punkt viser, at
-                            økonomien opererer under sit potentiale, hvilket typisk fører til højere arbejdsløshed.
-                            <br><b>Ekspansiv pengepolitik kan hjælpe med at lukke et negativt outputgab ved at skubbe
-                                SE-kurven til højre.</b>
+                            <br><b>SE<sub>Ny</sub> (rød stiplede):</b> SE efter ekspansiv politik – kurven er skubbet
+                            til højre. Den krydser SU<sub>KORT</sub> ved punkt 1, hvor outputgabet er lukket.
+                            <br><b>SU<sub>KORT</sub>-kurven (blå):</b> Kortsigtet udbud. Den er opadgående, fordi
+                            virksomhederne producerer mere ved højere priser.
+                            <br><b>SU<sub>LANG</sub>-linjen (grå lodret):</b> Økonomiens potentiale (Y*).
+                            <br><b>Punkt 0 (gult):</b> Kortsigtet ligevægt før politik. Y₀ &lt; Y* →
+                            negativt outputgab. Inflationen er π₀.
+                            <br><b>Punkt 1 (blåt):</b> Ny ligevægt efter ekspansiv politik. SE<sub>Ny</sub> skubbet til
+                            højre; Y₁ = Y* (gabet lukket). Inflationen er π₁.
                         </small></p>
 
-                    <h4>2.2 Intet outputgab</h4>
+                    <h4>2.2 Positivt outputgab</h4>
+                    <p>Et <b>positivt outputgab</b> opstår, når den faktiske nationalindkomst (<span class="legal-term"
+                            data-definition="Faktisk nationalindkomst: Den faktiske produktion i økonomien på et givet tidspunkt."
+                            data-example="Hvis Y₀ = 2.800 mia. kr., betyder det at økonomien faktisk producerer varer og tjenester til en værdi af 2.800 mia. kr."
+                            data-slug="symbol-y">Y₀</span>) er højere end den potentielle nationalindkomst (<span
+                            class="legal-term"
+                            data-definition="Potentiel nationalindkomst: Den maksimale produktion, som en økonomi kan opretholde på lang sigt uden at skabe inflation."
+                            data-example="Hvis Y* = 2.850 mia. kr., betyder det at økonomien potentielt kunne producere varer og tjenester til en værdi af 2.850 mia. kr."
+                            data-slug="symbol-y">Y*</span>). Dette betyder, at økonomien kører over kapacitet – den
+                        producerer mere end den kan opretholde på lang sigt – hvilket typisk fører til højere inflation
+                        og overophedning.</p>
+
+                    <p><b>Inflationens (π) rolle ved positivt outputgab:</b> Når der er et positivt outputgab (Y₀ &gt;
+                        Y*), er inflationen typisk <b>højere</b> end ved fuld kapacitetsudnyttelse. I SE-SU modellen ses
+                        dette ved, at ligevægtspunktet (hvor SE-kurven og SU<sub>KORT</sub>-kurven mødes) ligger til
+                        højre for SU<sub>LANG</sub>-linjen. Årsager inkluderer stærk efterspørgsel, knap arbejdskraft
+                        og pres på priser og lønninger. Politikerne har derfor typisk behov for at føre
+                        <b>kontraktiv politik</b> (både finans- og pengepolitik) for at lukke outputgabet og dæmpe
+                        inflationen. Ved at skubbe SE-kurven til venstre kan økonomien bevæge sig tilbage mod sit
+                        potentiale.</p>
+
+                    <div class="chart-container mb-1" style="position: relative; height: 400px; width: 100%;">
+                        <canvas id="sesuPositiveOutputGapChart" data-chart-type="sesu-positive-output-gap"></canvas>
+                        <div class="chart-legend" style="text-align: center; margin-top: 10px;"></div>
+                    </div>
+                    <p><small><b>Figur 6.12: SE/SU model – Positivt output gab.</b>
+                            <br><b>SE-kurven (rød, tyk):</b> Samlet efterspørgsel. Den er nedadgående, fordi
+                            højere inflation reducerer købekraften.
+                            <br><b>SE<sub>Ny</sub> (rød stiplede):</b> SE efter kontraktiv politik – kurven er skubbet
+                            til venstre. Den krydser SU<sub>KORT</sub> ved punkt 1, hvor outputgabet er lukket.
+                            <br><b>SU<sub>KORT</sub>-kurven (blå):</b> Kortsigtet udbud. Den er opadgående, fordi
+                            virksomhederne producerer mere ved højere priser.
+                            <br><b>SU<sub>LANG</sub>-linjen (grå lodret):</b> Økonomiens potentiale (Y*).
+                            <br><b>Punkt 0 (gult):</b> Kortsigtet ligevægt før politik. Y₀ &gt; Y* →
+                            positivt outputgab. Inflationen er π₀.
+                            <br><b>Punkt 1 (blåt):</b> Ny ligevægt efter kontraktiv politik. SE<sub>Ny</sub> skubbet til
+                            venstre; Y₁ = Y* (gabet lukket). Inflationen er π₁.
+                        </small></p>
+
+                    <h4>2.3 Intet outputgab</h4>
                     <p>Når den faktiske nationalindkomst (Y₀) er lig med den potentielle nationalindkomst (Y*), siger
                         vi, at der er <b>intet outputgab</b>. Dette er den ideelle situation, hvor økonomien udnytter
                         alle sine ressourcer optimalt uden at skabe unødvendig inflation.</p>
@@ -570,7 +709,7 @@
                         <div class="chart-legend" style="text-align: center; margin-top: 10px;"></div>
                     </div>
                     <br>
-                    <p><small><b>Figur 6.12: SE/SU model kort og lang sigt (intet outputgab).</b>
+                    <p><small><b>Figur 6.13: SE/SU model kort og lang sigt (intet outputgab).</b>
                             <br>Herover ses et eksempel på en økonomi uden outputgab - dette er den ideelle situation,
                             som vi forsøger at ramme vha. af konjunkturpolitik.
                             <br><b>Punkt 0 (gult punkt):</b> I denne model er ligevægtspunktet (det gule punkt) placeret
@@ -581,7 +720,10 @@
                             ingen unødvendig inflation eller arbejdsløshed ved dette gule punkt.
                         </small></p>
 
-                    <h3>3. Faktorer der påvirker kurverne</h3>
+                </div>
+
+                <h3>8. Faktorer der påvirker kurverne</h3>
+                <div class="info-box">
                     <p>For at forstå, hvordan politik påvirker økonomien gennem SE-SU modellen, er det vigtigt at kende
                         de faktorer, der kan flytte de forskellige kurver.</p>
 
@@ -657,7 +799,10 @@
                         </li>
                     </ul>
 
-                    <h3>4. Eksempler på effekter af finanspolitik (FP)</h3>
+                </div>
+
+                <h3>9. Eksempler på effekter af finanspolitik (FP)</h3>
+                <div class="info-box">
                     <p><span class="legal-term"
                             data-definition="Finanspolitik (FP): Statens regulering af økonomien via de offentlige finanser (G og T)."
                             data-example="Hvis staten øger de offentlige udgifter med 50 mia. kr., er det ekspansiv finanspolitik."
@@ -720,7 +865,10 @@
                         med lavere nationalindkomst og lavere inflation. Dette kan være nødvendigt, hvis økonomien er
                         overophedet, men kan også føre til højere arbejdsløshed.</p>
 
-                    <h3>5. Eksempler på effekter af pengepolitik (PP)</h3>
+                </div>
+
+                <h3>10. Eksempler på effekter af pengepolitik (PP)</h3>
+                <div class="info-box">
                     <p><span class="legal-term"
                             data-definition="Pengepolitik (PP): Centralbankens styring af økonomien via renten (i) og pengemængden."
                             data-example="Hvis centralbanken sænker renten fra 2% til 0,5%, er det ekspansiv pengepolitik."
@@ -772,7 +920,10 @@
                         med lavere nationalindkomst og lavere inflation. Dette kan være nødvendigt for at bekæmpe
                         inflation, men kan også føre til højere arbejdsløshed og lavere vækst.</p>
 
-                    <h3>6. Sammenligning af FP og PP</h3>
+                </div>
+
+                <h3>11. Sammenligning af FP og PP</h3>
+                <div class="info-box">
                     <p>Både finanspolitik og pengepolitik kan bruges til at påvirke økonomien gennem SE-SU modellen, men
                         der er vigtige forskelle:</p>
 
@@ -820,7 +971,10 @@
                         </table>
                     </div>
 
-                    <h3>7. Kortsigtet vs. langsigtet effekt</h3>
+                </div>
+
+                <h3>12. Kortsigtet vs. langsigtet effekt</h3>
+                <div class="info-box">
                     <p>En vigtig pointe i SE-SU modellen er forskellen mellem kortsigtede og langsigtede effekter:</p>
 
                     <h4>7.1 Kortsigtet effekt</h4>
@@ -837,7 +991,10 @@
                         effekten på nationalindkomsten gradvist forsvinder, når økonomien vender tilbage til sit
                         potentiale.</p>
 
-                    <h3>8. Praktisk anvendelse</h3>
+                </div>
+
+                <h3>13. Praktisk anvendelse</h3>
+                <div class="info-box">
                     <p>SE-SU modellen hjælper os med at forstå:</p>
                     <ul>
                         <li><b>Hvorfor inflationen stiger:</b> Når efterspørgslen overstiger udbuddet på kort sigt,
@@ -857,7 +1014,7 @@
                 </div>
 
                 <br>
-                <h3>6. Historiske eksempler på politik-indgreb</h3>
+                <h3>14. Historiske eksempler på politik-indgreb</h3>
                 <div class="info-box">
                     <div class="table-responsive mb-4">
                         <table class="table table-bordered table-hover">
@@ -1147,54 +1304,82 @@
                         </table>
                     </div>
                 </div>
-                <h3>7. Sammenfatning</h3>
-                <p>Varemarkedet på kort sigt forstås bedst gennem <b>Keynes-modellen</b>, mens <b>SE-SU modellen</b>
-                    giver os en mere komplet forståelse af, hvordan både nationalindkomst og inflation bestemmes. De
-                    vigtigste punkter er:
-                </p>
+                <h3>15. Sammenfatning</h3>
+                <div class="info-box">
+                    <p>Varemarkedet på kort sigt forstås bedst gennem <span class="legal-term"
+                            data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                            data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                            data-slug="keynes-modellen"><b>Keynes-modellen</b></span>, mens <span class="legal-term"
+                            data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                            data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse."
+                            data-slug="se-su-modellen"><b>SE-SU modellen</b></span>
+                        giver os en mere komplet forståelse af, hvordan både nationalindkomst og inflation bestemmes. De
+                        vigtigste punkter er:
+                    </p>
 
-                <ol>
-                    <li><b>Efterspørgslen (SE):</b> Består af C + I + G + (X - IM). Det er den, der driver BNP på
-                        kort sigt i Keynes-modellen.</li>
-                    <li><b>Ligevægt i Keynes-modellen:</b> Opstår der, hvor den samlede efterspørgsel er lig med
-                        produktionen (SE =
-                        Y).</li>
-                    <li><b>Multiplikatoreffekten:</b> Gør, at en ændring i efterspørgslen får en forstærket effekt
-                        på nationalindkomsten.</li>
-                    <li><b>SE-SU modellen:</b> Viser samspillet mellem samlet efterspørgsel (SE), kortsigtet udbud
-                        (SU<sub>KORT</sub>) og langsigtet udbud (SU<sub>LANG</sub>). Modellen forklarer, hvordan både
-                        nationalindkomst og inflation bestemmes samtidigt.</li>
-                    <li><b>Outputgab:</b> Forskellen mellem faktisk produktion og potentiel produktion. Et negativt
-                        outputgab betyder, at økonomien producerer under sit potentiale.</li>
-                    <li><b>Finanspolitik (FP):</b> Påvirker økonomien gennem ændringer i offentlige udgifter (<span
-                            class="legal-term"
-                            data-definition="Offentlige udgifter: Statens samlede udgifter til f.eks. velfærd, infrastruktur og lønninger til offentligt ansatte."
-                            data-example="Når staten bygger nye broer eller betaler lønninger til lærere, er det offentlige udgifter (G)."
-                            data-slug="symbol-g">G</span>) og skatter (<span class="legal-term"
-                            data-definition="Skatter: De penge, staten opkræver fra borgere og virksomheder for at finansiere kollektive goder."
-                            data-example="Når du betaler indkomstskat, moms eller virksomhedsskat, er det skatter (T)."
-                            data-slug="symbol-t">T</span>), hvilket skubber SE-kurven.</li>
-                    <li><b>Pengepolitik (PP):</b> Påvirker økonomien gennem ændringer i rente og pengemængde, hvilket
-                        også skubber SE-kurven.</li>
-                    <li><b>Politik:</b> Valget mellem ekspansiv og kontraktiv politik afhænger af, om man vil
-                        bekæmpe ledighed eller forbedre saldo og betalingsbalance. På kort sigt kan ekspansiv politik
-                        øge både produktion og inflation, mens effekten på produktionen gradvist forsvinder på lang
-                        sigt.</li>
-                </ol>
+                    <ol>
+                        <li><b>Efterspørgslen (<span class="legal-term"
+                                    data-definition="Den samlede efterspørgsel efter varer og tjenester i hele økonomien. Inkluderer C, I, G og nettoeksport."
+                                    data-example="Hvis alle øger deres forbrug samtidigt, stiger den samlede efterspørgsel. Virksomhederne får flere ordrer."
+                                    data-slug="samlet-efterspoergsel">SE</span>):</b> Består af C + I + G + (X - IM).
+                            Det er den, der driver BNP på
+                            kort sigt i <span class="legal-term"
+                                data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                                data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                                data-slug="keynes-modellen">Keynes-modellen</span>.</li>
+                        <li><b>Ligevægt i <span class="legal-term"
+                                    data-definition="Kortsigtet model for varemarkedet hvor nationalindkomsten (Y) bestemmes af den samlede efterspørgsel (SE). Ligevægt når Y = SE. Antager faste priser."
+                                    data-example="Hvis staten øger G, stiger SE og dermed ligevægtsnationalindkomsten gennem multiplikatoren."
+                                    data-slug="keynes-modellen">Keynes-modellen</span>:</b> Opstår der, hvor den samlede
+                            efterspørgsel er lig med
+                            produktionen (SE =
+                            Y).</li>
+                        <li><span class="legal-term"
+                                data-definition="Fænomenet hvor en indledende ændring i efterspørgslen fører til en større samlet ændring i BNP."
+                                data-example="Hvis staten bygger en bro for 1 mia. kr., tjener entreprenøren penge, som han bruger på forbrug osv."
+                                data-slug="multiplikatoreffekt"><b>Multiplikatoreffekten:</b></span> Gør, at en ændring
+                            i efterspørgslen får en forstærket effekt
+                            på nationalindkomsten.</li>
+                        <li><span class="legal-term"
+                                data-definition="Makroøkonomisk model der viser samspillet mellem samlet efterspørgsel (SE) og samlet udbud (SU). Forklarer både nationalindkomst og inflation."
+                                data-example="Ved negativt outputgab kan ekspansiv politik øge Y og beskæftigelse."
+                                data-slug="se-su-modellen"><b>SE-SU modellen:</b></span> Viser samspillet mellem samlet
+                            efterspørgsel (SE), kortsigtet udbud
+                            (SU<sub>KORT</sub>) og langsigtet udbud (SU<sub>LANG</sub>). Modellen forklarer, hvordan
+                            både
+                            nationalindkomst og inflation bestemmes samtidigt.</li>
+                        <li><b>Outputgab:</b> Forskellen mellem faktisk produktion og potentiel produktion. Et negativt
+                            outputgab betyder, at økonomien producerer under sit potentiale.</li>
+                        <li><b>Finanspolitik (FP):</b> Påvirker økonomien gennem ændringer i offentlige udgifter (<span
+                                class="legal-term"
+                                data-definition="Offentlige udgifter: Statens samlede udgifter til f.eks. velfærd, infrastruktur og lønninger til offentligt ansatte."
+                                data-example="Når staten bygger nye broer eller betaler lønninger til lærere, er det offentlige udgifter (G)."
+                                data-slug="symbol-g">G</span>) og skatter (<span class="legal-term"
+                                data-definition="Skatter: De penge, staten opkræver fra borgere og virksomheder for at finansiere kollektive goder."
+                                data-example="Når du betaler indkomstskat, moms eller virksomhedsskat, er det skatter (T)."
+                                data-slug="symbol-t">T</span>), hvilket skubber SE-kurven.</li>
+                        <li><b>Pengepolitik (PP):</b> Påvirker økonomien gennem ændringer i rente og pengemængde,
+                            hvilket
+                            også skubber SE-kurven.</li>
+                        <li><b>Politik:</b> Valget mellem ekspansiv og kontraktiv politik afhænger af, om man vil
+                            bekæmpe ledighed eller forbedre saldo og betalingsbalance. På kort sigt kan ekspansiv
+                            politik
+                            øge både produktion og inflation, mens effekten på produktionen gradvist forsvinder på lang
+                    </ol>
+                </div>
+
+                <br><br>
+                <h2>Quiz</h2>
+                <div class="quiz-container">
+                    <a href="https://quiz.tepedu.dk/makro6.1" class="effectLinks"
+                        data-replace="Start Quiz 6.1 om Varemarkedet på kort sigt og økonomiske udsving" target="_blank">
+                        <span>Quiz 6.1 om Varemarkedet på kort sigt og økonomiske udsving</span> </a>
+                </div>
+                <br><br>
+            </article>
         </div>
-
-        <br><br>
-        <h2>Quiz</h2>
-        <div class="quiz-container">
-            <a href="MAKROQUIZ/makro6.html" class="effectLinks"
-                data-replace="Start Quiz 6.1 om Varemarkedet på kort sigt" target="_blank">
-                <span>Quiz 6.1 om Varemarkedet på kort sigt</span> </a>
-        </div>
-        <br><br>
-
-        </article>
     </div>
-    </div>
+
 
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -1202,6 +1387,7 @@
     <script src="menu.js"></script>
     <script src="script.js"></script>
     <script src="info.js"></script>
+    <script src="theme-toggle.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
