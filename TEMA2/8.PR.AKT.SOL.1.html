@@ -24,13 +24,14 @@
             padding-bottom: 20px;
         }
         .explanation-box {
-            background-color: #f8f9fa;
-            border-radius: 8px;
+            background-color: rgba(223, 240, 216, 0.4); 
+            border: 1px dashed #002147;
+            border-left: 5px solid #002147;
+            border-radius: 0;
             padding: 20px;
             margin-top: 15px;
             font-size: 0.95rem;
-            color: #444;
-            border: 1px dashed #ccc;
+            color: #2c3e50;
         }
         .step-title {
             font-weight: 700;
@@ -105,7 +106,7 @@
                             <span class="step-title">AM-bidrag:</span>
                             480.000 × 8 % = <strong>38.400 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> AM-bidraget er den første skat, man betaler. Det beregnes af bruttolønnen *før* nogle fradrag overhovedet er trukket fra. AM-bidraget finansierer bl.a. statens udgifter til ledigheds- og aktiveringsindsatser.
+                                <strong>Uddybning:</strong> AM-bidraget (Arbejdsmarkedsbidrag) er en bruttoskat på 8 %, der trækkes fra al erhvervsindkomst og indgår i statens generelle budget til at dække udgifter til bl.a. ledighed og aktivering. Det er værd at bemærke, at der ikke findes noget personfradrag i AM-bidraget – alle, der har en arbejdsindkomst, betaler denne skat fra den første krone, de tjener. For Emma betyder det, at 38.400 kr. går direkte til dette formål, før hun overhovedet begynder at betale indkomstskat.
                             </div>
                         </div>
 
@@ -114,7 +115,7 @@
                             <span class="step-title">Personlig indkomst:</span>
                             480.000 − 38.400 = <strong>441.600 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Den personlige indkomst er fundamentet for beregningen af indkomstskatten (bund-, mellem- og topskat). Det er kort sagt din indkomst *efter* at AM-bidraget er betalt.
+                                <strong>Uddybning:</strong> Den personlige indkomst (PI) er det beløb, der er tilbage af bruttolønnen, når AM-bidraget er betalt. PI er et afgørende nøgletal, da det danner grundlag for beregningen af både bund-, mellem- og topskat. Da de progressive skattetrin i 2026-reformen beregnes af netop den personlige indkomst, er det dette beløb (441.600 kr.), man skal måle op mod mellemskattegrænsen på 641.200 kr.
                             </div>
                         </div>
 
@@ -123,7 +124,7 @@
                             <span class="step-title">Beregning:</span>
                             (65,6 km − 24 km bundgrænse) × 2,23 kr./km × 220 dage = <strong>20.418 kr./år</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Befordringsfradraget gives for kørsel mellem hjem og arbejde, uanset transportmiddel. Den centrale regel er, at du selv skal betale for de første 24 km om dagen (12 km hver vej). Kun det overskydende antal kilometer udløser et fradrag.
+                                <strong>Uddybning:</strong> Befordringsfradraget gives for kørsel mellem hjem og arbejdsplads, uanset om man benytter bil, tog, bus eller cykel. Logikken er, at staten støtter mobilitet på arbejdsmarkedet. I 2026 er satsen 2,23 kr. pr. km for de kilometer, der ligger mellem 24 og 120 km pr. dag. Da Emma har 65,6 km tur/retur, trækkes bundgrænsen på de første 24 km fra, hvilket efterlader 41,6 km pr. dag, som staten giver et skattemæssigt fradrag for.
                             </div>
                         </div>
 
@@ -132,7 +133,7 @@
                             <span class="step-title">Sammentælling:</span>
                             Befordring (20.418) + A-kasse (6.000) + Fagforening (5.000) + Renter (40.000) = <strong>71.418 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Bemærk at fagforeningskontingenter kun er fradragsberettigede op til 7.000 kr. (2026-niveau). Emmas kontingent på 5.000 kr. ligger under loftet og kan derfor trækkes fuldt fra.
+                                <strong>Uddybning:</strong> Ligningsmæssige fradrag omfatter udgifter, som staten vurderer er nødvendige eller gavnlige for enten at opretholde et arbejde eller forvalte sin økonomi. Bemærk, at fradrag for fagforeningskontingent er loftet ved 7.000 kr. pr. år. Emmas udgifter til DLF (5.000 kr.) er således fuldt fradragsberettigede. Disse fradrag trækkes fra den personlige indkomst for at finde den skattepligtige indkomst (SI), og deres skatteværdi er ca. 25,6 % (afhængig af kommune).
                             </div>
                         </div>
 
@@ -141,7 +142,7 @@
                             <span class="step-title">Beregning:</span>
                             441.600 (PI) − 71.418 (Lign. fradrag) = <strong>370.182 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Skattepligtig indkomst er det beløb, der danner grundlag for beregning af kommuneskat og kirkeskat. Det er her, forskellen mellem en boligejer (med rentefradrag) og en lejer bliver tydelig.
+                                <strong>Uddybning:</strong> Skattepligtig indkomst (SI) er det beløb, der beskattes med kommuneskat, kirkeskat og bundskat. Det er i SI, at alle dine "negative" poster som renteudgifter og befordring trækkes fra. Forskellen mellem PI og SI er altså summen af de ligningsmæssige fradrag. For rådgiveren er det vigtigt at kontrollere SI, da det er her, kundens boligøkonomi (renterne) har sin direkte effekt på skattebilletten.
                             </div>
                         </div>
 
@@ -150,7 +151,7 @@
                             <span class="step-title">Personfradrag:</span>
                             <strong>54.100 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Personfradraget er et bundbeløb, som man ikke skal betale bundskat eller kommuneskat af. Formålet er socialt: det sikrer, at de med meget lave indkomster ikke betaler indkomstskat af deres mest basale livsfornødenheder.
+                                <strong>Uddybning:</strong> Personfradraget er et bundbeløb i den skattepligtige indkomst, som der ikke skal betales bundskat, kommuneskat eller kirkeskat af. I 2026-systemet er det 54.100 kr. Formålet er social retfærdighed: det sikrer, at de med meget lave indkomster ikke betaler indkomstskat af de penge, der kræves for at dække de mest basale livsomkostninger. Alle borgere i Danmark modtager dette fradrag automatisk.
                             </div>
                         </div>
 
@@ -159,7 +160,7 @@
                             <span class="step-title">Skatteværdi:</span>
                             40.000 × 0,256 = <strong>10.240 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Selvom Emma har et fradrag på 40.000 kr., betyder det ikke, at hun får 40.000 kr. mere udbetalt. Det betyder, at hendes *skat nedsættes* med skatteværdien af de 40.000 kr. (ca. en fjerdedel).
+                                <strong>Uddybning:</strong> "Skatteværdien" af et fradrag forklarer, hvor mange kroner man reelt sparer i skat, for hver krone man har i fradrag. Selvom Emma har 40.000 kr. i renteudgifter, får hun ikke 40.000 kr. tilbage. Fordi hendes kommuneskat og bundskat samlet set nedsættes af fradraget, sparer hun ca. 25,6 % af beløbet. Det betyder, at staten reelt betaler 10.240 kr. af hendes renter via skattenedsættelsen. Dette er kernen i, hvorfor gæld ser "billigere" ud efter skat.
                             </div>
                         </div>
 
@@ -173,7 +174,7 @@
                             <span class="step-title">Marginalskat:</span>
                             ca. <strong>44 %</strong>. Hun er under mellemskattegrænsen.
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Marginalskatten er skatten på "den næste krone du tjener". For Emma betyder det, at hvis hun får en lønstigning, beholder hun ca. 56 øre selv for hver krone, lønnen stiger. Hun rammer hverken mellem- eller topskat.
+                                <strong>Uddybning:</strong> Marginalskatten er skatten på "den sidst tjente krone". For Emma betyder en marginalskat på 44 %, at hvis hun får 1.000 kr. mere i løn, skal hun aflevere 440 kr. til staten/kommunen og beholder 560 kr. selv. Da hendes personlige indkomst på 441.600 kr. ligger langt under mellemskattegrænsen (641.200 kr.), har hun ikke noget økonomisk incitamentsproblem i forhold til at tage ekstra vagter, da hendes skatteprocent ikke "stikker af" endnu.
                             </div>
                         </div>
 
@@ -181,7 +182,7 @@
                         <div class="sol-answer">
                             Hendes skattepligtige indkomst <strong>falder med 40.000 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Indbetalinger til ratepension og livrente er fradragsberettigede. Da Emma allerede har en marginalskat på 44 %, sparer hun 44 % her og nu i skat af det beløb, hun sætter ind på sin pension – pengene skal dog beskattes senere ved udbetaling.
+                                <strong>Uddybning:</strong> Indbetalinger til ratepension og livrente er fradragsberettigede i den personlige indkomst (op til loftet for ratepension). Ved at indbetale 40.000 kr. sænker hun sin personlige indkomst og dermed også sin skattepligtige indkomst med det tilsvarende beløb. Det er en direkte skattebesparelse her og nu på 44 %, men pengene skal modregnes ved udbetaling senere i livet (typisk med 40 % afgift). Dette kaldes "skatteudskydelse".
                             </div>
                         </div>
                     </li>
