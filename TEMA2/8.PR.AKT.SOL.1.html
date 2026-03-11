@@ -17,14 +17,16 @@
             border-radius: 0 4px 4px 0;
             font-style: italic;
         }
+
         .sol-answer {
             margin-bottom: 40px;
             padding-left: 15px;
             border-bottom: 1px solid #eee;
             padding-bottom: 20px;
         }
+
         .explanation-box {
-            background-color: rgba(223, 240, 216, 0.4); 
+            background-color: rgba(223, 240, 216, 0.4);
             border: 1px dashed #002147;
             border-left: 5px solid #002147;
             border-radius: 0;
@@ -33,6 +35,7 @@
             font-size: 0.95rem;
             color: #2c3e50;
         }
+
         .step-title {
             font-weight: 700;
             color: #0056b3;
@@ -50,235 +53,385 @@
                 <ul class="timeline">
                     <i>
 
-                    <!-- Intro -->
-                    <li class="timeline-item bg-white ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <img src="../images/skat2026.png" class="img-fluid w-100 mb-2">
+                        <!-- Intro -->
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <img src="../images/skat2026.png" class="img-fluid w-100 mb-2">
 
 
-                        <h2 class="mb-0">Aktivitet</h2>
-                        <p class="text-muted" style="text-transform: lowercase; font-size: 0.95rem;">løsningsforslag – finansiel rådgivning – privat</p>
-                        
+                            <h2 class="mb-0">Aktivitet</h2>
+                            <p class="text-muted" style="text-transform: lowercase; font-size: 0.95rem;">løsningsforslag
+                                – finansiel rådgivning – privat</p>
 
 
-                        <div class="mt-4">
+
+                            <div class="mt-4">
+                                <p>
+                                    <a href="https://skat.tepedu.dk/" class="effectLinks" data-replace="Skatteberegner"
+                                        target="_blank"><span>Skatteberegner (skat.tepedu.dk)</span></a><br>
+                                    <a href="https://pr.tepedu.dk/kapitel1.html" class="effectLinks"
+                                        data-replace="Kapitel 1" target="_blank"><span>Kapitel 1 – Skattesystemet
+                                            2026</span></a>
+                                </p>
+                                <hr>
+                            </div>
+                        </li>
+
+                        <!-- ========================= CASE 1: EMMA ========================= -->
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="mb-3">Oplysninger – Case 1: Emma Hansen</h2>
                             <p>
-                                <a href="https://skat.tepedu.dk/" class="effectLinks" data-replace="Skatteberegner" target="_blank"><span>Skatteberegner (skat.tepedu.dk)</span></a><br>
-                                <a href="https://pr.tepedu.dk/kapitel1.html" class="effectLinks" data-replace="Kapitel 1" target="_blank"><span>Kapitel 1 – Skattesystemet 2026</span></a>
+                                Emma er 36 år og bor i Roskilde, hvor hun har arbejdet som folkeskolelærer i otte år.
+                                Hun bor i en andelsbolig og ønsker at forstå sin skattemæssige situation i 2026 til
+                                bunds.
                             </p>
+
+                            <table class="table table-sm table-bordered table-striped mt-3">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th colspan="2">Emmas økonomi 2026</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Bruttoløn</strong></td>
+                                        <td>480.000 kr./år (40.000 kr./md.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Boligtype</strong></td>
+                                        <td>Andelsbolig i Roskilde</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Renteudgifter (andelsboliglån)</strong></td>
+                                        <td>40.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fagforening (DLF)</strong></td>
+                                        <td>5.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>A-kasse</strong></td>
+                                        <td>6.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Folkekirken</strong></td>
+                                        <td>Ja – betaler kirkeskat</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Transport</strong></td>
+                                        <td>66 km tur/retur, 220 arbejdsdage/år</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </li>
+
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="mb-4">Løsning – Case 1</h2>
+                            <a href="../files/emmahansen.pdf" class="effectLinks mb-0"
+                                data-replace="Udregninger fra skatteberegner" target="_blank"><span>Udregninger fra
+                                    skatteberegner for Emma Hansen</span></a>
+                            <br>
                             <hr>
-                        </div>
-                    </li>
+                            <div class="sol-question">Spørgsmål A: Hvad er Emmas beregningsgrundlag for AM-bidrag, og
+                                hvad udgør hendes AM-bidrag i kroner?</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Beregningsgrundlag:</span>
+                                480.000 kr.
+                                <br>
+                                <span class="step-title">AM-bidrag:</span>
+                                480.000 × 8 % = <strong>38.400 kr.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> AM-bidraget (Arbejdsmarkedsbidrag) er en bruttoskat på 8
+                                    %, der trækkes fra al erhvervsindkomst og indgår i statens generelle budget til at
+                                    dække udgifter til bl.a. ledighed og aktivering. Det er værd at bemærke, at der ikke
+                                    findes noget personfradrag i AM-bidraget – alle, der har en arbejdsindkomst, betaler
+                                    denne skat fra den første krone, de tjener. For Emma betyder det, at 38.400 kr. går
+                                    direkte til dette formål, før hun overhovedet begynder at betale indkomstskat.
+                                </div>
+                            </div>
 
-                    <!-- ========================= CASE 1: EMMA ========================= -->
-                    <li class="timeline-item bg-white ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="mb-3">Oplysninger – Case 1: Emma Hansen</h2>
-                        <p>
-                            Emma er 36 år og bor i Roskilde, hvor hun har arbejdet som folkeskolelærer i otte år. Hun bor i en andelsbolig og ønsker at forstå sin skattemæssige situation i 2026 til bunds.
-                        </p>
+                            <div class="sol-question">Spørgsmål B: Beregn Emmas personlige indkomst.</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Personlig indkomst:</span>
+                                480.000 − 38.400 = <strong>441.600 kr.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Den personlige indkomst (PI) er det beløb, der er
+                                    tilbage af bruttolønnen, når AM-bidraget er betalt. PI er et afgørende nøgletal, da
+                                    det danner grundlag for beregningen af både bund-, mellem- og topskat. Da de
+                                    progressive skattetrin i 2026-reformen beregnes af netop den personlige indkomst, er
+                                    det dette beløb (441.600 kr.), man skal måle op mod mellemskattegrænsen på 641.200
+                                    kr.
+                                </div>
+                            </div>
 
-                        <table class="table table-sm table-bordered table-striped mt-3">
-                            <thead class="thead-dark">
-                                <tr><th colspan="2">Emmas økonomi 2026</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td><strong>Bruttoløn</strong></td><td>480.000 kr./år (40.000 kr./md.)</td></tr>
-                                <tr><td><strong>Boligtype</strong></td><td>Andelsbolig i Roskilde</td></tr>
-                                <tr><td><strong>Renteudgifter (andelsboliglån)</strong></td><td>40.000 kr./år</td></tr>
-                                <tr><td><strong>Fagforening (DLF)</strong></td><td>5.000 kr./år</td></tr>
-                                <tr><td><strong>A-kasse</strong></td><td>6.000 kr./år</td></tr>
-                                <tr><td><strong>Folkekirken</strong></td><td>Ja – betaler kirkeskat</td></tr>
-                                <tr><td><strong>Transport</strong></td><td>65,6 km tur/retur, 220 arbejdsdage/år</td></tr>
-                            </tbody>
-                        </table>
-                    </li>
+                            <div class="sol-question">Spørgsmål C: Hvad er Emmas befordringsfradrag? (Se 2026-satsen i
+                                Kapitel 1.)</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Beregning:</span>
+                                (66 km − 24 km bundgrænse) × 2,28 kr./km × 220 dage = <strong>21.067 kr./år</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Befordringsfradraget gives for kørsel mellem hjem og
+                                    arbejdsplads, uanset om man benytter bil, tog, bus eller cykel. Logikken er, at
+                                    staten støtter mobilitet på arbejdsmarkedet. I 2026 er satsen 2,28 kr. pr. km for de
+                                    kilometer, der ligger mellem 24 og 120 km pr. dag. Da Emma har 66 km tur/retur,
+                                    trækkes bundgrænsen på de første 24 km fra, hvilket efterlader 42 km pr. dag, som
+                                    staten giver et skattemæssigt fradrag for.
+                                </div>
+                            </div>
 
-                    <li class="timeline-item bg-white ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="mb-4">Løsning – Case 1</h2>
+                            <div class="sol-question">Spørgsmål D: Beregn Emmas samlede ligningsmæssige fradrag
+                                (befordring, A-kasse, fagforening, beskæftigelsesfradrag og jobfradrag).</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Sammentælling:</span>
+                                Befordring (21.067) + A-kasse (6.000) + Fagforening (5.000) + Beskæftigelsesfradrag
+                                (61.200) + Jobfradrag (3.100) = <strong>96.367 kr.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Ligningsmæssige fradrag omfatter udgifter og lovbestemte
+                                    rabatter, som reducerer den indkomst der betales kommuneskat og kirkeskat af. I 2026
+                                    er beskæftigelsesfradraget 12,75 % (max 63.300 kr.) og jobfradraget yderligere 4,5 %
+                                    for indkomst over 235.200 kr. (max 3.100 kr.). Disse beregnes automatisk, men er
+                                    vigtige at huske. Renteudgifter indgår typisk ikke som et egentligt ligningsmæssigt
+                                    fradrag i skattestyrelsens "kasser", men derimod som <i>negativ kapitalindkomst</i>
+                                    inden man slutter af med den Skattepligtige Indkomst (SI). Skatteværdien for
+                                    ligningsmæssige fradrag og negativ kapitalindkomst er ca. 25,6 %.
+                                </div>
+                            </div>
 
-                        <div class="sol-question">Spørgsmål A: Hvad er Emmas beregningsgrundlag for AM-bidrag, og hvad udgør hendes AM-bidrag i kroner?</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Beregningsgrundlag:</span>
-                            480.000 kr.
+                            <div class="sol-question">Spørgsmål E: Hvad er Emmas skattepligtige indkomst?</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Beregning:</span>
+                                441.600 (PI) + (-40.000 negativ kapitalindkomst) − 96.367 (Lign. fradrag) =
+                                <strong>305.233 kr.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Skattepligtig indkomst (SI) er det beløb, der beskattes
+                                    med kommuneskat, kirkeskat og bundskat. Her trækkes både negativ kapitalindkomst
+                                    (renterne til andelsboligen) og alle de ligningsmæssige fradrag fra din PI.
+                                    Forskellen mellem PI og SI for Emma er derfor -40.000 kr. i rente og -96.367 kr. i
+                                    ligningsmæssige fradrag. Resultatet er 305.233 kr. Her er det tydeligt, hvordan
+                                    boliggælden sænker den samlede skattebetaling markant.
+                                </div>
+                            </div>
+
+                            <div class="sol-question">Spørgsmål F: Hvad er personfradraget i 2026, og hvad er dets
+                                formål?</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Personfradrag:</span>
+                                <strong>54.100 kr.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Personfradraget er et bundbeløb i den skattepligtige
+                                    indkomst, som der ikke skal betales bundskat, kommuneskat eller kirkeskat af. I
+                                    2026-systemet er det 54.100 kr. Formålet er social retfærdighed: det sikrer, at de
+                                    med meget lave indkomster ikke betaler indkomstskat af de penge, der kræves for at
+                                    dække de mest basale livsomkostninger. Alle borgere i Danmark modtager dette fradrag
+                                    automatisk.
+                                </div>
+                            </div>
+
+                            <div class="sol-question">Spørgsmål G: Hvad er skatteværdien (i kr.) af Emmas rentefradrag
+                                på 40.000 kr. (ca. 25,6 %)?</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Skatteværdi:</span>
+                                40.000 × 0,256 = <strong>10.240 kr.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> "Skatteværdien" af et fradrag forklarer, hvor mange
+                                    kroner man reelt sparer i skat, for hver krone man har i fradrag. Selvom Emma har
+                                    40.000 kr. i renteudgifter, får hun ikke 40.000 kr. tilbage. Fordi hendes
+                                    kommuneskat og bundskat samlet set nedsættes af fradraget, sparer hun ca. 25,6 % af
+                                    beløbet. Det betyder, at staten reelt betaler 10.240 kr. af hendes renter via
+                                    skattenedsættelsen. Dette er kernen i, hvorfor gæld ser "billigere" ud efter skat.
+                                </div>
+                            </div>
+
+                            <div class="sol-question">Spørgsmål H: Hvad er Emmas månedlige udbetaling ifølge
+                                skatteberegneren?</div>
+                            <div class="sol-answer">
+                                Udbetaling: <strong>27.739 kr./md.</strong> (332.866 kr./år).
+                            </div>
+
+                            <div class="sol-question">Spørgsmål I: Hvad er Emmas marginalskat, og rammer hun noget
+                                progressivt skattetrin?</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Marginalskat:</span>
+                                ca. <strong>44 %</strong>. Hun er under mellemskattegrænsen.
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Marginalskatten er skatten på "den sidst tjente krone".
+                                    For Emma betyder en nominel marginalskat på ca. 44 %, at hun afleverer omkring 440
+                                    kr. til staten og kommunen for hver 1.000 kr. ekstra hun tjener (AM-bidrag +
+                                    bundskat + kommuneskat). Virkeligheden er dog, at fordi hendes bruttoløn er 480.000
+                                    kr., har hun endnu ikke ramt loftet for sit beskæftigelsesfradrag (63.300 kr.). Det
+                                    betyder, at for hver ekstra krone hun tjener, får hun automatisk mere fradrag.
+                                    Hendes <i>reelle</i> marginalskat er derfor lidt lavere end de 44 %, hvilket sikrer
+                                    hende en større udbetalingsgevinst pr. ekstra tjent krone, inden hun en dag rammer
+                                    mellemskattegrænsen.
+                                </div>
+                            </div>
+
+                            <div class="sol-question">Spørgsmål J: Emma indbetaler 40.000 kr. ekstra til pension. Hvad
+                                sker der med hendes skattepligtige indkomst?</div>
+                            <div class="sol-answer">
+                                Hendes skattepligtige indkomst <strong>falder med 40.000 kr.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Indbetalinger til ratepension og livrente er
+                                    fradragsberettigede i den personlige indkomst (op til loftet for ratepension). Ved
+                                    at indbetale 40.000 kr. sænker hun sin personlige indkomst og dermed også sin
+                                    skattepligtige indkomst med det tilsvarende beløb. Det er en direkte
+                                    skattebesparelse her og nu på 44 %, men pengene skal modregnes ved udbetaling senere
+                                    i livet (typisk med 40 % afgift). Dette kaldes "skatteudskydelse".
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- ========================= CASE 2: LARS ========================= -->
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="mb-3">Oplysninger – Case 2: Lars Larsen</h2>
+                            <p>
+                                Lars er 28 år og uddannet tømrer i Slagelse. Han er fokuseret på at optimere sin
+                                økonomi.
+                            </p>
+
+                            <table class="table table-sm table-bordered table-striped mt-3">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th colspan="2">Lars' økonomi 2026</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Bruttoløn</strong></td>
+                                        <td>420.000 kr./år (35.000 kr./md.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Boligtype</strong></td>
+                                        <td>Lejer – ingen ejendomsskatter</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Forbrugslån – renteudgifter</strong></td>
+                                        <td>15.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fagforening (3F)</strong></td>
+                                        <td>4.800 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>A-kasse</strong></td>
+                                        <td>5.500 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Folkekirken</strong></td>
+                                        <td>Nej – ikke medlem, betaler ikke kirkeskat</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Transport</strong></td>
+                                        <td>40 km tur/retur, 220 dage/år</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </li>
+
+                        <li class="timeline-item bg-white ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="mb-3">Løsning – Case 2</h2>
+                            <a href="../files/larslarsen.pdf" class="effectLinks mb-0"
+                                data-replace="Udregninger fra skatteberegner" target="_blank"><span>Udregninger fra
+                                    skatteberegner for Lars Larsen</span></a>
                             <br>
-                            <span class="step-title">AM-bidrag:</span>
-                            480.000 × 8 % = <strong>38.400 kr.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> AM-bidraget (Arbejdsmarkedsbidrag) er en bruttoskat på 8 %, der trækkes fra al erhvervsindkomst og indgår i statens generelle budget til at dække udgifter til bl.a. ledighed og aktivering. Det er værd at bemærke, at der ikke findes noget personfradrag i AM-bidraget – alle, der har en arbejdsindkomst, betaler denne skat fra den første krone, de tjener. For Emma betyder det, at 38.400 kr. går direkte til dette formål, før hun overhovedet begynder at betale indkomstskat.
+                            <hr>
+
+
+                            <div class="sol-question">Spørgsmål A: Beregn Lars' personlige indkomst og skattepligtige
+                                indkomst skridt for skridt (inkl. beskæftigelses- og jobfradrag).</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Personlig indkomst (PI):</span>
+                                420.000 − 8 % AM = <strong>386.400 kr.</strong>
+                                <br>
+                                <span class="step-title">Ligningsmæssige fradrag:</span>
+                                Befordring (8.026) + A-kasse (5.500) + Fagforening (4.800) + Beskæftigelsesfradrag
+                                (53.550) + Jobfradrag (3.100) = <strong>74.976 kr.</strong>
+                                <br>
+                                <span class="step-title">Skattepligtig indkomst (SI):</span>
+                                386.400 (PI) + (-15.000 negativ kapitalindkomst) − 74.976 (Lign. fradrag) =
+                                <strong>296.424 kr.</strong>
                             </div>
-                        </div>
 
-                        <div class="sol-question">Spørgsmål B: Beregn Emmas personlige indkomst.</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Personlig indkomst:</span>
-                            480.000 − 38.400 = <strong>441.600 kr.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Den personlige indkomst (PI) er det beløb, der er tilbage af bruttolønnen, når AM-bidraget er betalt. PI er et afgørende nøgletal, da det danner grundlag for beregningen af både bund-, mellem- og topskat. Da de progressive skattetrin i 2026-reformen beregnes af netop den personlige indkomst, er det dette beløb (441.600 kr.), man skal måle op mod mellemskattegrænsen på 641.200 kr.
+                            <div class="sol-question">Spørgsmål B: Hvad er Lars' befordringsfradrag? (Kun km over 24
+                                km/dag.)</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Beregning:</span>
+                                (40 km − 24 km) × 2,28 kr. × 220 dage = <strong>8.026 kr.</strong>
                             </div>
-                        </div>
 
-                        <div class="sol-question">Spørgsmål C: Hvad er Emmas befordringsfradrag? (Se 2026-satsen i Kapitel 1.)</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Beregning:</span>
-                            (65,6 km − 24 km bundgrænse) × 2,23 kr./km × 220 dage = <strong>20.418 kr./år</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Befordringsfradraget gives for kørsel mellem hjem og arbejdsplads, uanset om man benytter bil, tog, bus eller cykel. Logikken er, at staten støtter mobilitet på arbejdsmarkedet. I 2026 er satsen 2,23 kr. pr. km for de kilometer, der ligger mellem 24 og 120 km pr. dag. Da Emma har 65,6 km tur/retur, trækkes bundgrænsen på de første 24 km fra, hvilket efterlader 41,6 km pr. dag, som staten giver et skattemæssigt fradrag for.
+                            <div class="sol-question">Spørgsmål C: Lars er ikke i folkekirken. Beregn præcist hvad Lars
+                                sparer pr. år ved dette (Slagelse kirkeskat ca. 0,82 %).</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Beregning:</span>
+                                (296.424 − 54.100 personfradrag) × 0,82 % = <strong>1.987 kr./år.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Kirkeskat er det nemmeste sted for mange kunder at
+                                    optimere deres økonomi, hvis de ikke benytter folkekirkens tilbud. Det er en direkte
+                                    besparelse uden skattetekniske modregninger.
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="sol-question">Spørgsmål D: Opstil Emmas samlede ligningsmæssige fradrag: befordring, A-kasse, fagforening og renteudgifter.</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Sammentælling:</span>
-                            Befordring (20.418) + A-kasse (6.000) + Fagforening (5.000) + Renter (40.000) = <strong>71.418 kr.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Ligningsmæssige fradrag omfatter udgifter, som staten vurderer er nødvendige eller gavnlige for enten at opretholde et arbejde eller forvalte sin økonomi. Bemærk, at fradrag for fagforeningskontingent er loftet ved 7.000 kr. pr. år. Emmas udgifter til DLF (5.000 kr.) er således fuldt fradragsberettigede. Disse fradrag trækkes fra den personlige indkomst for at finde den skattepligtige indkomst (SI), og deres skatteværdi er ca. 25,6 % (afhængig af kommune).
+                            <div class="sol-question">Spørgsmål D: Hvad er den reelle besparelse efter skat ved
+                                udmeldelse af fagforening og A-kasse?</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Brutto udgift:</span>
+                                4.800 + 5.500 = 10.300 kr.
+                                <br>
+                                <span class="step-title">Netto udgift (efter skatteværdi):</span>
+                                10.300 × (1 − 0,256) = <strong>ca. 7.663 kr.</strong>
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Som rådgiver skal du altid minde kunden om
+                                    "skatteværdien". Hvis Lars sparer 10.300 kr. i kontingent, stiger hans udbetalte løn
+                                    kun med ca. 7.600 kr., fordi staten stopper med at give ham skatterabat for
+                                    kontingentet.
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="sol-question">Spørgsmål E: Hvad er Emmas skattepligtige indkomst?</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Beregning:</span>
-                            441.600 (PI) − 71.418 (Lign. fradrag) = <strong>370.182 kr.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Skattepligtig indkomst (SI) er det beløb, der beskattes med kommuneskat, kirkeskat og bundskat. Det er i SI, at alle dine "negative" poster som renteudgifter og befordring trækkes fra. Forskellen mellem PI og SI er altså summen af de ligningsmæssige fradrag. For rådgiveren er det vigtigt at kontrollere SI, da det er her, kundens boligøkonomi (renterne) har sin direkte effekt på skattebilletten.
+                            <div class="sol-question">Spørgsmål E: Hvad er Lars' månedlige udbetaling ifølge
+                                skatteberegneren?</div>
+                            <div class="sol-answer">
+                                Udbetaling: <strong>23.704 kr./md.</strong> (284.444 kr./år).
                             </div>
-                        </div>
 
-                        <div class="sol-question">Spørgsmål F: Hvad er personfradraget i 2026, og hvad er dets formål?</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Personfradrag:</span>
-                            <strong>54.100 kr.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Personfradraget er et bundbeløb i den skattepligtige indkomst, som der ikke skal betales bundskat, kommuneskat eller kirkeskat af. I 2026-systemet er det 54.100 kr. Formålet er social retfærdighed: det sikrer, at de med meget lave indkomster ikke betaler indkomstskat af de penge, der kræves for at dække de mest basale livsomkostninger. Alle borgere i Danmark modtager dette fradrag automatisk.
+                            <div class="sol-question">Spørgsmål F: Hvad er den reelle nettorente efter fradrag på Lars'
+                                lån (11 % rente)?</div>
+                            <div class="sol-answer">
+                                <span class="step-title">Effektiv rente:</span>
+                                11 % × (1 − 0,256) = <strong>ca. 8,2 %</strong>.
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Dette er et af de vigtigste nøgletal i privatøkonomi.
+                                    Rentefradraget gør gæld billigere, end den ser ud på bankens papirer. Det er den
+                                    reelle rente (8,2 %), man skal sammenligne med et muligt afkast ved at investere
+                                    pengene frem for at afdrage.
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="sol-question">Spørgsmål G: Hvad er skatteværdien (i kr.) af Emmas rentefradrag på 40.000 kr. (ca. 25,6 %)?</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Skatteværdi:</span>
-                            40.000 × 0,256 = <strong>10.240 kr.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> "Skatteværdien" af et fradrag forklarer, hvor mange kroner man reelt sparer i skat, for hver krone man har i fradrag. Selvom Emma har 40.000 kr. i renteudgifter, får hun ikke 40.000 kr. tilbage. Fordi hendes kommuneskat og bundskat samlet set nedsættes af fradraget, sparer hun ca. 25,6 % af beløbet. Det betyder, at staten reelt betaler 10.240 kr. af hendes renter via skattenedsættelsen. Dette er kernen i, hvorfor gæld ser "billigere" ud efter skat.
+                            <div class="sol-question">Spørgsmål G: Hvad er Lars' marginalskat? Rammer han mellemskat
+                                eller topskat?</div>
+                            <div class="sol-answer">
+                                Marginalskat: ca. <strong>43,5 %</strong>. Han rammer <strong>ikke</strong> de højere
+                                trin.
                             </div>
-                        </div>
 
-                        <div class="sol-question">Spørgsmål H: Hvad er Emmas månedlige udbetaling ifølge skatteberegneren?</div>
-                        <div class="sol-answer">
-                            Udbetaling: <strong>ca. 26.500 kr./md.</strong>
-                        </div>
-
-                        <div class="sol-question">Spørgsmål I: Hvad er Emmas marginalskat, og rammer hun noget progressivt skattetrin?</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Marginalskat:</span>
-                            ca. <strong>44 %</strong>. Hun er under mellemskattegrænsen.
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Marginalskatten er skatten på "den sidst tjente krone". For Emma betyder en marginalskat på 44 %, at hvis hun får 1.000 kr. mere i løn, skal hun aflevere 440 kr. til staten/kommunen og beholder 560 kr. selv. Da hendes personlige indkomst på 441.600 kr. ligger langt under mellemskattegrænsen (641.200 kr.), har hun ikke noget økonomisk incitamentsproblem i forhold til at tage ekstra vagter, da hendes skatteprocent ikke "stikker af" endnu.
+                            <div class="sol-question">Spørgsmål H: Hvad er beskæftigelsesfradraget i 2026? Se Kapitel 1.
                             </div>
-                        </div>
-
-                        <div class="sol-question">Spørgsmål J: Emma indbetaler 40.000 kr. ekstra til pension. Hvad sker der med hendes skattepligtige indkomst?</div>
-                        <div class="sol-answer">
-                            Hendes skattepligtige indkomst <strong>falder med 40.000 kr.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Indbetalinger til ratepension og livrente er fradragsberettigede i den personlige indkomst (op til loftet for ratepension). Ved at indbetale 40.000 kr. sænker hun sin personlige indkomst og dermed også sin skattepligtige indkomst med det tilsvarende beløb. Det er en direkte skattebesparelse her og nu på 44 %, men pengene skal modregnes ved udbetaling senere i livet (typisk med 40 % afgift). Dette kaldes "skatteudskydelse".
+                            <div class="sol-answer">
+                                <span class="step-title">Sats 2026:</span>
+                                12,75 % (max <strong>63.300 kr.</strong>).
+                                <div class="explanation-box">
+                                    <strong>Uddybning:</strong> Beskæftigelsesfradraget er designet til at "sparke
+                                    arbejdet i gang". Jo mere du tjener (op til loftet), jo større fradrag får du. Det
+                                    er en direkte bonus for at være en del af arbejdsstyrken.
+                                </div>
                             </div>
-                        </div>
-                    </li>
-
-                    <!-- ========================= CASE 2: LARS ========================= -->
-                    <li class="timeline-item bg-white ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="mb-3">Oplysninger – Case 2: Lars Larsen</h2>
-                        <p>
-                            Lars er 28 år og uddannet tømrer i Slagelse. Han er fokuseret på at optimere sin økonomi.
-                        </p>
-
-                        <table class="table table-sm table-bordered table-striped mt-3">
-                            <thead class="thead-dark">
-                                <tr><th colspan="2">Lars' økonomi 2026</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td><strong>Bruttoløn</strong></td><td>420.000 kr./år (35.000 kr./md.)</td></tr>
-                                <tr><td><strong>Boligtype</strong></td><td>Lejer – ingen ejendomsskatter</td></tr>
-                                <tr><td><strong>Forbrugslån – renteudgifter</strong></td><td>15.000 kr./år</td></tr>
-                                <tr><td><strong>Fagforening (3F)</strong></td><td>4.800 kr./år</td></tr>
-                                <tr><td><strong>A-kasse</strong></td><td>5.500 kr./år</td></tr>
-                                <tr><td><strong>Folkekirken</strong></td><td>Nej – ikke medlem, betaler ikke kirkeskat</td></tr>
-                                <tr><td><strong>Transport</strong></td><td>40 km tur/retur, 220 dage/år</td></tr>
-                            </tbody>
-                        </table>
-                    </li>
-
-                    <li class="timeline-item bg-white ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="mb-3">Løsning – Case 2</h2>
-
-                        <div class="sol-question">Spørgsmål A: Beregn Lars' personlige indkomst og skattepligtige indkomst skridt for skridt.</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Personlig indkomst:</span>
-                            420.000 − 8 % AM = <strong>386.400 kr.</strong>
-                            <br>
-                            <span class="step-title">Skattepligtig indkomst:</span>
-                            386.400 − (7.850 + 4.800 + 5.500 + 15.000) = <strong>353.250 kr.</strong>
-                        </div>
-
-                        <div class="sol-question">Spørgsmål B: Hvad er Lars' befordringsfradrag? (Kun km over 24 km/dag.)</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Beregning:</span>
-                            (40 km − 24 km) × 2,23 kr. × 220 dage = <strong>7.850 kr.</strong>
-                        </div>
-
-                        <div class="sol-question">Spørgsmål C: Lars er ikke i folkekirken. Beregn præcist hvad Lars sparer pr. år ved dette (Slagelse kirkeskat ca. 0,82 %).</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Beregning:</span>
-                            (353.250 − 54.100 personfradrag) × 0,82 % = <strong>ca. 2.453 kr./år.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Kirkeskat er det nemmeste sted for mange kunder at optimere deres økonomi, hvis de ikke benytter folkekirkens tilbud. Det er en direkte besparelse uden skattetekniske modregninger.
-                            </div>
-                        </div>
-
-                        <div class="sol-question">Spørgsmål D: Hvad er den reelle nettoudsparing efter skat ved udmeldelse af fagforening og A-kasse?</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Brutto udgift:</span>
-                            4.800 + 5.500 = 10.300 kr.
-                            <br>
-                            <span class="step-title">Netto udgift (efter skatteværdi):</span>
-                            10.300 × (1 − 0,256) = <strong>ca. 7.663 kr.</strong>
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Som rådgiver skal du altid minde kunden om "skatteværdien". Hvis Lars sparer 10.300 kr. i kontingent, stiger hans udbetalte løn kun med ca. 7.600 kr., fordi staten stopper med at give ham skatterabat for kontingentet.
-                            </div>
-                        </div>
-
-                        <div class="sol-question">Spørgsmål E: Hvad er Lars' månedlige udbetaling ifølge skatteberegneren?</div>
-                        <div class="sol-answer">
-                            Udbetaling: <strong>ca. 23.900 kr./md.</strong>
-                        </div>
-
-                        <div class="sol-question">Spørgsmål F: Hvad er den reelle nettorente efter fradrag på Lars' lån (11 % rente)?</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Effektiv rente:</span>
-                            11 % × (1 − 0,256) = <strong>ca. 8,2 %</strong>.
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Dette er et af de vigtigste nøgletal i privatøkonomi. Rentefradraget gør gæld billigere, end den ser ud på bankens papirer. Det er den reelle rente (8,2 %), man skal sammenligne med et muligt afkast ved at investere pengene frem for at afdrage.
-                            </div>
-                        </div>
-
-                        <div class="sol-question">Spørgsmål G: Hvad er Lars' marginalskat? Rammer han mellemskat eller topskat?</div>
-                        <div class="sol-answer">
-                             Marginalskat: ca. <strong>43,5 %</strong>. Han rammer <strong>ikke</strong> de højere trin.
-                        </div>
-
-                        <div class="sol-question">Spørgsmål H: Hvad er beskæftigelsesfradraget i 2026? Se Kapitel 1.</div>
-                        <div class="sol-answer">
-                            <span class="step-title">Sats 2026:</span>
-                            12,75 % (max <strong>63.300 kr.</strong>).
-                            <div class="explanation-box">
-                                <strong>Uddybning:</strong> Beskæftigelsesfradraget er designet til at "sparke arbejdet i gang". Jo mere du tjener (op til loftet), jo større fradrag får du. Det er en direkte bonus for at være en del af arbejdsstyrken.
-                            </div>
-                        </div>
-                    </li>
+                        </li>
 
                     </i>
                 </ul>
@@ -304,4 +457,5 @@
         });
     </script>
 </body>
+
 </html>
