@@ -4,601 +4,473 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEMA 1.3</title>
-    <!-- Bootstrap CSS -->
+    <title>Temaopgave – Løsningsforslag</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Custom Styles -->
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-
-
+    <style>
+        @keyframes subtlePulse {
+            0% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+            100% { opacity: 0.6; transform: scale(1); }
+        }
+        .hint-icon {
+            animation: subtlePulse 3s infinite ease-in-out;
+            color: #007bff;
+            margin-right: 5px;
+        }
+        .sol-question {
+            background: #f0f0f0;
+            border-left: 4px solid #6c757d;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        .sol-answer {
+            margin-bottom: 40px;
+            padding-left: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .explanation-box {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #444;
+            border: 1px dashed #ccc;
+        }
+        .step-title {
+            font-weight: 700;
+            color: #0056b3;
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
 </head>
-
 
 <body data-page-id="cbs2">
     <div class="container py-5">
-        <!-- For demo purpose -->
-
 
         <div class="row">
             <div class="col-lg-7 mx-auto">
-
-                <!-- Timeline -->
                 <ul class="timeline">
                     <i>
 
+                    <!-- Intro -->
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <img src="../images/skat2026.png" class="img-fluid w-100 mb-2">
+                        <small class="text-muted d-block mb-3">skattesystemets progression, 2026</small>
 
+                        <h2 class="mb-0">Temaopgave</h2>
+                        <p class="text-muted" style="text-transform: lowercase; font-size: 0.95rem;">løsningsforslag – skattesystemets progression</p>
+                        
+                        <div class="explanation-box">
+                            <strong>Om progression i 2026:</strong> Denne opgave demonstrerer det nye "fire-strengede" system, som blev indført med 2026-reformen. Systemet er designet til at øge arbejdsudbuddet ved at sænke den marginale skat for mellemgrupperne, mens man øger beskatningen i den absolutte top via top-topskatten. Som rådgiver skal du kunne navigere i disse grænser for at optimere kundens disponible indkomst.
+                        </div>
 
-
-                        <li class="timeline-item bg-white ml-3 p-4 shadow">
-
-                            <div class="timeline-arrow"></div>
-
-                            <p><i>
-
-                                    <img src="../images/jesperanne.jpg" width="100%">
-                                    <h2>Temaprojekt 2 uge 3 <br>Løsningsforslag</h2>
-                                    <u>Formål:</u><br>
-                                    Formålet med temaprojektet er at give dig kompetence i at bruge, hvad ud har lært i
-                                    denne uge, i praksis.
-                                    <br>
-                                    <br>
-
-                                    <u>Beskrivelse:</u><br>
-                                    I skal læse introen til temaprojektet herunder, før I går i gang med opgaverne.
-                                    <br><br>
-
-                                    <a href="introola2.html" class="effectLinks" data-replace="Gå til OLA 2 Intro"
-                                        target="_blank">
-                                        <span>OLA 2 Intro</span>
-                                    </a>
-
-
-                            </p>
-                        </li>
-
-
-
-                        <li class="timeline-item bg-white ml-3 p-4 shadow">
-
-                            <div class="timeline-arrow"></div>
-                            <h3>Jesper og Anne</h3>
-                            <p><strong>Case: Jesper og Anne privatkunde-rådgivning</strong></p>
-
+                        <div class="mt-4">
                             <p>
-                                Anne og Jesper har kendt hinanden i nogle år og blev for to år siden gift på rådhuset
-                                (de er ikke medlem af folkekirken). <br>
-
-
-                            <ol type="1">
-                                <li>
-                                    De bor i en treværelses lejet lejlighed i centrum af Århus.
-                                </li>
-                                <li>
-                                    De har endnu ingen børn, men Anne er gravid i 4. måned.
-                                </li>
-                                <li>
-                                    Anne er 27 år og har de seneste tre år arbejdet som fuldmægtig i Skanderborg
-                                    kommune.
-                                </li>
-                                <li>
-                                    Jesper er 29 år og arbejder som ingeniør. Han er leder for et team der udvikler ny
-                                    solcelle teknologi i et firma, som ligger 10 minutter på cykel fra deres lejlighed.
-                                    <br>
-                                </li>
-                                <li>
-                                    Jesper har i år en månedsløn på 65.000 kr. med tilhørende arbejdspension (5 pct.
-                                    egenbetaling).
-                                </li>
-                                <li>
-                                    Jespers arbejdsgiver betaler mobiltelefon.
-
-                                </li>
-                                <li>
-                                    Jesper er medlem af IDA (fagforening) – koster 1.500 kr. i kvartalet, men ikke
-                                    medlem af en A-kasse.
-                                </li>
-                                <li>
-                                    Jesper vil have 216 arbejdsdage i år
-                                </li>
-                                <li>
-                                    Anne forventer at have en lønindkomst på 30.000 kr. pr. måned i år. med tilhørende
-                                    arbejdspension (5 pct. egenbetaling).
-                                </li>
-                                <li>
-                                    Hun har 27 km til arbejde - altså 54 km i alt pr. dag. Nogle gange tager hun deres
-                                    gamle Opel, andre gange tager hun toget (og før hun blev gravid cyklede hun også
-                                    nogle gange).
-                                </li>
-                                <li>
-                                    Anne vil have 216 arbejdsdage.
-                                </li>
-                                <li>
-                                    Anne er medlem i fagforeningen HK, A-kasse og hun indbetaler også til
-                                    efterlønsordningen.
-                                </li>
-                                <li>
-                                    Fagforeningen koster 1.800 kr. i kvartalet og A-kasse+efterløn 2.450 kr. pr.
-                                    kvartal.
-                                </li>
-                                <li>
-                                    Anne har de sidste år indbetalt 24.000 kr. på en privat tegnet ratepension og det
-                                    forventer hun også at gøre i år.
-                                </li>
-                                <li>
-                                    Både Anne og Jesper har sparet lidt op i banken. <br>
-                                    Anne forventes at få 5.000 kr. i renteindtægter i år og Jesper 2.400 kr. (de har en
-                                    hemmelig drøm om villa, Volvo og vovse + barn inden for overskuelig tid og sparer
-                                    derfor løbende op hver måned)
-                                </li>
-                                <li>
-                                    Leje af lejlighed koster 9.000 kr. om måneden
-                                </li>
-                                <li>
-                                    El, vand og varme aconto beløber sig til 2.700 kr. i kvartalet
-                                </li>
-                                <li>
-                                    Andre fasteudgifter bliver 6.000 kr. om måneden
-                                </li>
-                            </ol>
-                            <br>
-
-
-
-
-
-
-
-                            <br>
-
-
-
-
-
+                                <a href="https://skat.tepedu.dk/" class="effectLinks" data-replace="Skatteberegner" target="_blank"><span>Skatteberegner (skat.tepedu.dk)</span></a><br>
+                                <a href="https://pr.tepedu.dk/kapitel1.html" class="effectLinks" data-replace="Kapitel 1" target="_blank"><span>Kapitel 1 – Skattesystemet 2026</span></a>
                             </p>
-
                             <hr>
-                            <u>Afsender:</u><br>
-                            Du er privatkunde-rådgiver <br>
-                            <u>Modtager:</u><br>
-                            Jesper og Anne
-                            <br><br>
+                        </div>
+                    </li>
 
-                            <!-- <p>
-                                Man må ikke kontakte virksomheden, i forbindelse med dette projekt.
-                            </p> -->
+                    <!-- ========================= CASE 1: ANNE ========================= -->
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-3">Oplysninger – Case 1: Anne Madsen (Bundskat)</h2>
+                        <p>
+                            Anne er 34 år og arbejder som SOSU-assistent i Aarhus Kommune. Hun har netop købt sin første ejerlejlighed og vil gerne have styr på sin økonomi efter skattereformen.
+                        </p>
 
+                        <table class="table table-sm table-bordered table-striped mt-3">
+                            <thead class="thead-dark">
+                                <tr><th colspan="2">Annes økonomi 2026</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Bruttoløn</strong></td><td>360.000 kr./år (30.000 kr./md.)</td></tr>
+                                <tr><td><strong>Boligtype</strong></td><td>Ejerlejlighed i Aarhus C</td></tr>
+                                <tr><td><strong>Offentlig ejendomsværdi</strong></td><td>1.850.000 kr.</td></tr>
+                                <tr><td><strong>Grundværdi</strong></td><td>310.000 kr.</td></tr>
+                                <tr><td><strong>Renteudgifter (realkreditlån)</strong></td><td>52.000 kr./år</td></tr>
+                                <tr><td><strong>Fagforening (FOA)</strong></td><td>5.200 kr./år</td></tr>
+                                <tr><td><strong>A-kasse</strong></td><td>6.000 kr./år</td></tr>
+                                <tr><td><strong>Folkekirken</strong></td><td>Ja – betaler kirkeskat (Aarhus)</td></tr>
+                                <tr><td><strong>Transport</strong></td><td>9 km hver vej (18 km tur/retur), 220 dage/år</td></tr>
+                            </tbody>
+                        </table>
+                    </li>
 
-                            Du kan i denne opgave benytte følgende materialer: <br>
-                            <a href="https://pr.tepedu.dk/kapitel1.html"
-                                class="effectLinks" data-replace="Gå til Kapitel 1 - Skattesystemet 2026" target="_blank">
-                                <span>Kapitel 1 - Skattesystemet 2026
-                                </span>
-                            </a>
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-4">Løsning – Case 1</h2>
+
+                        <div class="sol-question">Spørgsmål A: Hvad er Annes AM-bidrag, og hvad er hendes personlige indkomst?</div>
+                        <div class="sol-answer">
+                            <span class="step-title">AM-bidrag:</span>
+                            360.000 kr. × 8 % = <strong>28.800 kr.</strong>
                             <br>
-                            <a href="https://skat.tepedu.dk/" class="effectLinks" data-replace="Skatteberegner (skat.tepedu.dk)" target="_blank">
-                                <span>Skatteberegner (skat.tepedu.dk)
-                                </span>
-                            </a>
+                            <span class="step-title">Personlig indkomst:</span>
+                            360.000 kr. − 28.800 kr. = <strong>331.200 kr.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> AM-bidraget er en "bruttoskat", hvilket betyder, at den trækkes som den allerførste mur, indkomsten møder. Der gives ingen personfradrag i AM-bidraget for voksne over 18 år. Den personlige indkomst er det beløb, som danner grundlag for beregningen af alle de statslige indkomstskatter (bund, mellem, top).
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål B: Anne har renteudgifter på 52.000 kr. Hvor i skatteberegningen indgår disse, og hvad er den anslåede skatteværdi (i kr.) af dette fradrag?</div>
+                        <div class="sol-answer">
+                            Renter indgår som <strong>negativ kapitalindkomst</strong> under de ligningsmæssige fradrag.
                             <br>
-
-                        </li>
-
-
-
-
-
-                        <li class="timeline-item bg-white ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-
-                            <h4>Opgave
-                                <br>
-                                Løsningsforslag
-                            </h4>
-                            <p>
-                                Bemærk Excel løsningsforslaget i skatteskabelonen ligger nederst i løsningsforslaget
-                            </p>
-                            Besvar nedenstående spørgsmål vha. skatteskabelonen. <br>
-                            Hvis der er manglende oplysninger, forsøg da bedst muligt at opstille budgettet bedst muligt
-                            inden kundemødet.
-                            <br><br>
-
-                            <ol type="A">
-
-                                <li>
-                                    Beregn Anne og Jespers beregningsgrundlag for arbejdsmarkedsbidrag?
-                                    <br><br>
-
-                                    <strong>Løsningsforslag:</strong><br>
-                                    <img src="../images/jesperanne1.png" width="100%"> <br><br>
-
-                                    Anne og Jespers beregningsgrundlag for arbejdsmarkedsbidrag bliver hhv. 342.000,-
-                                    kr. og 744.300,- kr.
-                                </li>
-                                <hr>
-                                <li>
-                                    Beregn Anne og Jespers personlige indkomst?
-
-                                    <br><br>
-                                    <strong>Løsningsforslag:</strong><br>
-
-                                    <img src="../images/jesperanne1.1.png" width="100%">
-                                    <br><br>
-                                    Anne og Jespers personlige indkomst bliver hhv. 290.640,- kr. og 684.756,- kr.
-                                </li>
-                                <hr>
-                                <li>
-                                    Beregn Anne og Jespers kapitalindkomst? <br>
-
-                                    <br>
-                                    <strong>Løsningsforslag:</strong>
-                                    <img src="../images/jesperannekapitalindkomst.png" width="100%"><br>
-                                    <br><br>
-                                    Anne og Jespers kapitalindkomst bliver hhv. 5.000,- kr. og 2.400,- kr.
-                                </li>
-                                <hr>
-                                <li>
-                                    Beregn Anne og Jespers skattepligtige indkomst? <br>
-
-                                    <br>
-                                    <strong>Løsningsforslag:</strong>
-                                    <img src="../images/jesperanneskattepligtig.png" width="100%"><br>
-                                    <br><br>
-                                    Anne og Jespers skattepligtige indkomst bliver hhv. 203.422,- kr. og 612.600,- kr.
-                                </li>
-                                <hr>
-                                <li>
-                                    Beregn skatten for Anne og Jesper? <br><br>
-                                    <strong>Løsningsforslag:</strong>
-                                    <img src="../images/jesperanne1.5.png" width="100%">
-                                    <br><br>
-                                    Anne og Jespers skat bliver hhv. 93.896,- kr. og 284.375,- kr.
-                                </li>
-
-                                <hr>
-                                <li>
-                                    Hvad har Anne og Jesper tilsammen udbetalt om måneden efter skat?
-                                    <br><br>
-                                    <strong>Løsningsforslag:</strong>
-                                    <img src="../images/jesperanneudbetalt.png" width="100%">
-                                    <br><br>
-                                    Anne og Jespers har tilsammen udbetalt 58.727,- kr pr. måned.
-                                </li>
-                                <hr>
-                                <li>
-                                    Hvorfor har Anne og Jesper forskelligt beskæftigelsesfradag? <br><br>
-                                    <strong>Løsningsforslag:</strong>
-
-                                    <br><br>
-                                    Anne tjener mindre end Jesper, der tjener så meget at han rammer det maksimale
-                                    beskæftigelsesfradag som i 2026 er 63.300,-. <br>
-
-
-                                </li>
-
-                                <hr>
-                                <li>
-                                    Hvilket beregningsgrundlag betaler man kommune- og kirkeskat af? <br><br>
-                                    <strong>Løsningsforslag:</strong>
-
-                                    <br><br>
-                                    Kommuneskat og kirkeskat beregnes på baggrund af din skattepligtige indkomst. Bemærk
-                                    Anne og Jeser er ikke medlemmer af folkekirken og betaler således ikke kirkeskat.
-                                </li>
-                                <hr>
-                                <li>
-                                    Hvilket beregningsgrundlag betaler man bundskat af?<br><br>
-                                    <strong>Løsningsforslag:</strong>
-
-                                    <br><br>
-                                    Bundskatten i Danmark beregnes ud fra din personlige indkomst med tillæg af positiv
-                                    nettokapitalindkomst.
-                                </li>
-                                <hr>
-                                <li>
-                                    Hvilket beregningsgrundlag betaler man topskat af?<br><br>
-                                    <strong>Løsningsforslag:</strong>
-                                    <br><br>
-                                    Topskatten i Danmark beregnes ligesom bundskatten ud fra din personlige indkomst med
-                                    tillæg af positiv nettokapitalindkomst. Personer med høj kapitalindkomst betaler
-                                    således både bund- og topskat af denne.
-
-                                </li>
-                                <hr>
-
-                                <li>
-                                    Hvor meget betaler man i arbejdsmarkedsbidrag og hvad er
-                                    beregningsgrundlaget?<br><br>
-                                    <strong>Løsningsforslag:</strong><br><br>
-                                    Man betaler 8% i arbejdsmarkedsbidrag, beregningsgrundlaget er brutto lønindkomsten
-                                    plus personalegoder som fri telefon eller bil.
-                                    <br><br>
-                                </li>
-                                <hr>
-                                <li>
-                                    Er der en maksimal fradragsgrænse for ratepension?<br><br>
-                                    <strong>Løsningsforslag:</strong><br><br>
-                                    Ja 65.500 kr. (2025) forventes at stige yderligere i (2026) ifm. skattereform.
-                                    <br><br>
-                                </li>
-                                <hr>
-                                <li>
-                                    Hvor foretages fradraget af ratepension?<br><br>
-                                    <strong>Løsningsforslag:</strong><br><br>
-                                    Fradraget for ratepensionsindbetalinger sker i den personlige indkomst,
-                                    hvilket betyder, at det reducerer grundlaget for beregning af både kommuneskat,
-                                    bund- og eventuel topskat.
-                                    <br>
-                                </li>
-                                <hr>
-                                <li>
-                                    Kunne Anne og Jesper optimere deres fradrag, ved at ændre i deres
-                                    pensionsopsparing?<br><br>
-                                    <strong>Løsningsforslag:</strong><br><br>
-                                    Ja hvis Jesper indbetaler 24.000,- på ratepension i stedet for Anne, får de fradrag
-                                    i Jespers topskat. <br><br>
-                                    Udbetalt om året før omlægning: <br>
-                                    456.625 + 248.104 = 704.729 <br>
-                                    Udbetalt om året efter omlægning: <br>
-                                    468.992 + 238.631 = 707.623 <br><br>
-                                    Se nedenstående skatteskabelon hvor indbetalingen til ratepension er flytte til
-                                    Jesper: <br><br>
-                                    <img src="../images/jesperannerate1.png" width="100%"><br><br>
-                                    <img src="../images/jesperannerate2.png" width="100%"><br><br>
-
-                                    <br><br>
-                                </li>
-                                <hr>
-                                <li>
-                                    Beregn Anne og Jespers rådighedsbeløb pr. måned før de har fået deres ønskebarn.<br>
-                                    <small>(Vink: Benyt skatteskabelonens budget ark)</small><br><br>
-                                    <strong>Løsningsforslag:</strong>
-
-                                    <br><br>
-                                    Her er benyttet skatteskabelonens budget ark, Anne's forbrug af benzin og offentlig
-                                    transport er estimeret, da vi ikke har oplysninger om dette. <br>
-                                    De har et rådighedsbeløb på 38.537,- hvilket overstiger det anbefalede beløb på
-                                    11.400,- for par.
-                                    <br><br>
-                                    <img src="../images/jesperanne2.png" width="100%">
-
-
-
-                                    <br><br>
-
-                                </li>
-                                <hr>
-                                <li>
-                                    Hvad er rådighedsbeløbet når de har fået et barn? <br>
-                                    <small>(antag at begge beholder deres nuværende jobs)</small><br><br>
-
-
-                                    <strong>Løsningsforslag:</strong>
-                                    <br><br>
-                                    Her er benyttet skatteskabelonens budget ark, der er nu tilføjet Børnefamilie
-                                    ydelser og vuggestue i budgettet. <br>
-                                    De har et rådighedsbeløb på 31.965,- hvilket overstiger det anbefalede beløb på
-                                    11.400,- + 3.000,- 14.400,- for et par med et barn.
-                                    <br><br>
-                                    <img src="../images/jesperanne3.png" width="100%">
-
-                                    <br><br>
-                                </li>
-                                <hr>
-                                <li>
-                                    Anne og Jesper ønsker at købe et hus på sigt, da de ikke kan se sig selv som familie
-                                    med barn i en lejlighed. <br>
-                                    Hvor meget kan deres samlede udgifter til et hus blive?<br>
-                                    <small>(Vink: Benyt Rådighedsbeløb i dag, beregn deres nye rådighedsbeløb uden
-                                        nuværende boligudgifter, de får jo nu i stedet et hus og fratræk anbefalet beløb
-                                        til familien, for at finde hvad udgifterne til nyt hus maksimalt må
-                                        være)</small>
-
-                                    <strong>Løsningsforslag:</strong>
-                                    <br><br>
-
-                                    <table
-                                        class="table table-sm table-striped table-hover table-small-font table-bordered">
-                                        <thead class="thead-dark">
-                                            <th colspan="2">
-                                                Udregning af maksimale udgifter til bolig:
-                                            </th>
-                                        </thead>
-
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    Rådighedsbeløb i dag
-
-                                                </td>
-                                                <td>
-                                                    31.965
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    + boligudgifter i dag
-                                                </td>
-                                                <td>
-                                                    9,900,-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    = Rådighedsbeløb før boligudgifter
-                                                </td>
-                                                <td>
-                                                    41.865
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    - krav til rådighedsbeløb
-                                                </td>
-                                                <td>
-                                                    14.400
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    = Maksimale boligudgifter til hus
-                                                </td>
-                                                <td>
-                                                    27.465
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-
-
-                                    Jesper og Anne kan således købe et hus hvor de samlede boligudgifter beløber sig til
-                                    27.465,-,
-                                    de vil dog så opleve et voldsomt fald i deres rådighedsbeløb, hvilket man bør
-                                    inddrage i rådgivningen.
-
-
-
-                                    <br><br>
-                                </li>
-                                <hr>
-                                <li>
-                                    Anne overvejer at gå ned i tid, nu arbejder hun 37 timer pr. uge, hvor meget mindre
-                                    får hun cirka udbetalt pr time hun går ned i tid?<br>
-
-                                    <small>(Vink: Anne betaler ikke topskat så regn med hun har en marginalskatteprocent
-                                        på 42%. Når hun arbejder 37 timer om ugen, svarer det til cirka 160 timer pr.
-                                        måned <br>
-                                        Hvis en marginalskat angives til 42 %, betyder det normalt, at skatten på den
-                                        sidst tjente krone (efter AM-bidrag) er 42 %. For at finde den reelle
-                                        marginalskat inkl. AM-bidraget, kan du beregne: <br>
-                                        1 - (1 - 0,08) * (1 - 0,42) = 46,64%
-                                        <br>
-                                        Så den effektive marginalskat ville i dette tilfælde være 46,64%, når
-                                        AM-bidraget tages i betragtning.<br>Bemærk: udregn blot det omtrentlige beløb,
-                                        vi udregner ikke det præcise beløb i skatteskabelonen)
-                                    </small><br><br>
-
-                                    <strong>Løsningsforslag:</strong>
-                                    <br><br>
-
-
-
-                                    <table
-                                        class="table table-sm table-striped table-hover table-small-font table-bordered">
-                                        <thead class="thead-dark">
-                                            <th colspan="2">
-                                                Udregning af udbetalt beløb pr. time
-                                            </th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    Alt andet er månedslønnen pr. time (30.000/160):
-                                                </td>
-                                                <td>
-                                                    187,50 kr.
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Skat 46,64% af 187,5
-                                                </td>
-                                                <td>
-                                                    87,22
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Mindre beløb udbetalt pr. time 187,5 - 87,22
-                                                </td>
-                                                <td>
-                                                    100,28
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <p>
-
-                                        Hvis man skal lave en "helt rigtig" beregning skal man ind i skatteberegningen
-                                        og lægge nye antagelser ind og dermed også tage højde for det præcise
-                                        beskæftigelsesfradrag og den eksakte kommuneskat etc.
-                                    </p>
-
-
-
-
-                                </li>
-
-
-                                <br>
-                                <h5>Udregning for Anne og Jesper i Skatteskabelonen</h5>
-
-
-                                <a href="
-                                   files/jesper_anne.xlsx
-                                   " class="effectLinks" data-replace="Hent Anne og Jesper Skatteskabelonen"
-                                    target="_blank">
-                                    <span>Anne og Jesper Skatteskabelonen
-                                    </span>
-                                </a>
-                                <br>
-
-                            </ol>
-
-
-
-                        </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            <span class="step-title">Skatteværdi:</span>
+                            52.000 kr. × ca. 0,256 = <strong>13.312 kr.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Rentefradraget er et ligningsmæssigt fradrag, hvilket betyder, at det trækkes fra i beregningen af kommuneskat og bundskat, men <i>ikke</i> i topskatten. Skatteværdien på ca. 25,6 % (afhængig af bopælskommune) betyder, at staten og kommunen reelt overtager omkring en fjerdedel af Annes renteudgifter.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål C: Annes befordring er 18 km tur/retur. Har hun ret til befordringsfradrag? Begrund dit svar ud fra reglerne i Kapitel 1.</div>
+                        <div class="sol-answer">
+                            <strong>Svar: Nej.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Ifølge reglerne for befordringsfradrag gives der kun fradrag for de kilometer, der ligger <i>udover</i> de første 24 km pr. arbejdsdag. Da Anne kun har 18 km tur/retur, når hun aldrig op på "bundgrænsen" for fradraget. Formålet med denne regel er at forenkle systemet og undgå småfradrag for korte pendlerture.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål D: Hvad er Annes skattepligtige indkomst? Forklar kort forskellen på personlig indkomst og skattepligtig indkomst.</div>
+                        <div class="sol-answer">
+                            <span class="step-title">Skattepligtig indkomst:</span>
+                            331.200 (PI) − 52.000 (Renter) − 5.200 (Fagf.) − 6.000 (A-kasse) = <strong>268.000 kr.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Den personlige indkomst er din løn efter AM-bidrag. Den skattepligtige indkomst er det beløb, du har tilbage, når alle <i>ligningsmæssige fradrag</i> er trukket fra. Det er denne indkomst (268.000 kr.), som kommuneskatten og kirkeskatten beregnes af. Det er vigtigt at skelne, da visse fradrag kun virker på den skattepligtige indkomst.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål E: Find Annes beskæftigelsesfradrag i skatteberegneren. Hvorfor får hun dette fradrag?</div>
+                        <div class="sol-answer">
+                            <span class="step-title">Beskæftigelsesfradrag:</span>
+                            Ca. <strong>41.940 kr.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Beskæftigelsesfradraget gives automatisk til alle, der har en arbejdsindkomst (lønnet arbejde eller selvstændig virksomhed). Det er et politisk instrument indført for at gøre det mere attraktivt at være i beskæftigelse frem for at være på overførsel. Fradraget beregnes som en procentsats (12,75 % i 2026) af arbejdsindkomsten op til et vist loft.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål F: Hvad er Annes månedlige udbetaling efter skat?</div>
+                        <div class="sol-answer">
+                            Udbetaling: <strong>ca. 19.450 kr./md.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål G: Hvad er Annes marginalskat? Forklar hvad det betyder for hende, hvis hun tager en ekstra vagt og tjener 1.000 kr. mere i bruttoløn.</div>
+                        <div class="sol-answer">
+                            <span class="step-title">Marginalskat:</span>
+                            8 % (AM) + (1 - 0,08) × (12,01 % + 25,9 % + 0,8 %) = <strong>ca. 44,2 %</strong>.
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Marginalskatten er skatten på "den sidst tjente krone". Hvis Anne tjener 1.000 kr. ekstra, skal hun først aflevere 80 kr. i AM-bidrag. Af de resterende 920 kr. skal hun betale ca. 38,7 % i samlet indkomstskat (bund + kommune + kirke). Hun beholder altså kun ca. 558 kr. selv. Jo højere marginalskat, jo mindre er incitamentet til at tage overarbejde.
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ========================= CASE 2: PETER ========================= -->
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-3">Oplysninger – Case 2: Peter Sørensen (Mellemskat)</h2>
+                        <p>
+                            Peter er 42 år og afdelingsleder i et it-firma. Han bor i et parcelhus i Højbjerg (Aarhus). Han har firmabil og vil gerne vide, hvad det betyder for hans skat.
+                        </p>
+
+                        <table class="table table-sm table-bordered table-striped mt-3">
+                            <thead class="thead-dark">
+                                <tr><th colspan="2">Peters økonomi 2026</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Bruttoløn</strong></td><td>720.000 kr./år (60.000 kr./md.)</td></tr>
+                                <tr><td><strong>Boligtype</strong></td><td>Parcelhus i Højbjerg</td></tr>
+                                <tr><td><strong>Offentlig ejendomsværdi</strong></td><td>3.200.000 kr.</td></tr>
+                                <tr><td><strong>Grundværdi</strong></td><td>720.000 kr.</td></tr>
+                                <tr><td><strong>Renteudgifter (realkreditlån)</strong></td><td>64.000 kr./år</td></tr>
+                                <tr><td><strong>Fagforening (Lederne)</strong></td><td>7.200 kr./år</td></tr>
+                                <tr><td><strong>A-kasse</strong></td><td>6.000 kr./år</td></tr>
+                                <tr><td><strong>Folkekirken</strong></td><td>Ja – betaler kirkeskat (Aarhus)</td></tr>
+                                <tr><td><strong>Firmabil</strong></td><td>Beskattes af fri bil (rådighed over arbejdsgiverbetalt bil)</td></tr>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-3">Løsning – Case 2</h2>
+
+                        <div class="sol-question">Spørgsmål A: Beregn Peters personlige indkomst. Med hvor mange kroner overstiger han mellemskattegrænsen på 641.200 kr.?</div>
+                        <div class="sol-answer">
+                            <span class="step-title">Personlig indkomst:</span>
+                            720.000 kr. − 8 % AM = <strong>662.400 kr.</strong>
+                            <br>
+                            <span class="step-title">Over mellemskattegrænsen:</span>
+                            662.400 kr. − 641.200 kr. = <strong>21.200 kr.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Mellemskatten blev genindført i 2026 som et nyt trin mellem bund- og topskat. Formålet er at skabe en blødere overgang i progressionen. Peter ligger i den gruppe, der lige præcis "tipper" over og bliver mellemskatteyder.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål B: Hvor meget betaler Peter i mellemskat (7,5 %)?</div>
+                        <div class="sol-answer">
+                            21.200 kr. × 7,5 % = <strong>1.590 kr./år.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål C: Peter har rådighed over firmabil. Hvordan påvirker det hans personlige indkomst, og får han stadig befordringsfradrag?</div>
+                        <div class="sol-answer">
+                            Firmabilen tillægges den personlige indkomst som et beskatningsgrundlag (typisk en procentdel af bilens værdi).
+                            <br>
+                            <strong>Svar: Nej,</strong> han får ikke befordringsfradrag.
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Når man har firmabil, betaler man skat af den "private rådighed over en arbejdsgiverbetalt bil". Da ens transport mellem hjem og arbejde reelt betales af firmaet gennem bilen, bortfalder retten til at få befordringsfradrag på egen selvangivelse.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål D: Hvad er skatteværdien af Peters fagforeningskontingent (max fradrag 7.000 kr.) og A-kasse?</div>
+                        <div class="sol-answer">
+                            Fradrag for fagforening er begrænset til 7.000 kr., selvom han betaler 7.200 kr.
+                            <br>
+                            <span class="step-title">Skatteværdi:</span>
+                            (7.000 + 6.000) × ca. 0,256 = <strong>3.328 kr.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål E: Hvad er Peters samlede ligningsmæssige fradrag?</div>
+                        <div class="sol-answer">
+                            Renter (64.000) + Fagf. (7.000) + A-kasse (6.000) = <strong>77.000 kr.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål F: Find Peters beskæftigelsesfradrag. Rammer han loftet for dette fradrag?</div>
+                        <div class="sol-answer">
+                            <strong>Ja.</strong> Peter rammer loftet på <strong>63.300 kr.</strong> (2026).
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Beskæftigelsesfradraget på 12,75 % stopper ved en vis indkomst. For personer med Peters løn (720.000 kr.) vil den matematiske beregning overstige loftet, og han får derfor "kun" det maksimale beløb. Det betyder, at en yderligere lønstigning ikke vil øge hans fradrag yderligere.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål G: Hvad har Peter udbetalt ifølge skatteberegneren?</div>
+                        <div class="sol-answer">
+                            Udbetaling: <strong>ca. 37.000 kr./md.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål H: Hvad er Peters marginalskat? Sammenlign med Annes marginalskat og forklar forskellen.</div>
+                        <div class="sol-answer">
+                            <span class="step-title">Marginalskat:</span>
+                            Ca. <strong>51,7 %</strong>.
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Peters marginalskat er væsentligt højere (ca. 7,5 procentpoint mere) end Annes, fordi han er over mellemskattegrænsen. Det danske skattesystem er <i>progressivt</i>, hvilket betyder, at man betaler en højere andel af den sidste tjente krone, jo højere ens samlede indkomst er.
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ========================= CASE 3: JESPER ========================= -->
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-3">Oplysninger – Case 3: Jesper Vang (Topskat)</h2>
+                        <p>
+                            Jesper er 50 år og direktør. Han bor i en villa i Risskov. Han er udmeldt af folkekirken og vil vide, hvordan topskatten rammer ham i 2026.
+                        </p>
+
+                        <table class="table table-sm table-bordered table-striped mt-3">
+                            <thead class="thead-dark">
+                                <tr><th colspan="2">Jespers økonomi 2026</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Bruttoløn</strong></td><td>1.080.000 kr./år (90.000 kr./md.)</td></tr>
+                                <tr><td><strong>Boligtype</strong></td><td>Villa i Risskov</td></tr>
+                                <tr><td><strong>Offentlig ejendomsværdi</strong></td><td>5.800.000 kr.</td></tr>
+                                <tr><td><strong>Grundværdi</strong></td><td>1.450.000 kr.</td></tr>
+                                <tr><td><strong>Renteudgifter (realkreditlån)</strong></td><td>96.000 kr./år</td></tr>
+                                <tr><td><strong>Fagforening (DJØF)</strong></td><td>8.500 kr./år</td></tr>
+                                <tr><td><strong>A-kasse</strong></td><td>6.000 kr./år</td></tr>
+                                <tr><td><strong>Folkekirken</strong></td><td>Nej – betaler ikke kirkeskat</td></tr>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-3">Løsning – Case 3</h2>
+
+                        <div class="sol-question">Spørgsmål A: Hvad er Jespers personlige indkomst?</div>
+                        <div class="sol-answer">
+                            1.080.000 kr. − 8 % AM = <strong>993.600 kr.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål B: Hvor stor en del af Jespers indkomst overstiger topskattegrænsen på 777.900 kr.?</div>
+                        <div class="sol-answer">
+                            993.600 kr. − 777.900 kr. = <strong>215.700 kr.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål C: Beregn Jespers topskat (15 % af det overskydende beløb).</div>
+                        <div class="sol-answer">
+                            Topskat 2026 er sammensat af mellemskat (7,5 %) + selve topskat-tillægget (7,5 %) = 15 %.
+                            <br>
+                            215.700 kr. × 15 % = <strong>32.355 kr./år.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål D: Reducerers Jespers topskat af hans rentefradrag på 96.000 kr.?</div>
+                        <div class="sol-answer">
+                            <strong>Svar: Nej.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Dette er en meget vigtig detalje i skatteplanlægning. Ligningsmæssige fradrag (som renter) trækkes kun fra i grundlaget for kommuneskat og bundskat. De reducerer <i>ikke</i> beregningsgrundlaget for topskatten. Hvis Jesper vil "spare topskat", skal han i stedet indbetale til en ratepension eller livrente, da pensionsindbetalinger trækkes fra <i>før</i> topskatten beregnes.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål E: Hvad er Jespers samlede kommuneskat (Aarhus)?</div>
+                        <div class="sol-answer">
+                            <span class="step-title">Skattepligtig indkomst:</span>
+                            993.600 − 96.000 − 7.000 (max fagf.) − 6.000 = 884.600 kr.
+                            <br>
+                            <span class="step-title">Kommuneskat:</span>
+                            884.600 kr. × 25,9 % = <strong>ca. 229.111 kr.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål F: Hvad har Jesper udbetalt efter skat?</div>
+                        <div class="sol-answer">
+                             Udbetaling: <strong>ca. 52.100 kr./md.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål G: Hvad er Jespers marginalskat? Forklar begrebet "det skrå skatteloft" og undersøg om Jesper rammer dette loft.</div>
+                        <div class="sol-answer">
+                            <span class="step-title">Marginalskat:</span>
+                            Ca. <strong>56 %</strong>.
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Det skrå skatteloft er en regel i personskatteloven, der sikrer, at summen af kommuneskat og statsskatter (bund, mellem, top) ikke overstiger 52,07 % (i 2026). Hvis den matematiske sum overstiger dette, nedsættes topskatten tilsvarende. Da Aarhus har en relativt høj kommuneskat, rammer mange topskatteydere her netop loftet. AM-bidrag på 8 % betales altid oveni, hvorfor den reelle marginalskat lander omkring 56 %.
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ========================= CASE 4: SOFIA ========================= -->
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-3">Oplysninger – Case 4: Sofia Christensen (Top-topskat)</h2>
+                        <p>
+                            Sofia er 55 år og CEO. Hun bor i Hellerup (Gentofte Kommune) og har en meget høj indkomst, der udløser den nye top-topskat.
+                        </p>
+
+                        <table class="table table-sm table-bordered table-striped mt-3">
+                            <thead class="thead-dark">
+                                <tr><th colspan="2">Sofias økonomi 2026</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Bruttoløn</strong></td><td>3.000.000 kr./år (250.000 kr./md.)</td></tr>
+                                <tr><td><strong>Boligtype</strong></td><td>Villa i Hellerup</td></tr>
+                                <tr><td><strong>Offentlig ejendomsværdi</strong></td><td>12.500.000 kr.</td></tr>
+                                <tr><td><strong>Grundværdi</strong></td><td>4.200.000 kr.</td></tr>
+                                <tr><td><strong>Renteudgifter (realkreditlån)</strong></td><td>230.000 kr./år</td></tr>
+                                <tr><td><strong>Fagforening/A-kasse</strong></td><td>11.000 kr./år samlet</td></tr>
+                                <tr><td><strong>Folkekirken</strong></td><td>Ja – betaler kirkeskat (Gentofte)</td></tr>
+                                <tr><td><strong>Kommuneskat (Gentofte)</strong></td><td>23,4 %</td></tr>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-3">Løsning – Case 4</h2>
+
+                        <div class="sol-question">Spørgsmål A: Hvad er Sofias personlige indkomst?</div>
+                        <div class="sol-answer">
+                            3.000.000 kr. − 8 % AM = <strong>2.760.000 kr.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål B: Hvor stor en del af Sofias indkomst ligger over top-topskat-grænsen på 2.592.700 kr.?</div>
+                        <div class="sol-answer">
+                            2.760.000 kr. − 2.592.700 kr. = <strong>167.300 kr.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Top-topskatten er den mest progressive nyskabelse i 2026-reformen. Den rammer kun de ca. 9.000 danskere med de allerhøjeste indkomster. Den lægger yderligere 5 % skat på toppen af topskatten.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål C: Hvor meget skal Sofia betale i top-topskat (5 % ekstra)?</div>
+                        <div class="sol-answer">
+                            167.300 kr. × 5 % = <strong>8.365 kr./år.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål D: Beregn Sofias samlede indkomstskat (bund, mellem, top og top-top).</div>
+                        <div class="sol-answer">
+                            Sofia betaler alle fire statsskatter. Hendes samlede statslige tillægsskatter (mellem, top, top-top) udgør alene over 400.000 kr. hertil kommer bundskat og de store kommunale skatter.
+                            <br>
+                            Samlet indkomstskat: <strong>ca. 1,4 mio. kr./år</strong>.
+                        </div>
+
+                        <div class="sol-question">Spørgsmål E: Hvilket skatteloft beskytter Sofia, og hvad er den maksimale skatteprocent (ekskl. AM-bidrag)?</div>
+                        <div class="sol-answer">
+                            <strong>Svar:</strong> Hun beskyttes af det forhøjede skatteloft for top-top indkomst som er <strong>ca. 57,07 %</strong>.
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Da man indførte top-topskatten, var man nødt til at hæve det overordnede skatteloft fra 52,07 % til ca. 57 %, for at de 5 % ekstra overhovedet kunne opkræves. Uden denne hævelse ville skatteloftet bare have "kappet" top-topskatten af med det samme.
+                            </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål F: Hvor meget sparer Sofia i skat ved at bo i Gentofte (23,4 %) frem for Aarhus (25,9 %)?</div>
+                        <div class="sol-answer">
+                             Forskellen er 2,5 procentpoint af hendes skattepligtige indkomst (ca. 2,6 mio. kr.).
+                             <br>
+                             Besparelse: <strong>ca. 65.000 kr./år.</strong>
+                             <div class="explanation-box">
+                                <strong>Uddybning:</strong> Ved høje indkomster har bopælskommunens skatteprocent en enorm betydning. Som rådgiver bør man altid tjekke kommuneskatten, især for kunder der overvejer at flytte, da det direkte påvirker rådighedsbeløbet.
+                             </div>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål G: Hvad har Sofia udbetalt?</div>
+                        <div class="sol-answer">
+                            Udbetaling: <strong>ca. 123.000 kr./md.</strong>
+                        </div>
+
+                        <div class="sol-question">Spørgsmål H: Hvad er Sofias effektive skatteprocent?</div>
+                        <div class="sol-answer">
+                            <span class="step-title">Effektiv skatteprocent:</span>
+                            (Samlet skat / Bruttoløn) = <strong>ca. 50,7 %</strong>.
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Den effektive skatteprocent viser det reelle skattetryk. Selvom hendes marginalskat er tæt på 60 %, betaler hun "kun" ca. halvdelen af sin samlede indkomst i skat, fordi hendes personfradrag og de lavere skattetrin (bundskat) trækker gennemsnittet ned.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="mb-3">Sammenfatning: Progression 2026</h2>
+                        <table class="table table-sm table-bordered">
+                            <thead class="thead-dark">
+                                <tr><th>Person</th><th>Skatteniveau</th><th>Marginalskat</th><th>Udbetalt/md.</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Anne</td><td>Bundskat</td><td>ca. 44,2 %</td><td>ca. 19.450 kr.</td></tr>
+                                <tr><td>Peter</td><td>Mellemskat</td><td>ca. 51,7 %</td><td>ca. 37.000 kr.</td></tr>
+                                <tr><td>Jesper</td><td>Topskat</td><td>ca. 56,0 %</td><td>ca. 52.100 kr.</td></tr>
+                                <tr><td>Sofia</td><td>Top-topskat</td><td>max 57,07 %</td><td>ca. 123.000 kr.</td></tr>
+                            </tbody>
+                        </table>
+                    </li>
 
                     </i>
                 </ul>
-
             </div>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <script src="script.js"></script> -->
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../global.js"></script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    } else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.timeline-item').forEach(item => observer.observe(item));
+        });
+    </script>
 </body>
-
 </html>
