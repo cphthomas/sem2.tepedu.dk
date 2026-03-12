@@ -109,6 +109,8 @@
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
                         <h2 class="mb-4">Løsning – Case 1</h2>
+                        <a href="../files/annemadsen.xlsx" class="effectLinks mb-0" data-replace="Skatteskabelon" target="_blank"><span>Skatteskabelon for Anne Madsen</span></a>
+                        <br><hr>
 
                         <div class="sol-question">Spørgsmål A: Hvad er Annes AM-bidrag, og hvad er hendes personlige indkomst?</div>
                         <div class="sol-answer">
@@ -243,7 +245,7 @@
                         <div class="timeline-arrow"></div>
                         <h2 class="mb-3">Oplysninger – Case 2: Peter Sørensen (Mellemskat)</h2>
                         <p>
-                            Peter er 42 år og afdelingsleder i et it-firma. Han bor i et parcelhus i Højbjerg (Aarhus). Han har firmabil og vil gerne vide, hvad det betyder for hans skat.
+                            Peter er 42 år og afdelingsleder i et it-firma. Han bor i et parcelhus i Højbjerg (Aarhus) og kører 10 km til arbejde (5 km hver vej). Han vil gerne forstå sin skattemæssige situation efter skattereformen.
                         </p>
 
                         <table class="table table-sm table-bordered table-striped mt-3">
@@ -259,7 +261,7 @@
                                 <tr><td><strong>Fagforening (Lederne)</strong></td><td>7.200 kr./år</td></tr>
                                 <tr><td><strong>A-kasse</strong></td><td>6.000 kr./år</td></tr>
                                 <tr><td><strong>Folkekirken</strong></td><td>Ja – betaler kirkeskat (Aarhus)</td></tr>
-                                <tr><td><strong>Firmabil</strong></td><td>Beskattes af fri bil (rådighed over arbejdsgiverbetalt bil)</td></tr>
+                                <tr><td><strong>Transport</strong></td><td>5 km hver vej (10 km tur/retur), 220 dage/år</td></tr>
                             </tbody>
                         </table>
                     </li>
@@ -267,16 +269,22 @@
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
                         <h2 class="mb-3">Løsning – Case 2</h2>
-
+                        <a href="../files/petersorensen.xlsx" class="effectLinks mb-0" data-replace="Skatteskabelon" target="_blank"><span>Skatteskabelon for Peter Sørensen</span></a>
+                        <br><hr>
                         <div class="sol-question">Spørgsmål A: Beregn Peters personlige indkomst. Med hvor mange kroner overstiger han mellemskattegrænsen på 641.200 kr.?</div>
                         <div class="sol-answer">
-                            <span class="step-title">Personlig indkomst:</span>
-                            720.000 kr. − 8 % AM = <strong>662.400 kr.</strong>
-                            <br>
-                            <span class="step-title">Over mellemskattegrænsen:</span>
-                            662.400 kr. − 641.200 kr. = <strong>21.200 kr.</strong>
+                            <span class="step-title">Trin 1 – AM-bidrag og personlig indkomst (PI):</span>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr><td>AM-pligtig indkomst (bruttoløn)</td><td class="text-right"><strong>720.000 kr.</strong></td></tr>
+                                    <tr class="table-danger"><td>− AM-bidrag (8 % af 720.000 kr.)</td><td class="text-right">− 57.600 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Personlig indkomst (PI)</strong></td><td class="text-right"><strong>662.400 kr.</strong></td></tr>
+                                    <tr class="table-warning"><td>Mellemskattegrænse</td><td class="text-right">641.200 kr.</td></tr>
+                                    <tr class="table-info"><td><strong>Over mellemskattegrænsen</strong></td><td class="text-right"><strong>21.200 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Mellemskatten er det nye "mellemstadie" i 2026-skattereformen. Den blev genindført for at skabe en blødere progression end tidligere. For Peter betyder det, at de første 641.200 kr. (PI) kun beskattes med bundskat, mens alt mellem 641.200 kr. og topskattegrænsen på 777.900 kr. bliver pålagt de ekstra 7,5 %. Dette trin øger hans marginalskat med præcis 7,5 procentpoint.
+                                <strong>Uddybning:</strong> Mellemskatten er det nye "mellemstadie" i 2026-skattereformen. For Peter betyder det, at de første 641.200 kr. (PI) kun beskattes med bundskat, mens de 21.200 kr. over grænsen pålægges ekstra 7,5 % i mellemskat.
                             </div>
                         </div>
 
@@ -285,52 +293,107 @@
                             21.200 kr. × 7,5 % = <strong>1.590 kr./år.</strong>
                         </div>
 
-                        <div class="sol-question">Spørgsmål C: Peter har rådighed over firmabil. Hvordan påvirker det hans personlige indkomst, og får han stadig befordringsfradrag?</div>
+                        <div class="sol-question">Spørgsmål C: Peter har 10 km til arbejde (5 km hver vej). Får han befordringsfradrag?</div>
                         <div class="sol-answer">
-                            Firmabilen tillægges den personlige indkomst som et beskatningsgrundlag (typisk en procentdel af bilens værdi).
-                            <br>
-                            <strong>Svar: Nej,</strong> han får ikke befordringsfradrag.
+                            <strong>Svar: Nej.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Beskatning af fri bil (firmabil) er en "fiktiv" indkomst. Man får ikke flere penge mellem hænderne, men staten lader som om, man har tjent mere (baseret på bilens værdi), fordi man sparer udgiften til en privat bil. Denne fiktive indkomst lægges oveni bruttolønnen og øger dermed den personlige indkomst, hvilket kan skubbe kunden op i mellemskat eller topskat. Samtidig mister man retten til befordringsfradrag, da man jo ikke har udgifter til sin transport.
+                                <strong>Uddybning:</strong> Befordringsfradrag kræver, at den daglige transport overstiger 24 km (12 km hver vej). Peter pendler kun 5 km hver vej (10 km t/r) og når ikke over grænsen. Fradraget er 0 kr. – præcis som for Anne, men her er det Peterss korte pendlingsafstand der er årsagen.
                             </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål D: Hvad er skatteværdien af Peters fagforeningskontingent (max fradrag 7.000 kr.) og A-kasse?</div>
                         <div class="sol-answer">
-                            Fradrag for fagforening er begrænset til 7.000 kr., selvom han betaler 7.200 kr.
-                            <br>
-                            <span class="step-title">Skatteværdi:</span>
-                            (7.000 + 6.000) × ca. 0,256 = <strong>3.328 kr.</strong>
+                            <span class="step-title">Trin 2 – Kapitalindkomst (KI):</span>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr class="table-danger"><td>− Renteudgifter (realkreditlån)</td><td class="text-right">− 64.000 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Kapitalindkomst (KI)</strong></td><td class="text-right"><strong>− 64.000 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            Skatteværdi fagforening + A-kasse: (7.000 + 6.000) × ca. 25,6 % = <strong>3.328 kr.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Peters fagforeningskontingent er 7.200 kr., men fradraget er begrænset til max 7.000 kr. A-kassen er 6.000 kr. Renteudgifter indgår som negativ kapitalindkomst og reducerer SI – ikke PI (og dermed ikke mellemskatten).
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål E: Hvad er Peters samlede ligningsmæssige fradrag?</div>
                         <div class="sol-answer">
-                            <span class="step-title">Sammentælling:</span>
-                            Fagf. (max 7.000) + A-kasse (6.000) + Beskæftigelsesfradrag (63.300) + Jobfradrag (3.100) = <strong>79.400 kr.</strong>
+                            <span class="step-title">Trin 3 – Ligningsmæssige fradrag og skattepligtig indkomst (SI):</span>
+                            <table class="table table-sm table-bordered mt-2">
+                                <thead class="thead-light"><tr><th colspan="2">Ligningsmæssige fradrag</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Fagforening (Lederne, max 7.000 kr.)</td><td class="text-right">7.000 kr.</td></tr>
+                                    <tr><td>A-kasse</td><td class="text-right">6.000 kr.</td></tr>
+                                    <tr><td>Beskæftigelsesfradrag (12,75 % af 720.000, loft 63.300 kr.)</td><td class="text-right">63.300 kr.</td></tr>
+                                    <tr><td>Jobfradrag (4,5 % af beløb over 235.200 kr., max 3.100 kr.)</td><td class="text-right">3.100 kr.</td></tr>
+                                    <tr><td>Befordringsfradrag</td><td class="text-right">0 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Ligningsmæssige fradrag i alt</strong></td><td class="text-right"><strong>79.400 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr><td>Personlig indkomst (PI)</td><td class="text-right">662.400 kr.</td></tr>
+                                    <tr><td>+ Kapitalindkomst (KI)</td><td class="text-right">− 64.000 kr.</td></tr>
+                                    <tr class="table-danger"><td>− Ligningsmæssige fradrag</td><td class="text-right">− 79.400 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Skattepligtig indkomst (SI)</strong></td><td class="text-right"><strong>519.000 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Peters firmabil betyder, at han ikke får befordringsfradrag. Derudover indgår renteudgifter (64.000 kr.) ikke klassisk her, men særskilt som "negativ kapitalindkomst", inden vi lander på Skattepligtig Indkomst (SI). Hans ligningsmæssige fradrag er dermed fagforening og a-kasse, plus de fulde automatiske job- og beskæftigelsesfradrag pga. hans høje indløn.
+                                <strong>Uddybning:</strong> PI = grundlag for statsskatterne (bundskat + mellemskat). SI = grundlag for kommuneskat og kirkeskat. Peter rammer beskæftigelsesfradragets loft (63.300 kr.) pga. sin høje indkomst.
                             </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål F: Find Peters beskæftigelsesfradrag. Rammer han loftet for dette fradrag?</div>
                         <div class="sol-answer">
-                            <strong>Ja.</strong> Peter rammer loftet på <strong>63.300 kr.</strong> (2026).
+                            <strong>Ja.</strong> Peter rammer loftet på <strong>63.300 kr.</strong> (2026). 12,75 % × 720.000 = 91.800 kr. – over loftet.
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Beskæftigelsesfradraget stiger med indkomsten (12,75 %), indtil man rammer loftet. Peter tjener rigeligt til at ramme loftet på 63.300 kr. For en rådgiver betyder det, at hvis Peter får endnu højere løn, får han ikke mere i fradrag. Han har "maxet" denne skattefordel ud. Hans incitament til at arbejde mere vil fremover blive styret rent af marginalskatten uden denne lille "rabat" fra fradraget.
+                                <strong>Uddybning:</strong> Beskæftigelsesfradraget stiger med indkomsten (12,75 %) indtil loftet nås. Peter har "maxet" denne fordel.
                             </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål G: Hvad har Peter udbetalt ifølge skatteberegneren?</div>
                         <div class="sol-answer">
-                            Udbetaling: <strong>37.720 kr./md.</strong> (452.645 kr./år).
+                            <span class="step-title">Trin 4 – Komplet skatteopgørelse (Aarhus, Folkekirke, Ejerbolig, 2026):</span>
+                            <a href="../files/petersorensen.xlsx" class="effectLinks mb-2 d-inline-block" data-replace="Skatteskabelon" target="_blank"><span>Skatteskabelon for Peter Sørensen</span></a>
+                            <table class="table table-sm table-bordered mt-2">
+                                <thead class="thead-dark"><tr><th colspan="2">Skatteopgørelse – Peter Sørensen 2026</th></tr></thead>
+                                <tbody>
+                                    <tr class="table-light"><td colspan="2"><strong>Beregningsgrundlag</strong></td></tr>
+                                    <tr><td>Personlig indkomst (PI)</td><td class="text-right">662.400 kr.</td></tr>
+                                    <tr><td>Skattepligtig indkomst (SI)</td><td class="text-right">519.000 kr.</td></tr>
+                                    <tr><td>Personfradrag</td><td class="text-right">54.100 kr.</td></tr>
+                                    <tr><td>Beskatningsgrundlag bundskat (PI − personfradrag)</td><td class="text-right">608.300 kr.</td></tr>
+                                    <tr><td>Beskatningsgrundlag kommune/kirke (SI − personfradrag)</td><td class="text-right">464.900 kr.</td></tr>
+                                    <tr class="table-light"><td colspan="2"><strong>Skatter</strong></td></tr>
+                                    <tr><td>AM-bidrag (8 % af 720.000 kr.)</td><td class="text-right">57.600 kr.</td></tr>
+                                    <tr><td>Bundskat (12,01 % af 608.300 kr.)</td><td class="text-right">73.057 kr.</td></tr>
+                                    <tr><td>Mellemskat (7,5 % af 21.200 kr.)</td><td class="text-right">1.590 kr.</td></tr>
+                                    <tr><td>Topskat (7,5 %)</td><td class="text-right">0 kr. – under grænsen</td></tr>
+                                    <tr><td>Kommuneskat (24,52 % af 464.900 kr.)</td><td class="text-right">113.993 kr.</td></tr>
+                                    <tr><td>Kirkeskat (0,74 % af 464.900 kr.)</td><td class="text-right">3.440 kr.</td></tr>
+                                    <tr><td>Ejendomsværdiskat (parcelhus 3.200.000 kr.)</td><td class="text-right">11.856 kr.</td></tr>
+                                    <tr><td>Grundskyld (720.000 kr. grundværdi)</td><td class="text-right">4.550 kr.</td></tr>
+                                    <tr class="table-success"><td>Skatterabat neg. KI (8 % af 64.000 kr.)</td><td class="text-right">− 4.000 kr.</td></tr>
+                                    <tr class="table-warning"><td><strong>Skat i alt</strong></td><td class="text-right"><strong>262.087 kr.</strong></td></tr>
+                                    <tr class="table-light"><td colspan="2"><strong>Nettoudbetaling</strong></td></tr>
+                                    <tr><td>Bruttoløn</td><td class="text-right">720.000 kr.</td></tr>
+                                    <tr class="table-danger"><td>− Skat i alt</td><td class="text-right">− 262.087 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Netto udbetalt (år)</strong></td><td class="text-right"><strong>457.913 kr.</strong></td></tr>
+                                    <tr class="table-success"><td><strong>= Netto pr. måned</strong></td><td class="text-right"><strong>38.159 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Peters ejendomsværdiskat og grundskyld trækkes automatisk. Skatterabatten på 4.000 kr. (max) gives for de 64.000 kr. i negative renter. Mellemskatten udgør kun 1.590 kr. da Peter kun er 21.200 kr. over grænsen.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål H: Hvad er Peters marginalskat? Sammenlign med Annes marginalskat og forklar forskellen.</div>
                         <div class="sol-answer">
                             <span class="step-title">Marginalskat:</span>
-                            Ca. <strong>51,7 %</strong>.
+                            8 % (AM) + (1 − 0,08) × (12,01 % + 7,5 % + 24,52 % + 0,74 %) = <strong>ca. 51,5 %</strong>
+                            <br>Ekstra 1.000 kr. brutto → Peter beholder ca. <strong>485 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Peter går fra Annes marginalskat på ca. 44 % op til ca. 51,7 %. Det betyder, at for hver gang Peter tjener en krone mere, afleverer han mere end halvdelen til skat. Forklaringen er de 7,5 % i mellemskat. Når man som rådgiver taler med mellemskatteydere, er det her, man begynder at tale om pension og andre fradragsmuligheder, for at få PI under grænsen igen.
+                                <strong>Uddybning:</strong> Peter går fra Annes marginalskat på ca. 42,8 % op til ca. 51,5 %. Det ekstra trin er mellemskatten på 7,5 %. For hver krone Peter tjener over mellemskattegrænsen, afleverer han mere end halvdelen til skat. Her er det oplagt at tale om pension: en indbetaling reducerer PI og kan bringe ham under mellemskattegrænsen igen.
                             </div>
                         </div>
                     </li>
@@ -340,7 +403,7 @@
                         <div class="timeline-arrow"></div>
                         <h2 class="mb-3">Oplysninger – Case 3: Jesper Vang (Topskat)</h2>
                         <p>
-                            Jesper er 50 år og direktør. Han bor i en villa i Risskov. Han er udmeldt af folkekirken og vil vide, hvordan topskatten rammer ham i 2026.
+                            Jesper er 50 år og direktør. Han bor i en villa i Dragør. Han er udmeldt af folkekirken og vil vide, hvordan topskatten rammer ham i 2026.
                         </p>
 
                         <table class="table table-sm table-bordered table-striped mt-3">
@@ -349,7 +412,7 @@
                             </thead>
                             <tbody>
                                 <tr><td><strong>Bruttoløn</strong></td><td>1.080.000 kr./år (90.000 kr./md.)</td></tr>
-                                <tr><td><strong>Boligtype</strong></td><td>Villa i Risskov</td></tr>
+                                <tr><td><strong>Boligtype</strong></td><td>Villa i Dragør</td></tr>
                                 <tr><td><strong>Offentlig ejendomsværdi</strong></td><td>5.800.000 kr.</td></tr>
                                 <tr><td><strong>Grundværdi</strong></td><td>1.450.000 kr.</td></tr>
                                 <tr><td><strong>Renteudgifter (realkreditlån)</strong></td><td>96.000 kr./år</td></tr>
@@ -364,10 +427,24 @@
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
                         <h2 class="mb-3">Løsning – Case 3</h2>
-
+                        <a href="../files/jespervang.xlsx" class="effectLinks mb-0" data-replace="Skatteskabelon" target="_blank"><span>Skatteskabelon for Jesper Vang</span></a>
+                        <br><hr>
                         <div class="sol-question">Spørgsmål A: Hvad er Jespers personlige indkomst?</div>
                         <div class="sol-answer">
-                            1.080.000 kr. − 8 % AM = <strong>993.600 kr.</strong>
+                            <span class="step-title">Trin 1 – AM-bidrag og personlig indkomst (PI):</span>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr><td>AM-pligtig indkomst (bruttoløn)</td><td class="text-right"><strong>1.080.000 kr.</strong></td></tr>
+                                    <tr class="table-danger"><td>− AM-bidrag (8 % af 1.080.000 kr.)</td><td class="text-right">− 86.400 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Personlig indkomst (PI)</strong></td><td class="text-right"><strong>993.600 kr.</strong></td></tr>
+                                    <tr class="table-warning"><td>Mellemskattegrænse</td><td class="text-right">641.200 kr.</td></tr>
+                                    <tr class="table-warning"><td>Topskattegrænse</td><td class="text-right">777.900 kr.</td></tr>
+                                    <tr class="table-info"><td><strong>Over topskattegrænsen</strong></td><td class="text-right"><strong>215.700 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Jespers PI på 993.600 kr. overskrider både mellemskattegrænsen (641.200 kr.) og topskattegrænsen (777.900 kr.). Han betaler dermed bundskat, mellemskat og topskat.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål B: Hvor stor en del af Jespers indkomst overstiger topskattegrænsen på 777.900 kr.?</div>
@@ -377,9 +454,11 @@
 
                         <div class="sol-question">Spørgsmål C: Beregn Jespers topskat (15 % af det overskydende beløb).</div>
                         <div class="sol-answer">
-                            Topskat 2026 er sammensat af mellemskat (7,5 %) + selve topskat-tillægget (7,5 %) = 15 %.
-                            <br>
+                            Topskat 2026 er sammensat af mellemskat (7,5 %) + topskat-tillæg (7,5 %) = 15 %.<br>
                             215.700 kr. × 15 % = <strong>32.355 kr./år.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> I beregningen opdeles dette: Mellemskat dækker indkomst fra 641.200–777.900 kr. (352.400 kr. × 7,5 % = 26.430 kr.) og topskat dækker indkomst over 777.900 kr. (215.700 kr. × 7,5 % = 16.178 kr.).
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål D: Reducerers Jespers topskat af hans rentefradrag på 96.000 kr.?</div>
@@ -392,42 +471,99 @@
 
                         <div class="sol-question">Spørgsmål E: Beregn Jespers befordringsfradrag.</div>
                         <div class="sol-answer">
-                            <span class="step-title">Beregning:</span>
+                            <span class="step-title">Trin 2 – Kapitalindkomst og befordringsfradrag:</span>
                             (64 km − 24 km) × 2,28 kr. × 220 dage = <strong>20.064 kr.</strong>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr class="table-danger"><td>− Renteudgifter (realkreditlån)</td><td class="text-right">− 96.000 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Kapitalindkomst (KI)</strong></td><td class="text-right"><strong>− 96.000 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Selvom Jesper betaler topskat, har han præcis samme ret til befordringsfradrag som alle andre lønmodtagere, der har mere end 24 km til og fra arbejde. I 2026 er satsen 2,28 kr. pr. km. Dette fradrag trækkes fra i Jespers skattepligtige indkomst og reducerer dermed hans kommuneskattebetaling.
+                                <strong>Uddybning:</strong> Selvom Jesper betaler topskat, har han præcis samme ret til befordringsfradrag. I 2026 er satsen 2,28 kr./km for km 25–120. Fradraget reducerer SI og sænker kommuneskatten – ikke topskatten.
                             </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål F: Hvad er Jespers samlede kommuneskat (Aarhus)?</div>
                         <div class="sol-answer">
-                            <span class="step-title">Skattepligtig indkomst (SI):</span>
-                            993.600 (PI) + (-96.000 negativ kapitalindkomst) − 99.464 (Befordring 20.064 + A-kasse 6.000 + Fagf. 7.000 + Beskæftigelse 63.300 + Job 3.100) = 798.136 kr.
-                            <br>
-                            <span class="step-title">Kommuneskat:</span>
-                            (798.136 kr. - 54.100 personfradrag) × 24,52 % = <strong>182.460 kr.</strong>
+                            <span class="step-title">Trin 3 – Ligningsmæssige fradrag og skattepligtig indkomst (SI):</span>
+                            <table class="table table-sm table-bordered mt-2">
+                                <thead class="thead-light"><tr><th colspan="2">Ligningsmæssige fradrag</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Befordringsfradrag</td><td class="text-right">20.064 kr.</td></tr>
+                                    <tr><td>Fagforening (DJØF, max 7.000 kr.)</td><td class="text-right">7.000 kr.</td></tr>
+                                    <tr><td>A-kasse</td><td class="text-right">6.000 kr.</td></tr>
+                                    <tr><td>Beskæftigelsesfradrag (loft 63.300 kr.)</td><td class="text-right">63.300 kr.</td></tr>
+                                    <tr><td>Jobfradrag (max 3.100 kr.)</td><td class="text-right">3.100 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Ligningsmæssige fradrag i alt</strong></td><td class="text-right"><strong>99.464 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr><td>Personlig indkomst (PI)</td><td  class="text-right">993.600 kr.</td></tr>
+                                    <tr><td>+ Kapitalindkomst (KI)</td><td class="text-right">− 96.000 kr.</td></tr>
+                                    <tr class="table-danger"><td>− Ligningsmæssige fradrag</td><td class="text-right">− 99.464 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Skattepligtig indkomst (SI)</strong></td><td class="text-right"><strong>798.136 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            Kommuneskat: (798.136 − 54.100 personfradrag) × 24,80 % = <strong>184.521 kr.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Dragør kommuneskat er 24,80 %. Selvom topskatten ikke reduceres af renter, sparer Jesper på kommuneskatten via negativ kapitalindkomst.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål G: Hvad har Jesper udbetalt efter skat?</div>
                         <div class="sol-answer">
-                             Udbetaling: <strong>51.800 kr./md.</strong> (621.601 kr./år).
+                            <span class="step-title">Trin 4 – Komplet skatteopgørelse (Dragør, ikke folkekirkemedlem, Ejerbolig, 2026):</span>
+                            <a href="../files/jespervang.xlsx" class="effectLinks mb-2 d-inline-block" data-replace="Skatteskabelon" target="_blank"><span>Skatteskabelon for Jesper Vang</span></a>
+                            <table class="table table-sm table-bordered mt-2">
+                                <thead class="thead-dark"><tr><th colspan="2">Skatteopgørelse – Jesper Vang 2026</th></tr></thead>
+                                <tbody>
+                                    <tr class="table-light"><td colspan="2"><strong>Beregningsgrundlag</strong></td></tr>
+                                    <tr><td>Personlig indkomst (PI)</td><td class="text-right">993.600 kr.</td></tr>
+                                    <tr><td>Skattepligtig indkomst (SI)</td><td class="text-right">798.136 kr.</td></tr>
+                                    <tr><td>Personfradrag</td><td class="text-right">54.100 kr.</td></tr>
+                                    <tr><td>Beskatningsgrundlag bundskat (PI − personfradrag)</td><td class="text-right">939.500 kr.</td></tr>
+                                    <tr><td>Beskatningsgrundlag kommuneskat (SI − personfradrag)</td><td class="text-right">744.036 kr.</td></tr>
+                                    <tr class="table-light"><td colspan="2"><strong>Skatter</strong></td></tr>
+                                    <tr><td>AM-bidrag (8 % af 1.080.000 kr.)</td><td class="text-right">86.400 kr.</td></tr>
+                                    <tr><td>Bundskat (12,01 % af 939.500 kr.)</td><td class="text-right">112.834 kr.</td></tr>
+                                    <tr><td>Mellemskat (7,5 % af 352.400 kr. over 641.200 kr.)</td><td class="text-right">26.430 kr.</td></tr>
+                                    <tr><td>Topskat (7,5 % af 215.700 kr. over 777.900 kr.)</td><td class="text-right">16.178 kr.</td></tr>
+                                    <tr><td>Kommuneskat (24,80 % af 744.036 kr.)</td><td class="text-right">184.521 kr.</td></tr>
+                                    <tr><td>Kirkeskat</td><td class="text-right">0 kr. – ikke folkekirkemedlem</td></tr>
+                                    <tr><td>Ejendomsværdiskat (villa 5.800.000 kr.)</td><td class="text-right">22.464 kr.</td></tr>
+                                    <tr><td>Grundskyld (1.450.000 kr. grundværdi)</td><td class="text-right">9.396 kr.</td></tr>
+                                    <tr class="table-success"><td>Skatterabat neg. KI (8 % af 96.000 kr., max 4.000 kr.)</td><td class="text-right">− 4.000 kr.</td></tr>
+                                    <tr class="table-warning"><td><strong>Skat i alt</strong></td><td class="text-right"><strong>454.222 kr.</strong></td></tr>
+                                    <tr class="table-light"><td colspan="2"><strong>Nettoudbetaling</strong></td></tr>
+                                    <tr><td>Bruttoløn</td><td class="text-right">1.080.000 kr.</td></tr>
+                                    <tr class="table-danger"><td>− Skat i alt</td><td class="text-right">− 454.222 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Netto udbetalt (år)</strong></td><td class="text-right"><strong>625.778 kr.</strong></td></tr>
+                                    <tr class="table-success"><td><strong>= Netto pr. måned</strong></td><td class="text-right"><strong>52.148 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Jesper betaler både mellemskat og topskat. Ingen kirkeskat sparer ham yderligere. Ejendomsværdiskat og grundskyld beregnes automatisk af boligværdi og grundværdi.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål H: Hvad er Jespers marginalskat? Forklar begrebet "det skrå skatteloft" og undersøg om Jesper rammer dette loft.</div>
                         <div class="sol-answer">
                             <span class="step-title">Marginalskat:</span>
-                            Ca. <strong>56 %</strong>.
+                            8 % (AM) + (1 − 0,08) × (12,01 % + 7,5 % + 7,5 % + 24,80 %) = <strong>ca. 56,1 %</strong>
+                            <br>Ekstra 1.000 kr. brutto → Jesper beholder ca. <strong>439 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Det "skrå skatteloft" er statens garanti for, at man ikke betaler over en vis procentdel af sin indkomst i direkte indkomstskat. I 2026 er loftet 52,07 % (ekskl. AM-bidrag og kirkeskat). Både kommuneskat, bundskat, mellemskat og topskat er komponenterne. I Aarhus er kommuneskatten 24,52 %. Jespers samlede marginalskat: 12,01 % (bundskat) + 7,5 % (mellemskat) + 7,5 % (topskat) + 24,52 % (kommuneskat) = 51,53 % – han rammer <em>ikke</em> skatteloftet på 52,07 % og betaler dermed den fulde topskat.
+                                <strong>Uddybning:</strong> Det "skrå skatteloft" er statens garanti for, at den samlede indkomstskat ikke overstiger et maksimum (ekskl. AM-bidrag og kirkeskat). I 2026 er loftet 52,07 %. Jespers statsskatter: 12,01 % + 7,5 % + 7,5 % = 27,01 % + Dragør kommuneskat 24,80 % = 51,81 % – han rammer <em>ikke</em> skatteloftet og betaler den fulde topskat.
                             </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål I: Hvor meget sparer Jesper årligt ved ikke at være medlem af folkekirken?</div>
                         <div class="sol-answer">
-                            <span class="step-title">Beregning af kirkeskattebesparelse:</span>
-                            (798.136 − 54.100 personfradrag) × 0,74 % (Aarhus) = <strong>5.506 kr.</strong>
+                            <span class="step-title">Kirkeskattebesparelse (Dragør kirkeskat ca. 0,62 %):</span>
+                            744.036 kr. × 0,62 % = <strong>ca. 4.613 kr./år</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Kirkeskat beregnes af den skattepligtige indkomst minus personfradraget. Fordi Jesper er udmeldt af folkekirken, betaler han ikke de 0,74 % i Aarhus, hvilket sparer ham for 5.506 kr. om året – penge, der går direkte ind på udbetalingskontoen, fordi det er en "rabat" uden modregning.
+                                <strong>Uddybning:</strong> Kirkeskat beregnes af SI minus personfradraget (744.036 kr.). Fordi Jesper er udmeldt af folkekirken, betaler han ikke kirkeskat – en direkte besparelse uden modregning.
                             </div>
                         </div>
                     </li>
@@ -446,14 +582,15 @@
                             </thead>
                             <tbody>
                                 <tr><td><strong>Bruttoløn</strong></td><td>3.000.000 kr./år (250.000 kr./md.)</td></tr>
-                                <tr><td><strong>Boligtype</strong></td><td>Villa i Hellerup</td></tr>
+                                <tr><td><strong>Boligtype</strong></td><td>Villa i Hellerup (Gentofte)</td></tr>
                                 <tr><td><strong>Offentlig ejendomsværdi</strong></td><td>12.500.000 kr.</td></tr>
                                 <tr><td><strong>Grundværdi</strong></td><td>4.200.000 kr.</td></tr>
                                 <tr><td><strong>Renteudgifter (realkreditlån)</strong></td><td>230.000 kr./år</td></tr>
-                                <tr><td><strong>Fagforening/A-kasse</strong></td><td>11.000 kr./år samlet</td></tr>
+                                <tr><td><strong>Fagforening</strong></td><td>7.000 kr./år (ingen a-kasse)</td></tr>
                                 <tr><td><strong>Folkekirken</strong></td><td>Ja – betaler kirkeskat (Gentofte)</td></tr>
-                                <tr><td><strong>Kommuneskat (Gentofte)</strong></td><td>24,14 %</td></tr>
-                                <tr><td><strong>Kirkeskat (Gentofte)</strong></td><td>0,38 %</td></tr>
+                                <tr><td><strong>Transport</strong></td><td>5,5 km hver vej (11 km tur/retur), 220 dage/år</td></tr>
+                                <tr><td><strong>Pension (eget bidrag)</strong></td><td>6 % af bruttoløn = 180.000 kr./år</td></tr>
+                                <tr><td><strong>Pension (arbejdsgiver)</strong></td><td>12 % af bruttoløn = 360.000 kr./år</td></tr>
                             </tbody>
                         </table>
                     </li>
@@ -461,64 +598,143 @@
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
                         <h2 class="mb-3">Løsning – Case 4</h2>
-
+                        <a href="../files/sofiachristensen.xlsx" class="effectLinks mb-0" data-replace="Skatteskabelon" target="_blank"><span>Skatteskabelon for Sofia Christensen</span></a>
+                        <br><hr>
                         <div class="sol-question">Spørgsmål A: Hvad er Sofias personlige indkomst?</div>
                         <div class="sol-answer">
-                            3.000.000 kr. − 8 % AM = <strong>2.760.000 kr.</strong>
+                            <span class="step-title">Trin 1 – Pension, AM-bidrag og personlig indkomst (PI):</span>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr><td>Bruttoløn</td><td class="text-right">3.000.000 kr.</td></tr>
+                                    <tr class="table-warning"><td>− Pension eget bidrag (6 %)</td><td class="text-right">− 180.000 kr.</td></tr>
+                                    <tr class="table-warning"><td>− Pension arbejdsgiver (12 %)</td><td class="text-right">− 360.000 kr.</td></tr>
+                                    <tr><td>= AM-pligtig indkomst (bruttoløn − pension)</td><td class="text-right"><strong>2.820.000 kr.</strong></td></tr>
+                                    <tr class="table-danger"><td>− AM-bidrag (8 % af 2.820.000 kr.)</td><td class="text-right">− 225.600 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Personlig indkomst (PI)</strong></td><td class="text-right"><strong>2.594.400 kr.</strong></td></tr>
+                                    <tr class="table-warning"><td>Mellemskattegrænse</td><td class="text-right">641.200 kr.</td></tr>
+                                    <tr class="table-warning"><td>Topskattegrænse</td><td class="text-right">777.900 kr.</td></tr>
+                                    <tr class="table-warning"><td>Top-topskattegrænse</td><td class="text-right">2.592.700 kr.</td></tr>
+                                    <tr class="table-info"><td><strong>Over top-topskattegrænsen</strong></td><td class="text-right"><strong>1.700 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Pensionsbidrag (eget + arbejdsgivers) reducerer den AM-pligtige indkomst. Sofia indbetaler 18 % i pension i alt (540.000 kr./år), hvilket samtidig reducerer hendes PI markant – fra brutto 3 mio. ned til PI 2.594.400 kr. Det er en enorm skattemæssig fordel.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål B: Hvor stor en del af Sofias indkomst ligger over top-topskat-grænsen på 2.592.700 kr.?</div>
                         <div class="sol-answer">
-                            2.760.000 kr. − 2.592.700 kr. = <strong>167.300 kr.</strong>
+                            2.594.400 kr. − 2.592.700 kr. = <strong>1.700 kr.</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Top-topskatten på 5 % er det øverste og 4. trin. Den blev indført i 2026 for de allerhøjeste indkomster (over ca. 2,6 mio. kr. i PI). Sofia er en af de få kunder i banken, der rammer dette niveau. Formålet med top-topskatten er social omfordeling fra de allerrigeste. For en rådgiver betyder det, at vi her taler om ekstremt komplekse finansielle strukturer, da marginalskatten her rammer systemets absolutte maksimum.
+                                <strong>Uddybning:</strong> Top-topskatten på 5 % er det øverste og 4. trin. Sofias pensionsindbetalinger medfører, at hun kun så vidt overskrider grænsen med 1.700 kr. – mod 167.300 kr. uden pension. Dette viser tydeligt, hvordan strategiske pensionsindbetalinger er et kraftfuldt værktøj for højlønnede.
                             </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål C: Hvor meget skal Sofia betale i top-topskat (5 % ekstra)?</div>
                         <div class="sol-answer">
-                            167.300 kr. × 5 % = <strong>8.365 kr./år.</strong>
+                            1.700 kr. × 5 % = <strong>85 kr./år.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Fordi pensionsindbetalingerne trækker PI ned til kun 1.700 kr. over top-topskattegrænsen, betaler Sofia minimalt i top-topskat. Uden pension ville hun betale 167.300 kr. × 5 % = 8.365 kr. i top-topskat. Det illustrerer den store gevinst af pensionsoptimering.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål D: Beregn Sofias samlede indkomstskat (bund, mellem, top og top-top).</div>
                         <div class="sol-answer">
-                            Sofia betaler alle fire statsskatter. Hendes samlede statslige tillægsskatter (mellem, top, top-top) udgør alene over 400.000 kr. hertil kommer bundskat og de store kommunale skatter.
-                            <br>
-                            Samlet indkomstskat: <strong>ca. 1,4 mio. kr./år</strong>.
+                            <span class="step-title">Trin 2 – Kapitalindkomst:</span>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr class="table-danger"><td>− Renteudgifter (realkreditlån)</td><td class="text-right">− 230.000 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Kapitalindkomst (KI)</strong></td><td class="text-right"><strong>− 230.000 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <span class="step-title">Trin 3 – Ligningsmæssige fradrag og skattepligtig indkomst (SI):</span>
+                            <table class="table table-sm table-bordered mt-2">
+                                <thead class="thead-light"><tr><th colspan="2">Ligningsmæssige fradrag</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Fagforening (max 7.000 kr.)</td><td class="text-right">7.000 kr.</td></tr>
+                                    <tr><td>A-kasse</td><td class="text-right">0 kr.</td></tr>
+                                    <tr><td>Beskæftigelsesfradrag (loft 63.300 kr.)</td><td class="text-right">63.300 kr.</td></tr>
+                                    <tr><td>Jobfradrag (max 3.100 kr.)</td><td class="text-right">3.100 kr.</td></tr>
+                                    <tr><td>Befordringsfradrag (11 km &lt; 24 km grænse)</td><td class="text-right">0 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Ligningsmæssige fradrag i alt</strong></td><td class="text-right"><strong>73.400 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-sm table-bordered mt-2">
+                                <tbody>
+                                    <tr><td>Personlig indkomst (PI)</td><td class="text-right">2.594.400 kr.</td></tr>
+                                    <tr><td>+ Kapitalindkomst (KI)</td><td class="text-right">− 230.000 kr.</td></tr>
+                                    <tr class="table-danger"><td>− Ligningsmæssige fradrag</td><td class="text-right">− 73.400 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Skattepligtig indkomst (SI)</strong></td><td class="text-right"><strong>2.291.000 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Sofia betaler alle fire statsskatter. Mellemskat: (777.900−641.200) × 7,5 % = 146.490 kr. Topskat: (2.592.700−777.900) × 7,5 % = 136.238 kr. Top-topskat: 1.700 × 5 % = 85 kr. Bundskat: (2.594.400−personfradrag) × 12,01 % = 305.090 kr.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål E: Hvilket skatteloft beskytter Sofia, og hvad er den maksimale skatteprocent (ekskl. AM-bidrag)?</div>
                         <div class="sol-answer">
                             <strong>Svar:</strong> Hun beskyttes af det forhøjede skatteloft for top-top indkomst som er <strong>ca. 57,07 %</strong>.
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Da man indførte top-topskatten, hævede man også det maksimale skatteloft for denne del af indkomsten til ca. 57,07 % (ekskl. AM-bidrag). Ellers ville top-topskatten være blevet "slugt" af det gamle skatteloft på 52,07 %. Sofia betaler altså 5 % mere i skat af sine sidste kroner end Jesper gør, hvilket understreger systemets skarpe progression for CEO-niveauer.
+                                <strong>Uddybning:</strong> Da man indforte top-topskatten, hævede man også det maksimale skatteloft for denne del af indkomsten til ca. 57,07 % (ekskl. AM-bidrag). Ellers ville top-topskatten være blevet "slugt" af det gamle skatteloft på 52,07 %. Sofia betaler dermed 5 % mere af sine øverste kroner end Jesper – men kun af de 1.700 kr. der overskrider grænsen.
                             </div>
                         </div>
 
-                        <div class="sol-question">Spørgsmål F: Hvor meget sparer Sofia i skat ved at bo i Gentofte (24,14 %) frem for Aarhus (24,52 %)?</div>
+                        <div class="sol-question">Spørgsmål F: Hvor meget sparer Sofia i skat ved at bo i Gentofte (24,14 %) frem for Aarhus (24,52 %)?</div>
                         <div class="sol-answer">
-                             Forskellen er 0,38 procentpoint af hendes skattepligtige indkomst under hensyn til personfradraget.
-                             <br>
-                             <em>SI-beregning: 2.760.000 (PI) + (-230.000 negativ kapitalindkomst) − 77.400 (fagf./a-kasse 11.000 + beskæftigelse 63.300 + job 3.100) = 2.452.600 kr.</em>
-                             <br>
-                             <br>
-                             Besparelse: (2.452.600 − 54.100 personfradrag) × 0,38 % = <strong>9.114 kr./år.</strong>
-                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Gentofte har en kommuneskat på 24,14 % mod Aarhus' 24,52 % – en forskel på 0,38 procentpoint. For en kunde som Sofia med høj SI udgør det stadig 9.114 kr. ekstra udbetalt om året. Det illustrerer, at selv små forskelle i kommuneskat mærkes tydeligt for højindkomstattagere.
-                             </div>
+                            Forskel: 0,38 procentpoint.<br>
+                            (2.291.000 − 54.100 personfradrag) × 0,38 % = <strong>8.994 kr./år.</strong>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Gentofte har kommuneskat på 24,14 % mod Aarhus' 24,52 % – en forskel på 0,38 procentpoint. For en kunde som Sofia med høj SI gives det en besparelse på knap 9.000 kr./år. Det illustrerer, at selv små forskelle i kommuneskat mærkes tydeligt for højindkomstattagere.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål G: Hvad har Sofia udbetalt?</div>
                         <div class="sol-answer">
-                            Udbetaling: <strong>119.586 kr./md.</strong> (1.435.034 kr./år).
+                            <span class="step-title">Trin 4 – Komplet skatteopgørelse (Gentofte, Folkekirke, Ejerbolig, Pension, 2026):</span>
+                            <a href="../files/sofiachristensen.xlsx" class="effectLinks mb-2 d-inline-block" data-replace="Skatteskabelon" target="_blank"><span>Skatteskabelon for Sofia Christensen</span></a>
+                            <table class="table table-sm table-bordered mt-2">
+                                <thead class="thead-dark"><tr><th colspan="2">Skatteopgørelse – Sofia Christensen 2026</th></tr></thead>
+                                <tbody>
+                                    <tr class="table-light"><td colspan="2"><strong>Beregningsgrundlag</strong></td></tr>
+                                    <tr><td>Bruttoløn</td><td class="text-right">3.000.000 kr.</td></tr>
+                                    <tr><td>− Pension i alt (18 %)</td><td class="text-right">− 540.000 kr.</td></tr>
+                                    <tr><td>AM-pligtig indkomst</td><td class="text-right">2.820.000 kr.</td></tr>
+                                    <tr><td>Personlig indkomst (PI)</td><td class="text-right">2.594.400 kr.</td></tr>
+                                    <tr><td>Skattepligtig indkomst (SI)</td><td class="text-right">2.291.000 kr.</td></tr>
+                                    <tr><td>Beskatningsgrundlag bundskat (PI − personfradrag)</td><td class="text-right">2.540.300 kr.</td></tr>
+                                    <tr><td>Beskatningsgrundlag kommune/kirke (SI − personfradrag)</td><td class="text-right">2.236.900 kr.</td></tr>
+                                    <tr class="table-light"><td colspan="2"><strong>Skatter</strong></td></tr>
+                                    <tr><td>AM-bidrag (8 % af 2.820.000 kr.)</td><td class="text-right">225.600 kr.</td></tr>
+                                    <tr><td>Bundskat (12,01 % af 2.540.300 kr.)</td><td class="text-right">305.090 kr.</td></tr>
+                                    <tr><td>Mellemskat (7,5 % af 1.951.500 kr.)</td><td class="text-right">146.490 kr.</td></tr>
+                                    <tr><td>Topskat (7,5 % af 1.814.800 kr.)</td><td class="text-right">136.238 kr.</td></tr>
+                                    <tr><td>Top-topskat (5 % af 1.700 kr.)</td><td class="text-right">85 kr.</td></tr>
+                                    <tr><td>Kommuneskat (24,14 % af 2.236.900 kr.)</td><td class="text-right">540.012 kr.</td></tr>
+                                    <tr><td>Kirkeskat (0,38 % af 2.236.900 kr.)</td><td class="text-right">8.500 kr.</td></tr>
+                                    <tr><td>Ejendomsværdiskat (villa 12.500.000 kr.)</td><td class="text-right">58.638 kr.</td></tr>
+                                    <tr><td>Grundskyld (4.200.000 kr. grundværdi)</td><td class="text-right">17.136 kr.</td></tr>
+                                    <tr class="table-success"><td>Skatterabat neg. KI (8 % af 230.000, max 4.000 kr.)</td><td class="text-right">− 4.000 kr.</td></tr>
+                                    <tr class="table-warning"><td><strong>Skat i alt</strong></td><td class="text-right"><strong>1.431.181 kr.</strong></td></tr>
+                                    <tr class="table-light"><td colspan="2"><strong>Nettoudbetaling</strong></td></tr>
+                                    <tr><td>Bruttoløn</td><td class="text-right">3.000.000 kr.</td></tr>
+                                    <tr><td>− Skat i alt</td><td class="text-right">− 1.431.181 kr.</td></tr>
+                                    <tr class="table-warning"><td>− Pension eget bidrag</td><td class="text-right">− 180.000 kr.</td></tr>
+                                    <tr class="table-success"><td><strong>= Netto udbetalt (år)</strong></td><td class="text-right"><strong>1.388.819 kr.</strong></td></tr>
+                                    <tr class="table-success"><td><strong>= Netto pr. måned</strong></td><td class="text-right"><strong>115.735 kr.</strong></td></tr>
+                                </tbody>
+                            </table>
+                            <div class="explanation-box">
+                                <strong>Uddybning:</strong> Sofias netto er 115.735 kr./md. efter skat og eget pensionsbidrag. Arbejdsgivers 360.000 kr. går direkte til pensionsdepotet og vises ikke som udbetaling. Top-topskatten er kun 85 kr. fordi pension har reduceret PI til kun 1.700 kr. over grænsen.
+                            </div>
                         </div>
 
                         <div class="sol-question">Spørgsmål H: Hvad er Sofias effektive skatteprocent?</div>
                         <div class="sol-answer">
                             <span class="step-title">Effektiv skatteprocent:</span>
-                            (Samlet skat / Bruttoløn) = <strong>ca. 50,7 %</strong>.
+                            Skat i alt / AM-pligtig indkomst = 1.431.181 / 2.820.000 = <strong>ca. 50,7 %</strong>
                             <div class="explanation-box">
-                                <strong>Uddybning:</strong> Den effektive skat er her ca. 50,7 %. Selvom Sofia har en marginalskat på næsten 60 %, betaler hun i gennemsnit kun det halve, fordi hendes første tjente krone kun beskattes med bundskat og kommuneskat. Det er klassisk "gennemsnitsberegning": Progressionen rammer kun de øverste kroner, mens fundamentet af hendes løn stadig beskattes på linje med en gennemsnitsdanskers.
+                                <strong>Uddybning:</strong> Selvom Sofias marginalskat er høj, betaler hun i gennemsnit ca. 50,7 % i skat af den AM-pligtige indkomst. Progressionen rammer kun de øverste kroner, mens fundamentet beskattes som en gennemsnitsdanskers. Kombineret med pensionsindbetalingerne (der ikke beskattes nu, men i stedet ved udbetaling) er realværdien af lønpakken betydeligt højere end nettobetalingen antyder.
                             </div>
                         </div>
                     </li>
