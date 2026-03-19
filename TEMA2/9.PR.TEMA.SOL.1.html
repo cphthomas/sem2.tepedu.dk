@@ -67,6 +67,42 @@
             margin-top: 15px;
             display: block;
         }
+
+        .resource-links {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        .resource-link {
+            display: block;
+            width: 100%;
+        }
+
+        .key-figure {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            background: #fff;
+            text-align: right;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-radius: 2px;
+        }
+
+        .calc-table {
+            font-size: 0.9rem;
+            margin: 10px 0;
+        }
+
+        .calc-table td {
+            padding: 4px 12px 4px 0;
+        }
+
+        .calc-table td:last-child {
+            text-align: right;
+            font-family: monospace;
+        }
     </style>
 </head>
 
@@ -95,48 +131,135 @@
                         <!-- ======== CASE 1: EMILIE OG THOMAS ======== -->
                         <li class="timeline-item bg-white ml-3 p-4 shadow">
                             <div class="timeline-arrow"></div>
-                            <h2 class="mb-3">Løsning – Case 1: Emilie og Thomas</h2>
-                            <p>Denne case viser et par, hvor skattefordelen er meget begrænset, da begge tjener nok til at udnytte fradrag.</p>
-                            <ul>
-                                <li><a href="../files/emilie_thomas_ugift.xlsx" class="effectLinks mb-2 d-inline-block"
+                            <h2 class="mb-3">Løsning – Case 1: Emilie og Thomas (Aarhus)</h2>
+                            <p>
+                                Emilie (35 år) og Thomas (38 år) bor sammen i en lejlighed i Aarhus C og overvejer at
+                                blive gift. De vil gerne undersøge den skattemæssige forskel samt lægge et realistisk
+                                budget. Emilie er Project Manager, mens Thomas er folkeskolelærer.
+                            </p>
+
+                            <table class="table table-sm table-bordered table-striped mt-3">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th colspan="2">Økonomi & Skat (2026)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Bruttoløn (Emilie)</strong></td>
+                                        <td>750.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bruttoløn (Thomas)</strong></td>
+                                        <td>450.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bopæl & Kirke</strong></td>
+                                        <td>Aarhus Kommune — Begge betaler kirkeskat (Ja)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Renteudgifter (angives hos Emilie)</strong></td>
+                                        <td>50.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fagforening & A-kasse (Emilie)</strong></td>
+                                        <td>Fagf.: 7.000 kr./år. A-kasse: 6.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fagforening & A-kasse (Thomas)</strong></td>
+                                        <td>Fagf.: 5.000 kr./år. A-kasse: 5.500 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Transport (Emilie)</strong></td>
+                                        <td>10 km hver vej (20 km tur/retur), 220 dage/år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Transport (Thomas)</strong></td>
+                                        <td>0 km (arbejder primært i nærområdet under 12 km væk)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p><strong>Deres faste månedlige udgifter:</strong><br> Husleje: 12.500 kr., Varme: 1.800 kr., El: 700 kr., Internet: 350 kr., Mobil (samlet): 350 kr., Streaming: 300 kr., Indbo/Familieforsikring: 250 kr., Ulykkesforsikring: 300 kr., Rejseforsikring: 100 kr., Offentlig transport: 1.000 kr., Diverse kontingenter: 400 kr., Fast opsparing: 2.000 kr.</p>
+
+                            <ul class="resource-links">
+                                <li><a href="../files/emilie_thomas_ugift.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Skat: Ugift" target="_blank"><span>Skatteberegning –
                                             Ugifte</span></a></li>
-                                <li><a href="../files/emilie_thomas_gift.xlsx" class="effectLinks mb-2 d-inline-block"
+                                <li><a href="../files/emilie_thomas_gift.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Skat: Gift" target="_blank"><span>Skatteberegning –
                                             Gifte</span></a></li>
-                                <li><a href="../files/emilie_thomas_budget.xlsx" class="effectLinks mb-2 d-inline-block"
+                                <li><a href="../files/emilie_thomas_budget.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Budgetberegning" target="_blank"><span>Budgetberegning – Gifte
                                             (Rådighedsbeløb)</span></a></li>
                             </ul>
                             <br>
                             <hr>
 
-                            <div class="sol-question">Spørgsmål A: Hvad får de udbetalt (netto) om måneden tilsammen (ugift)?</div>
+                            <h5 class="mt-4 mb-3">Spørgsmål og løsninger</h5>
+
+                            <div class="sol-question">Spørgsmål A: Tag udgangspunkt i, at Emilie og Thomas <strong>ikke er gift</strong> i skatteberegneren. Hvad får de udbetalt (netto) om måneden tilsammen?</div>
                             <div class="sol-answer">
                                 <span class="step-title">Svar:</span>
+                                <p>Ud fra skatteberegneren (se Excel-filerne) fremgår følgende netto udbetaling pr. måned:</p>
                                 <ul>
-                                    <li><strong>Emilie:</strong> 34.365 kr./md.</li>
-                                    <li><strong>Thomas:</strong> 24.500 kr./md.</li>
-                                    <li><strong>Tilsammen:</strong> 58.865 kr./md.</li>
+                                    <li><strong>Emilie:</strong> 40.502 kr./md.</li>
+                                    <li><strong>Thomas:</strong> 24.816 kr./md.</li>
+                                    <li><strong>Tilsammen:</strong> 65.318 kr./md.</li>
                                 </ul>
+                                <span class="step-title">Beregningsgang (linje for linje):</span>
+                                <p>Beregningen følger skatteberegnerens detaljerede struktur:</p>
+                                <table class="calc-table">
+                                    <tr><td colspan="2"><strong>1. Personlig indkomst (PI)</strong></td></tr>
+                                    <tr><td>AM-pligtig indkomst</td><td>Emilie: 750.000 kr. | Thomas: 450.000 kr. | Samlet: 1.200.000 kr.</td></tr>
+                                    <tr><td>− AM-bidrag (8%)</td><td>Emilie: 60.000 kr. | Thomas: 36.000 kr. | Samlet: 96.000 kr.</td></tr>
+                                    <tr><td>= Personlig indkomst (PI)</td><td>Emilie: 690.000 kr. | Thomas: 414.000 kr. | Samlet: 1.104.000 kr.</td></tr>
+                                    <tr><td colspan="2"><strong>2. Kapitalindkomst (KI)</strong></td></tr>
+                                    <tr><td>− Renteudgifter</td><td>Emilie: 50.000 kr. | Thomas: 0 kr. | Samlet: 50.000 kr.</td></tr>
+                                    <tr><td>= Kapitalindkomst (KI)</td><td>Emilie: −50.000 kr. | Thomas: 0 kr. | Samlet: −50.000 kr.</td></tr>
+                                    <tr><td colspan="2"><strong>3. Ligningsmæssige fradrag</strong></td></tr>
+                                    <tr><td>Fagforening + A-kasse</td><td>Emilie: 13.000 kr. | Thomas: 10.500 kr. | Samlet: 23.500 kr.</td></tr>
+                                    <tr><td>Beskæftigelsesfradrag</td><td>Emilie: 63.300 kr. | Thomas: 57.375 kr. | Samlet: 120.675 kr.</td></tr>
+                                    <tr><td>Jobfradrag</td><td>Emilie: 3.100 kr. | Thomas: 3.100 kr. | Samlet: 6.200 kr.</td></tr>
+                                    <tr><td>= Ligningsmæssige fradrag i alt</td><td>Emilie: 79.400 kr. | Thomas: 70.975 kr. | Samlet: 150.375 kr.</td></tr>
+                                    <tr><td colspan="2"><strong>4. Skattepligtig indkomst (SI)</strong></td></tr>
+                                    <tr><td>= Skattepligtig indkomst</td><td>Emilie: 560.600 kr. | Thomas: 343.025 kr. | Samlet: 903.625 kr.</td></tr>
+                                    <tr><td colspan="2"><strong>5. Skatteopgørelse</strong></td></tr>
+                                    <tr><td>AM-bidrag</td><td>Emilie: 60.000 kr. | Thomas: 36.000 kr. | Samlet: 96.000 kr.</td></tr>
+                                    <tr><td>Bundskat (12,01%)</td><td>Emilie: 76.372 kr. | Thomas: 43.224 kr. | Samlet: 119.596 kr.</td></tr>
+                                    <tr><td>Kommuneskat</td><td>Emilie: 124.194 kr. | Thomas: 70.844 kr. | Samlet: 195.038 kr.</td></tr>
+                                    <tr><td>Kirkeskat</td><td>Emilie: 3.748 kr. | Thomas: 2.138 kr. | Samlet: 5.886 kr.</td></tr>
+                                    <tr><td>Mellemskat</td><td>Emilie: 3.660 kr. | Thomas: 0 kr. | Samlet: 3.660 kr.</td></tr>
+                                    <tr><td>Skatterabat neg. KI (8%)</td><td>Emilie: −4.000 kr. | Thomas: 0 kr. | Samlet: −4.000 kr.</td></tr>
+                                    <tr><td>Skat i alt</td><td>Emilie: 263.973 kr. | Thomas: 152.206 kr. | Samlet: 416.180 kr.</td></tr>
+                                    <tr><td colspan="2"><strong>6. Netto udbetaling</strong></td></tr>
+                                    <tr><td>Brutto indkomst</td><td>Emilie: 750.000 kr. | Thomas: 450.000 kr. | Samlet: 1.200.000 kr.</td></tr>
+                                    <tr><td>− Skat i alt</td><td>Emilie: 263.973 kr. | Thomas: 152.206 kr. | Samlet: 416.180 kr.</td></tr>
+                                    <tr><td>= Netto udbetalt (år)</td><td>Emilie: 486.027 kr. | Thomas: 297.794 kr. | Samlet: 783.820 kr.</td></tr>
+                                    <tr><td>= Netto pr. måned</td><td>Emilie: 40.502 kr. | Thomas: 24.816 kr. | Samlet: 65.318 kr.</td></tr>
+                                </table>
                             </div>
 
-                            <div class="sol-question">Spørgsmål B: Skift til "gift" i beregneren. Åbner det for en skattefordel for dem her i 2026?</div>
+                            <div class="sol-question">Spørgsmål B: Skift til <strong>"gift"</strong> i beregneren. Åbner det for en skattefordel for dem her i 2026, og hvorfor/hvorfor ikke? (Tænk på om de begge udnytter personfradraget).</div>
                             <div class="sol-answer">
-                                <span class="step-title">Svar: Nej, der opstår slet ingen skattefordel.</span>
-                                <ul>
-                                    <li><strong>Emilie & Thomas (Gifte):</strong> Tilsammen udbetalt samme beløb: 58.865 kr./md.</li>
-                                </ul>
+                                <span class="step-title">Svar: Nej, der opstår ingen skattefordel ved at blive gift.</span>
+                                <p>Både som ugifte og som gifte opnår parret samme samlede netto udbetaling: <strong>65.318 kr./md.</strong></p>
                                 <div class="explanation-box">
-                                    <strong>Uddybning:</strong> Årsagen er ret simpel: Da Thomas tjener ca. 450.000 kr. om året, overstiger det langt personfradraget på 54.100 kr. Han udnytter dermed fuldt ud sit fradrag selv. Emilie ligeså. Der er altså intet uudnyttet personfradrag at overføre, og dermed ingen samlet "bonus" for ægteparret.
+                                    <strong>Forklaring:</strong> Thomas har en bruttoløn på 450.000 kr./år, hvilket langt overstiger personfradraget på 54.100 kr. Han udnytter dermed fuldt ud sit personfradrag. Emilie gør tilsvarende. Der findes derfor intet uudnyttet personfradrag, der kan overføres mellem ægtefællerne, og dermed ingen skattemæssig gevinst ved ægteskabet.
                                 </div>
                             </div>
 
-                            <div class="sol-question">Spørgsmål C: Hvad ender deres rådighedsbeløb på pr. måned?</div>
+                            <div class="sol-question">Spørgsmål C: Indtast nu parrets samlede udgifter samt deres "gifte" udbetalte nettoindkomst i Par-budgetberegneren. Hvad ender deres <strong>rådighedsbeløb</strong> på pr. måned?</div>
                             <div class="sol-answer">
-                                <span class="step-title">Svar: Rådighedsbeløbet er cirka 39.465 kr. pr. måned.</span>
+                                <span class="step-title">Svar: Rådighedsbeløbet udgør ca. 44.868 kr. pr. måned.</span>
+                                <p>Beregning:</p>
+                                <ul>
+                                    <li><strong>Nettoindkomst (gifte):</strong> 65.318 kr./md.</li>
+                                    <li><strong>Faste udgifter:</strong> Husleje 12.500 kr. + Varme 1.800 kr. + El 700 kr. + Internet 350 kr. + Mobil 350 kr. + Streaming 300 kr. + Indbo/Familieforsikring 250 kr. + Ulykkesforsikring 300 kr. + Rejseforsikring 100 kr. + Offentlig transport 1.000 kr. + Diverse kontingenter 400 kr. + Fast opsparing 2.000 kr. = 20.450 kr./md.</li>
+                                    <li><strong>Rådighedsbeløb:</strong> 65.318 − 20.450 = <strong>44.868 kr./md.</strong></li>
+                                </ul>
                                 <div class="explanation-box">
-                                    <strong>Uddybning:</strong> Med en indtægt på næsten 60k udbetalt og relativt moderate årlige / månedlige udgifter (Husleje 12.500 kr. mv.), trækkes blot omkring 19.400 kr. om måneden væk i faste udgifter inklusive fast opsparing. De står dermed yderst stærkt finansielt ift. kommende husholdning, boligkøb og andre projekter.
+                                    <strong>Vurdering:</strong> Med en samlet nettoindkomst på over 65.000 kr./md. og moderate faste udgifter har parret et betydeligt rådighedsbeløb. Det giver et solidt grundlag til boligkøb, opsparing og andre større investeringer.
                                 </div>
                             </div>
 
@@ -147,21 +270,62 @@
                         <!-- ======== CASE 2: SOFIE OG MADS ======== -->
                         <li class="timeline-item bg-white ml-3 p-4 shadow">
                             <div class="timeline-arrow"></div>
-                            <h2 class="mb-3">Løsning – Case 2: Sofie og Mads</h2>
-                            <p>Denne case belyser udfordringen omkring en SU-indkomst.</p>
-                            <ul>
-                                <li><a href="../files/sofie_mads_ugift.xlsx" class="effectLinks mb-2 d-inline-block"
+                            <h2 class="mb-3">Løsning – Case 2: Sofie og Mads (Odense)</h2>
+                            <p>
+                                Sofie (26 år) og Mads (25 år) er et ungt par i Odense. Sofie er netop færdiguddannet
+                                pædagog, mens Mads stadig studerer og primært lever af SU. De bor sammen.
+                            </p>
+
+                            <table class="table table-sm table-bordered table-striped mt-3">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th colspan="2">Økonomi & Skat (2026)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Bruttoløn (Sofie)</strong></td>
+                                        <td>420.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bruttoindkomst (Mads, inkl. SU)</strong></td>
+                                        <td>82.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bopæl & Kirke</strong></td>
+                                        <td>Odense Kommune — Begge betaler kirkeskat (Ja)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fagforening & A-kasse (Sofie)</strong></td>
+                                        <td>Fagf.: 5.000 kr./år. A-kasse: 5.500 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Transport (Sofie)</strong></td>
+                                        <td>5 km (cykler, ingen befordringsfradrag)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Gæld og renter</strong></td>
+                                        <td>De har ingen nævneværdig gæld. (0 kr. i renteudgift)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><strong>Faste månedlige udgifter:</strong><br> Husleje: 8.500 kr., Varme: 1.000 kr., El: 450 kr., Internet: 250 kr., Mobil: 300 kr., Familieforsikring: 200 kr., Ulykke: 250 kr., Transport: 600 kr.</p>
+
+                            <ul class="resource-links">
+                                <li><a href="../files/sofie_mads_ugift.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Skat: Ugift" target="_blank"><span>Skatteberegning –
                                             Ugifte</span></a></li>
-                                <li><a href="../files/sofie_mads_gift.xlsx" class="effectLinks mb-2 d-inline-block"
+                                <li><a href="../files/sofie_mads_gift.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Skat: Gift" target="_blank"><span>Skatteberegning –
                                             Gifte</span></a></li>
-                                <li><a href="../files/sofie_mads_budget.xlsx" class="effectLinks mb-2 d-inline-block"
+                                <li><a href="../files/sofie_mads_budget.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Budgetberegning" target="_blank"><span>Budgetberegning – Gifte
                                             (Rådighedsbeløb)</span></a></li>
                             </ul>
                             <br>
                             <hr>
+
+                            <div class="key-figure">243.511 kr.</div>
 
                             <div class="sol-question">Spørgsmål A: Hvad tjener de tilsammen udbetalt om året, hvis de er ugifte?</div>
                             <div class="sol-answer">
@@ -172,7 +336,7 @@
                                 </ul>
                             </div>
 
-                            <div class="sol-question">Spørgsmål B: Har Mads brugt sit personfradrag, og gør det en forskel at blive gift?</div>
+                            <div class="sol-question">Spørgsmål B: Har Mads brugt sit skattefrie personfradrag, og gør det en forskel at blive gift for dette par?</div>
                             <div class="sol-answer">
                                 <span class="step-title">Svar: Ja, og Nej til skattefordel.</span>
                                 <div class="explanation-box">
@@ -181,7 +345,7 @@
                                 </div>
                             </div>
 
-                            <div class="sol-question">Spørgsmål C: Beregn budget - Finanstilsynets vurdering?</div>
+                            <div class="sol-question">Spørgsmål C: Beregn deres budget (som gifte) - har de et "fornuftigt" rådighedsbeløb ifølge Finanstilsynets tommelfingerregler?</div>
                             <div class="sol-answer">
                                 <span class="step-title">Svar: Ja, rådighedsbeløbet danner ca. 17.000 kr. pr. måned.</span>
                                 <div class="explanation-box">
@@ -196,23 +360,65 @@
                         <!-- ======== CASE 3: CAMILLA OG HENRIK ======== -->
                         <li class="timeline-item bg-white ml-3 p-4 shadow">
                             <div class="timeline-arrow"></div>
-                            <h2 class="mb-3">Løsning – Case 3: Camilla og Henrik</h2>
-                            <p>En spændende case hvor der er enorme renteudgifter til boligsagen.</p>
-                            <ul>
-                                <li><a href="../files/camilla_henrik_ugift.xlsx" class="effectLinks mb-2 d-inline-block"
+                            <h2 class="mb-3">Løsning – Case 3: Camilla og Henrik (Aalborg)</h2>
+                            <p>
+                                Camilla tjener rigtig godt i det private erhvervsliv og betaler topskat, mens Henrik er
+                                lærer. De bor i hus sammen i Aalborg. De har et stort realkreditlån, og Camilla har
+                                renteudgifterne stående i hendes navn på skatteopgørelsen.
+                            </p>
+
+                            <table class="table table-sm table-bordered table-striped mt-3">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th colspan="2">Økonomi & Skat (2026)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Bruttoløn (Camilla)</strong></td>
+                                        <td>950.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bruttoløn (Henrik)</strong></td>
+                                        <td>400.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bopæl & Kirke</strong></td>
+                                        <td>Aalborg Kommune — Begge i folkekirken (Ja)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Renteudgifter (kun angivet for Camilla)</strong></td>
+                                        <td>80.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fagforening & A-kasse (Begge)</strong></td>
+                                        <td>Camilla: Fagf. 8.000 og Akasse 6.000. Henrik: Fagf. 7.000 og Akasse 6.000.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Transport</strong></td>
+                                        <td>Camilla pendler 40 km pr. vej, 220 dg. Henrik pendler 15 km pr. vej, 220 dg.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><strong>Faste udgifter (hus & biler mm.):</strong><br> Husleje/Boligydelse: 16.000 kr., Varme: 2.200 kr., El: 900 kr., Internet/Medie: 900 kr., Biler (Lån, Forsikring, Afgift, Benzin): ca. 5.400 kr. samlet, Hus- og Familieforsikringer: 900 kr., Div.: 800 kr.</p>
+
+                            <ul class="resource-links">
+                                <li><a href="../files/camilla_henrik_ugift.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Skat: Ugift" target="_blank"><span>Skatteberegning –
                                             Ugifte</span></a></li>
-                                <li><a href="../files/camilla_henrik_gift.xlsx" class="effectLinks mb-2 d-inline-block"
+                                <li><a href="../files/camilla_henrik_gift.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Skat: Gift" target="_blank"><span>Skatteberegning –
                                             Gifte</span></a></li>
-                                <li><a href="../files/camilla_henrik_budget.xlsx" class="effectLinks mb-2 d-inline-block"
+                                <li><a href="../files/camilla_henrik_budget.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Budgetberegning" target="_blank"><span>Budgetberegning – Gifte
                                             (Rådighedsbeløb)</span></a></li>
                             </ul>
                             <br>
                             <hr>
 
-                            <div class="sol-question">Spørgsmål A: Ugifte kontra gifte nettoløn. Giver det et overraskende udfald mht. skattebesparelsen?</div>
+                            <div class="key-figure">243.511 kr.</div>
+
+                            <div class="sol-question">Spørgsmål A: Undersøg deres nettoløn som <strong>ugifte</strong> kontra <strong>gifte</strong>. Giver det et overraskende udfald mht. hvem der får skattebesparelsen?</div>
                             <div class="sol-answer">
                                 <span class="step-title">Svar: Ja! Selvom de <em>helt oplagt</em> udnytter deres personfradrag, vinder de alligevel penge på at gifte sig – men gaven gives uventet til Henrik!</span>
                                 <div class="explanation-box">
@@ -225,7 +431,7 @@
                                 </div>
                             </div>
 
-                            <div class="sol-question">Spørgsmål B: Hvorfor får de egentlig en skattefordel ("Skatterabat neg. KI")?</div>
+                            <div class="sol-question">Spørgsmål B: Hvorfor får de egentlig en stor skattefordel ved giftermålet her? (Kig under afsnittet i beregneren kaldet "Skatterabat neg. KI (8%)").</div>
                             <div class="sol-answer">
                                 <span class="step-title">Svar: Overførsel af fradragsrenten for par over 50.000 kr. grænsen.</span>
                                 <div class="explanation-box">
@@ -239,25 +445,62 @@
                         <!-- ======== CASE 4: JONAS ======== -->
                         <li class="timeline-item bg-white ml-3 p-4 shadow">
                             <div class="timeline-arrow"></div>
-                            <h2 class="mb-3">Løsning – Case 4: Jonas (Enlig)</h2>
-                            <p>Denne case behandler en storby-single uden det store pres for ejendomsværdiskat etc.</p>
-                            <ul>
-                                <li><a href="../files/jonas_skat.xlsx" class="effectLinks mb-2 d-inline-block"
+                            <h2 class="mb-3">Løsning – Case 4: Jonas (Enlig i København)</h2>
+                            <p>
+                                Jonas er 29 år gammel, er single og bor alene i København. Han vil gerne have lavet
+                                et tjek af sin skat og sit budget for året.
+                            </p>
+
+                            <table class="table table-sm table-bordered table-striped mt-3">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th colspan="2">Økonomi & Skat (2026)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Bruttoløn</strong></td>
+                                        <td>550.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bopæl & Kirke</strong></td>
+                                        <td>København Kommune — Ikke medlem (Nej)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Renteudgifter (forbrugslån)</strong></td>
+                                        <td>20.000 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fagforening & A-kasse</strong></td>
+                                        <td>Fagf.: 6.500 kr./år. A-kasse: 5.500 kr./år</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Transport</strong></td>
+                                        <td>15 km hver vej (30 km tur/retur), 220 dage/år</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><strong>Faste månedlige udgifter:</strong><br> Husleje: 10.000 kr., Varme: 900 kr., El: 400 kr., Internet/Mobil/Streaming: 700 kr., Forsikringer: 300 kr., Transport: 500 kr., Kontingenter mv.: 300 kr.</p>
+
+                            <ul class="resource-links">
+                                <li><a href="../files/jonas_skat.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Skat (Single)" target="_blank"><span>Skatteberegning –
                                             Enlig</span></a></li>
-                                <li><a href="../files/jonas_budget.xlsx" class="effectLinks mb-2 d-inline-block"
+                                <li><a href="../files/jonas_budget.xlsx" class="effectLinks mb-2 resource-link"
                                         data-replace="Budgetberegning" target="_blank"><span>Budgetberegning –
                                             (Rådighedsbeløb)</span></a></li>
                             </ul>
                             <br>
                             <hr>
 
-                            <div class="sol-question">Spørgsmål A: Jonas' månedlige udbetalte løn.</div>
+                            <div class="key-figure">243.511 kr.</div>
+
+                            <div class="sol-question">Spørgsmål A: Brug <strong>skatteberegneren for enlige</strong> til at finde Jonas' månedlige udbetalte (netto) løn.</div>
                             <div class="sol-answer">
                                 <span class="step-title">Svar: Typisk ca. 28.324 kr./md. udbetalt.</span>
                             </div>
 
-                            <div class="sol-question">Spørgsmål B: Vurdér rådighedsbeløbet. Er han dækket fornuftigt ind?</div>
+                            <div class="sol-question">Spørgsmål B: Brug <strong>budgetberegneren for enlige</strong> til at vurdere Jonas' rådighedsbeløb. Er han dækket fornuftigt ind til et single-liv i storbyen?</div>
                             <div class="sol-answer">
                                 <span class="step-title">Svar: Massivt robust og dækket ind. </span>
                                 <div class="explanation-box">
