@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,74 +14,75 @@
 
 
 
-   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <style>
-    /* Base styles */
-    .table-bordered td, .table-bordered th {
-        border: 1px solid #dee2e6 !important;
-    }
-    
-    /* Even team numbers - dark background */
-    tr[data-team-number="2"],
-    tr[data-team-number="4"],
-    tr[data-team-number="6"],
-    tr[data-team-number="8"],
-    tr[data-team-number="10"],
-    tr[data-team-number="12"],
-    tr[data-team-number="14"],
-    tr[data-team-number="16"] {
-        background-color: black;
-        color: white;
-    }
+    <style>
+        /* Base styles */
+        .table-bordered td,
+        .table-bordered th {
+            border: 1px solid #dee2e6 !important;
+        }
 
-    /* Odd team numbers - light background */
-    tr[data-team-number="1"],
-    tr[data-team-number="3"],
-    tr[data-team-number="5"],
-    tr[data-team-number="7"],
-    tr[data-team-number="9"],
-    tr[data-team-number="11"],
-    tr[data-team-number="13"],
-    tr[data-team-number="15"] {
-        background-color: #ffffff;
-        color: #212529;
-    }
+        /* Even team numbers - dark background */
+        tr[data-team-number="2"],
+        tr[data-team-number="4"],
+        tr[data-team-number="6"],
+        tr[data-team-number="8"],
+        tr[data-team-number="10"],
+        tr[data-team-number="12"],
+        tr[data-team-number="14"],
+        tr[data-team-number="16"] {
+            background-color: black;
+            color: white;
+        }
 
-    /* Hover effects */
-    tr[data-team-number]:hover {
-        transition: background-color 0.3s ease;
-    }
-    
-    /* Dark rows hover */
-    tr[data-team-number="2"]:hover,
-    tr[data-team-number="4"]:hover,
-    tr[data-team-number="6"]:hover,
-    tr[data-team-number="8"]:hover,
-    tr[data-team-number="10"]:hover,
-    tr[data-team-number="12"]:hover,
-    tr[data-team-number="14"]:hover,
-    tr[data-team-number="16"]:hover {
-        background-color: #c0c0c0 !important;
-        color: #212529 !important;
-    }
+        /* Odd team numbers - light background */
+        tr[data-team-number="1"],
+        tr[data-team-number="3"],
+        tr[data-team-number="5"],
+        tr[data-team-number="7"],
+        tr[data-team-number="9"],
+        tr[data-team-number="11"],
+        tr[data-team-number="13"],
+        tr[data-team-number="15"] {
+            background-color: #ffffff;
+            color: #212529;
+        }
 
-    /* Light rows hover */
-    tr[data-team-number="1"]:hover,
-    tr[data-team-number="3"]:hover,
-    tr[data-team-number="5"]:hover,
-    tr[data-team-number="7"]:hover,
-    tr[data-team-number="9"]:hover,
-    tr[data-team-number="11"]:hover,
-    tr[data-team-number="13"]:hover,
-    tr[data-team-number="15"]:hover {
-        background-color: #788086 !important;
-        color: white !important;
-    }
-                            </style>
+        /* Hover effects */
+        tr[data-team-number]:hover {
+            transition: background-color 0.3s ease;
+        }
 
-   
+        /* Dark rows hover */
+        tr[data-team-number="2"]:hover,
+        tr[data-team-number="4"]:hover,
+        tr[data-team-number="6"]:hover,
+        tr[data-team-number="8"]:hover,
+        tr[data-team-number="10"]:hover,
+        tr[data-team-number="12"]:hover,
+        tr[data-team-number="14"]:hover,
+        tr[data-team-number="16"]:hover {
+            background-color: #c0c0c0 !important;
+            color: #212529 !important;
+        }
+
+        /* Light rows hover */
+        tr[data-team-number="1"]:hover,
+        tr[data-team-number="3"]:hover,
+        tr[data-team-number="5"]:hover,
+        tr[data-team-number="7"]:hover,
+        tr[data-team-number="9"]:hover,
+        tr[data-team-number="11"]:hover,
+        tr[data-team-number="13"]:hover,
+        tr[data-team-number="15"]:hover {
+            background-color: #788086 !important;
+            color: white !important;
+        }
+    </style>
+
+
 </head>
 
 
@@ -111,17 +111,17 @@
 
 
                             <h1>Teams</h1>
-                                <p>Her kan du se hvilket Team du er tilknyttet</p>
-                            
-                          
-                            
+                            <p>Her kan du se hvilket Team du er tilknyttet</p>
 
 
-                        
 
 
-                           
-                            
+
+
+
+
+
+
 
 
 
@@ -129,7 +129,7 @@
 
                             <div class="timeline-arrow"></div>
 
-                          
+
 
                             <table class="table table-sm table-small-font table-bordered">
                                 <thead>
@@ -158,12 +158,6 @@
                                         <td>Alexander Louis</td>
                                         <td>Kjærgaard</td>
                                         <td>alkj1000@stud.ek.dk</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr data-team-number="1">
-                                        <td>Deborah Marie Veronica</td>
-                                        <td>Laier Lyster</td>
-                                        <td>cph-dj24@stud.ek.dk</td>
                                         <td>1</td>
                                     </tr>
 
@@ -548,12 +542,12 @@
                                     </tr>
 
                                     <!-- Team 15 -->
-                                    <tr data-team-number="15">
+                                    <!-- <tr data-team-number="15">
                                         <td>Marcus Frey</td>
                                         <td>Hørkjær</td>
                                         <td>cph-mh1362@stud.ek.dk</td>
                                         <td>15</td>
-                                    </tr>
+                                    </tr> -->
                                     <tr data-team-number="15">
                                         <td>Nanna Charlotte Christine</td>
                                         <td>Lender</td>
@@ -612,14 +606,14 @@
                                     </tr> -->
                                 </tbody>
                             </table>
-                            
 
 
 
-                           
-                            
-                             
-                               
+
+
+
+
+
                         </li>
 
 
@@ -629,7 +623,6 @@
 
 
 
-                       
 
 
 
@@ -659,7 +652,8 @@
 
 
 
-                        
+
+
 
 
 
