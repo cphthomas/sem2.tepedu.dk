@@ -10,7 +10,7 @@
 08.jun 13:00 - Sebastian Wyrwik Karlsson - cph-sk560@stud.ek.dk - Team 3
 08.jun 13:30 - Louise Rej-Kirkebjerg - cph-lr324@stud.ek.dk - Team 3
 08.jun 14:00 - Christian Bülow-Møller - cph-cb583@stud.ek.dk - Team 4
-08.jun 14:30 - Magnus Elkjær - cph-me373@stud.ek.dk - Team 4
+08.jun 14:30 - Magnus Ellekjær - cph-me373@stud.ek.dk - Team 4
 09.jun 08:00 - Signe Saur Kaas Albertsen - cph-sa550@stud.ek.dk - Team 4
 09.jun 08:30 - Malte Mats Wachter - cph-mw283@stud.ek.dk - Team 4
 09.jun 09:00 - Mads Engelhardt Hansen - cph-mh1363@stud.ek.dk - Team 5
@@ -26,19 +26,18 @@
 09.jun 14:30 - Yasemin Turan - cph-yt13@stud.ek.dk - Team 7
 10.jun 08:00 - Line Lagerbon Carlsen - cph-lc296@stud.ek.dk - Team 7
 10.jun 08:30 - Emilie Ellen Bruun Enemark - cph-ee99@stud.ek.dk - Team 7
-10.jun 09:00 - Annika Rysgaard - cph-ar429@stud.ek.dk - Team 8
-10.jun 09:30 - Simone Julie Bloch Jessen - cph-sj672@stud.ek.dk - Team 8
-10.jun 10:00 - Henriette Tatiana Eisner - cph-he95@stud.ek.dk - Team 8
-10.jun 10:30 - Tanja Hovgaard Ludvigsen - cph-tl306@stud.ek.dk - Team 8
-10.jun 11:00 - Bibi Zenat Zaidi - cph-bz40@stud.ek.dk - Team 8
-10.jun 11:30 - Emma Stott Flygstrup - cph-ef183@stud.ek.dk - Team 9
-10.jun 12:30 - Albert Profit Gaub-Jakobs - cph-ag279@stud.ek.dk - Team 9
-10.jun 13:00 - Paulina Anna Maxa Warmind - cph-pw93@stud.ek.dk - Team 9
-10.jun 13:30 - Ida Grabenthin Kaagaard Kristensen - cph-ik96@stud.ek.dk - Team 9
-10.jun 14:00 - Isabella Maria Lund Kühne - cph-ik95@stud.ek.dk - Team 10
-10.jun 14:30 - Martine Saadoun - cph-ms1408@stud.ek.dk - Team 10
+10.jun 09:00 - Simone Julie Bloch Jessen - cph-sj672@stud.ek.dk - Team 8
+10.jun 09:30 - Henriette Tatiana Eisner - cph-he95@stud.ek.dk - Team 8
+10.jun 10:00 - Tanja Ludvigsen - cph-tl306@stud.ek.dk - Team 8
+10.jun 10:30 - Bibi Zenat Zaidi - cph-bz40@stud.ek.dk - Team 8
+10.jun 11:00 - Emma Stott Flygstrup - cph-ef183@stud.ek.dk - Team 9
+10.jun 12:00 - Albert Profit Gaub-Jakobsen - cph-ag279@stud.ek.dk - Team 9
+10.jun 12:30 - Paulina Anna Maxa Warmind - cph-pw93@stud.ek.dk - Team 9
+10.jun 13:00 - Ida Grabenthin Kaagaard Kristensen - cph-ik96@stud.ek.dk - Team 9
+10.jun 13:30 - Isabella Maria Lund Kühne - cph-ik95@stud.ek.dk - Team 10
+10.jun 14:00 - Martine Saadoun - cph-ms1408@stud.ek.dk - Team 10
 11.jun 08:00 - Emily Anastasia Toft - cph-et135@stud.ek.dk - Team 10
-11.jun 08:30 - Hanna Klittlund Nielsen - hani1000@stud.ek.dk - Team 10
+11.jun 08:30 - Hanna Klitlund Nielsen - hani1000@stud.ek.dk - Team 10
 11.jun 09:00 - Max Hunt Kirkland - maki1000@stud.ek.dk - Team 10
 11.jun 09:30 - Ernad Aliti - cph-ea198@stud.ek.dk - Team 11
 11.jun 10:00 - Esben Lind Bengtson - cph-eb228@stud.ek.dk - Team 11
@@ -51,11 +50,9 @@
 11.jun 14:00 - Natascha Renée Ankersen - cph-na291@stud.ek.dk - Team 12
 11.jun 14:30 - Rama Walaa Hisham Al-Asmar - cph-wa39@stud.ek.dk - Team 13
 11.jun 15:00 - Tobias Dan Hansen - cph-th466@stud.ek.dk - Team 13
-12.jun 08:00 - Marco Iaria - maia1000@stud.ek.dk - Team 13
-12.jun 08:30 - Abdikheyr Mohamed Abdirahman - abab1001@stud.ek.dk - Team 13
-12.jun 09:00 - Sarah Mathilde Iversen - cph-si118@stud.ek.dk - Team 14
-12.jun 09:30 - Christian Elkjær Christensen - cph-cc345@stud.ek.dk - Team 14
-12.jun 10:00 - Nanna Charlotte Christine Lender - cph-nl73@stud.ek.dk - Team 15
-12.jun 10:30 - Tobias Jensen - cph-tj416@stud.ek.dk - Team 15
-12.jun 11:00 - Ammar Abbed Aziz - cph-aa670@stud.ek.dk - Team 16
-12.jun 11:30 - Diana Ester Brandt Peder - cph-dp196@stud.ek.dk - Team 16
+12.jun 08:00 - Abdikheyr Mohamed Abdirahman - abab1001@stud.ek.dk - Team 13
+12.jun 08:30 - Christian Elkjær Christensen - cph-cc345@stud.ek.dk - Team 14
+12.jun 09:00 - Nanna Charlotte Christine Lender - cph-nl73@stud.ek.dk - Team 15
+12.jun 09:30 - Tobias Jensen - cph-tj416@stud.ek.dk - Team 15
+12.jun 10:00 - Ammar Abbed Aziz - cph-aa670@stud.ek.dk - Team 16
+12.jun 10:30 - Diana Ester Brandt Pedersen - cph-dp196@stud.ek.dk - Team 16
